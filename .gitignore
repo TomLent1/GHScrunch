@@ -1,4 +1,5 @@
-.log
+*.py[cod]
+*.log
 .DS_Store
 .DS_Store?
 ._*

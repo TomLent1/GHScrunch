@@ -1,13 +1,43 @@
-#!/usr/local/bin/python3.3
+#!/usr/local/bin/python2.7
 
-# ghscrunch.py
+# ghscrunch2.py
 # Extract GHS hazard classification information for chemicals out of various
 # international government documents, and output as a series of CSV files. 
 # By Akos Kokai. 
 # Uses the xlrd module (http://www.python-excel.org/).
 
 import xlrd
-import csv
+import csv, codecs, cStringIO
+
+class UnicodeWriter:
+    """
+    A CSV writer which will write rows to CSV file "f",
+    which is encoded in the given encoding.
+    """
+
+    def __init__(self, f, dialect=csv.excel, encoding="utf-8", **kwds):
+        # Redirect output to a queue
+        self.queue = cStringIO.StringIO()
+        self.writer = csv.writer(self.queue, dialect=dialect, **kwds)
+        self.stream = f
+        self.encoder = codecs.getincrementalencoder(encoding)()
+
+    def writerow(self, row):
+        self.writer.writerow([s.encode("utf-8") for s in row])
+        # Fetch UTF-8 output from the queue ...
+        data = self.queue.getvalue()
+        data = data.decode("utf-8")
+        # ... and reencode it into the target encoding
+        data = self.encoder.encode(data)
+        # write to the target stream
+        self.stream.write(data)
+        # empty queue
+        self.queue.truncate(0)
+
+    def writerows(self, rows):
+        for row in rows:
+            self.writerow(row)
+
 
 # Japan GHS classifications of 1424 chemicals, 2006
 
@@ -120,8 +150,8 @@ def crunch_jp_2006():
 
 # Output one list of chemicals (& their classification info) per hazard class.
     for h in hazard_lists:
-        with open('GHS-jp/output/' + h + '.csv', 'w', newline='') as csvfile:
-            listwriter = csv.writer(csvfile, dialect='excel')
+        with open('GHS-jp/output/' + h + '.csv', 'w') as csvfile:
+            listwriter = UnicodeWriter(csvfile)
             listwriter.writerows(hazard_lists[h])
 
 

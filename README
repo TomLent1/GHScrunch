@@ -1,0 +1,28 @@
+GHScrunch
+=========
+A Python program for extracting Globally Harmonised System (GHS) hazard classification information for chemicals out of various international government documents. The program will output lists of chemicals with their associated hazard classifications, such that there is one list (CSV format) per hazard type. 
+
+The goal is to add these GHS classifications to datasets used for comparative chemical hazard assessment, particularly for assessments guided by the GreenScreen framework (http://cleanproduction.org/Greenscreen.php). 
+
+This is work in progress. By Akos Kokai.
+
+Information sources: (so far only one)
+
+JAPAN GHS CLASSIFICATIONS OF 1424 CHEMICALS (2006) - http://www.safe.nite.go.jp/english/ghs_index.html
+===============================
+There are 16 Excel workbooks (xls), each containing up to 100 sheets. Each sheet contains the classification results for one chemical in an identical layout. Chemicals are identified by an index ID, CASRN, and chemical name. The classifications appear to be based on the first edition of GHS, or on Revision 1. A GHS classification manual produced by the Japanese government for this task is supplied (2005, in English - arigato). 
+
+The hazard classification scheme has three major groups: Physical, Health, Environmental; within those groups, there are several hazard classes. In these spreadsheets, some hazard classes are split into subcategories (e.g. exposure routes). GHS and its ontology of hazards has been through four revisions since these particular classifications were made, so we don't really care about preserving the exact hierarchy here. In fact, we have to tease apart "Respiratory/skin sensitizer" classifications for use with GreenScreen.
+
+For each hazard class, the results of chemical evaluations tabulated here include: 
+- Classification
+- Symbol
+- Signal word
+- Hazard statement
+- Rationale for the classification
+
+"Classification" is the most important to extract. It can be any of the following things:
+- A category number and/or name, which depends on criteria set out specifically for each hazard class. 
+- "Not Classified" - This phrase means that there was evidence of low hazard (i.e., safety).
+- "Classification not possible" - This means that there were no data. Very different from "Not classified."
+- "Not applicable" - Classification criteria are not applicable to this substance.

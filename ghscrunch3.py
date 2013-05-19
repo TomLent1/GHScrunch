@@ -1,45 +1,14 @@
-#!/usr/local/bin/python2.7
-# coding=utf-8
+#!/usr/local/bin/python3.3
 
-# ghscrunch2.py
+# ghscrunch3.py
 # Extract GHS hazard classification information for chemicals out of various
 # international government documents, and output as a series of CSV files. 
 # By Akos Kokai. 
 # Uses the xlrd module (http://www.python-excel.org/).
 
 
-import csv, codecs, cStringIO
 import xlrd
-
-
-class UnicodeWriter:
-    """
-    A CSV writer which will write rows to CSV file "f",
-    which is encoded in the given encoding.
-    """
-
-    def __init__(self, f, dialect=csv.excel, encoding="utf-8", **kwds):
-        # Redirect output to a queue
-        self.queue = cStringIO.StringIO()
-        self.writer = csv.writer(self.queue, dialect=dialect, **kwds)
-        self.stream = f
-        self.encoder = codecs.getincrementalencoder(encoding)()
-
-    def writerow(self, row):
-        self.writer.writerow([s.encode("utf-8") for s in row])
-        # Fetch UTF-8 output from the queue ...
-        data = self.queue.getvalue()
-        data = data.decode("utf-8")
-        # ... and reencode it into the target encoding
-        data = self.encoder.encode(data)
-        # write to the target stream
-        self.stream.write(data)
-        # empty queue
-        self.queue.truncate(0)
-
-    def writerows(self, rows):
-        for row in rows:
-            self.writerow(row)
+import csv
 
 
 def h_statement(h_code):
@@ -138,7 +107,7 @@ def splitsens(info):
     resp_list = ['Respiratory sensitizer']
     skin_list = ['Skin sensitizer']
     for x in info:
-        x = unicode(x)
+        x = str(x)
         if 'Skin' in x:
             a = x.find('Skin')
             resp_str = x[:a].rstrip(';([ \n\r')
@@ -160,26 +129,29 @@ def update(chemical, hazard_class, datalist):
     elif datalist[1] != '':
         chemical[hazard_class] = datalist
 
-
-def update_all(chemicals, source_file, date):
+def update_all(chemicals, source_file):
     # For Japan GHS classifications.
     # Creates or updates the dict of chemical classifications from a given
-    # spreadsheet. Specifying date allows revisions to be clearly seen.
+    # spreadsheet. Specifying date allows revisions to be clearly seen, but
+    # not going to deal with parsing the dates given in the spreadsheets.
     chembook = xlrd.open_workbook(source_file)
     # Ignore the first sheet (it's just a list of chemicals in the workbook).
     for chempage in range(1, chembook.nsheets):
         chemsheet = chembook.sheet_by_index(chempage)
         # Cells are identified by (row, col) where A1 is (0, 0).
+        id = chemsheet.cell_value(1,0)
         casrn_field = chemsheet.cell_value(2, 2)
+        # Must use their ID numbers as unique ID if CASRN is blank.
+        if casrn_field.strip() == '' or casrn_field.strip() == '-':
+            casrn_field = id
         chemname = chemsheet.cell_value(1, 3)
-        # We want one CASRN per chemical, just to be consistent.
+        date = chemsheet.cell_value(2, 4)
+        # But I also want one CASRN per chemical listing.
         for casrn in casrn_field.split(','):
             if casrn not in chemicals:
                 chemicals[casrn] = dict(name=chemname)
             # We are going to extract columns 2-7 for each of the rows.
             # Hazard class name is in col 2, Classification is in col 3, ...
-            update(chemicals[casrn], 'explosive', chemsheet.row_values(5)[2:8] + [date])
-            update(chemicals[casrn], 'explosive', chemsheet.row_values(5)[2:8] + [date])
             update(chemicals[casrn], 'explosive', chemsheet.row_values(5)[2:8] + [date])
             update(chemicals[casrn], 'flamm_gas', chemsheet.row_values(6)[2:8] + [date])
             update(chemicals[casrn], 'flamm_aer', chemsheet.row_values(7)[2:8] + [date])
@@ -252,37 +224,81 @@ def crunch_jp():
     #     information as their values.
     chemicals = dict()
 
+    # These are all the hazard class keywords that we will use.
+    hazard_classes = [
+        'explosive',
+        'flamm_gas',
+        'flamm_aer',
+        'oxid_gas',
+        'gas_press',
+        'flamm_liq',
+        'flamm_sol',
+        'self_react',
+        'pyro_liq',
+        'pyro_sol',
+        'self_heat',
+        'water_fire',
+        'oxid_liq',
+        'oxid_sol',
+        'org_perox',
+        'cor_metal',
+        'acute_oral',
+        'acute_derm',
+        'acute_gas',
+        'acute_vap',
+        'acute_air',
+        'skin_cor',
+        'eye_dmg',
+        'resp_sens',
+        'skin_sens',
+        'mutagen',
+        'cancer',
+        'repr_tox',
+        'sys_single',
+        'sys_rept',
+        'asp_haz',
+        'aq_acute',
+        'aq_chronic'
+    ]
+    
     # First feed in the 2006 mass classification.
     for filename in GHS_jp_2006_files:
-        update_all(chemicals, filename, '2006')
-
+        update_all(chemicals, filename)
     # Then add subsequent revisions and additions.
     for filename in GHS_jp_2007_files:
-        update_all(chemicals, filename, '2007')
+        update_all(chemicals, filename)
     for filename in GHS_jp_2008_files:
-        update_all(chemicals, filename, '2008')
+        update_all(chemicals, filename)
 
-    # Test some things...
-    print(chemicals['107-21-1']['skin_sens'])
-    print(chemicals['107-21-1']['cancer'])
-    
     # Finally, output a list of chemicals & their classification info for 
     # each hazard class.
-####### Really, we should be trying to write a CSV or XLS file that matches 
-####### the CML upload template.
-    # These are the fields we have extracted and wish to output.
-#     list_header = ['Name', 'Hazard class', 'Classification',
-#                    'Symbol', 'Signal word', 'Hazard statement',
-#                    'Rationale for classification', 'Date']
-#     for h in hazard_lists:
-#         with open('GHS-jp/output/' + h + '.csv', 'w') as csvfile:
-#             listwriter = UnicodeWriter(csvfile)
-#             listwriter.writerows(hazard_lists[h])
+    # These are all the fields we have extracted:
+    out_header = ['CASRN', 'Name', 'Hazard class', 'Classification', 
+                  'Symbol', 'Signal word', 'Hazard statement', 
+                  'Rationale for classification', 'Date of classification']
+    # CASRN are the keys in the dict called chemicals. Name is stored in 
+    # chemicals[<casrn>]['name'], and the rest of the data are stored in 
+    # chemicals[<casrn>][<hazard_class>] as a list, in this order.
+    
+    # I want the output to be in separate CSV files for each hazard class.
+    for h in hazard_classes:
+        with open('GHS-jp/output/' + h + '.csv', 'w', newline='') as outfile:
+            listwriter = csv.writer(outfile)
+            listwriter.writerow(out_header)
+            for c in chemicals.keys():
+                listwriter.writerow([c] + [chemicals[c]['name']] + 
+                                    chemicals[c][h])
+
+    # Also output an index of chemicals, just to check for problems.
+    with open('GHS-jp/output/index.csv', 'w', newline='') as outfile:
+        listwriter = csv.writer(outfile)
+        listwriter.writerow(['CASRN', 'Name'])
+        for c in chemicals.keys():
+            listwriter.writerow([c] + [chemicals[c]['name']])
 
 
-
-# Korea GHS classification (2011)
 def crunch_kr():
+    # Process the Korea GHS classification (2011).
     chembook = xlrd.open_workbook('GHS-kr/GHS-kr-2011-04-15.xls')
     chemsheet = chembook.sheet_by_index(0)
 # There are defined, and sometimes distinct, values for each row within 

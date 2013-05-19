@@ -1,13 +1,14 @@
-GHScrunch
+GHScrunch by Akos Kokai
 =========
-A Python program for extracting Globally Harmonised System (GHS) hazard classification information for chemicals out of various international government documents. The program will output lists of chemicals with their associated hazard classifications in CSV format. The goal is to add these GHS classifications to datasets used for comparative chemical hazard assessment, particularly for assessments guided by the GreenScreen framework (http://cleanproduction.org/Greenscreen.php). 
+A Python program for extracting Globally Harmonised System (GHS) hazard classification information for chemicals out of various international government documents. The program will output lists of chemicals with their associated hazard classifications in CSV format. The goal is to add these GHS classifications to datasets used for comparative chemical hazard assessment, particularly for assessments guided by the GreenScreen framework (http://cleanproduction.org/Greenscreen.php). It's a work in progress.
 
 For information on the Globally Harmonised System, see:
 http://www.unece.org/trans/danger/publi/ghs/ghs_welcome_e.html 
 
-This is work in progress by Akos Kokai.
 
-I use the following information sources, included in this repo.
+INFORMATION SOURCES
+===================
+I use the official published classification documents from the following GHS implementations, all of which are included with this repo.
 
 
 JAPAN GHS CLASSIFICATIONS
@@ -18,23 +19,22 @@ Classification Results of 93 chemicals by METI and MOE (2008)
 -------------------------------------------------------------------------------
 Downloaded from: http://www.safe.nite.go.jp/english/ghs_index.html
 
-All three batches of classifications are distributed in series of Excel workbooks (xls), each containing up to 100 sheets. Each sheet contains the classification results for one chemical in an identical layout. Chemicals are identified by an index ID, CASRN, and chemical name. The 2006 classifications appear to be based on the first edition of GHS, or on Revision 1. The subsequent classifications (which include new chemicals and updates to previously classified chemicals) are based on Revision 2.
+All three batches of classifications are distributed in series of Excel workbooks (xls), each containing up to 100 sheets. Each sheet contains the classification results for one chemical in an identical layout. Chemicals are identified by an index ID, CASRN, and chemical name. The 2006 classifications appear to be based on the first edition of GHS or on Revision 1. The subsequent classifications (which include new chemicals and updates to previously classified chemicals) are based on Revision 2. GHScrunch outputs the cumulative results of all the classifications and their updates. 
 
-In these spreadsheets, some hazard classes are described using multiple spreadsheet rows corresponding to subcategories (e.g. exposure routes). This program preserves such subdivisions. In fact, it also teases apart "Respiratory/skin sensitizer" classifications into separate respiratory and skin sub-classes.
+In the spreadsheets, some hazard classes are described using multiple spreadsheet rows corresponding to subcategories (e.g. exposure routes). GHScrunch preserves that structure. Additionally, the program teases apart "Respiratory/skin sensitizer" classifications into separate respiratory and skin sensitization subcategories.
 
-For each hazard, the results of chemical evaluations tabulated here include: 
+For each hazard class, the spreadsheets tabulate the following results of chemical evaluations: 
 - Classification
-- Symbol
+- Symbol (named)
 - Signal word
-- Hazard statement
+- Hazard statement (unfortunately without codes)
 - Rationale for the classification
 
-"Classification" is the most important to extract. It can be any of the following things:
+The classification is probably the most important. It can be any of the following things:
 - A category number and/or name, which depends on criteria set out specifically for each hazard class. 
-- "Not Classified" - This phrase means that there was evidence of low hazard (i.e., safety).
+- "Not Classified" - This phrase typically means that there was evidence of low hazard (i.e., safety).
 - "Classification not possible" - This means that there were no data. Very different from "Not classified."
 - "Not applicable" - Classification criteria are not applicable to this substance.
-
 
 
 KOREA GHS CLASSIFICATIONS
@@ -45,4 +45,4 @@ by the National Institute of Environmental Research
 Main page: http://ncis.nier.go.kr/ghs/
 Downloaded from: http://ncis.nier.go.kr/ghs/search/searchlist_view.jsp?seq=17
 
-
+Working on this.

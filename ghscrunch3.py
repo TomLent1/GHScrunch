@@ -147,7 +147,8 @@ def update_all(chemicals, source_file):
         chemname = chemsheet.cell_value(1, 3)
         date = chemsheet.cell_value(2, 4)
         # But I also want one CASRN per chemical listing.
-        for casrn in casrn_field.split(','):
+        for c in casrn_field.split(','):
+            casrn = c.strip()
             if casrn not in chemicals:
                 chemicals[casrn] = dict(name=chemname)
             # We are going to extract columns 2-7 for each of the rows.

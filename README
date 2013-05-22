@@ -21,7 +21,44 @@ Downloaded from: http://www.safe.nite.go.jp/english/ghs_index.html
 
 All three batches of classifications are distributed in series of Excel workbooks (xls), each containing up to 100 sheets. Each sheet contains the classification results for one chemical in an identical layout. Chemicals are identified by an index ID, CASRN, and chemical name. The 2006 classifications appear to be based on the first edition of GHS or on Revision 1. The subsequent classifications (which include new chemicals and updates to previously classified chemicals) are based on Revision 2. GHScrunch outputs the cumulative results of all the classifications and their updates. 
 
-In the spreadsheets, some hazard classes are described using multiple spreadsheet rows corresponding to subcategories (e.g. exposure routes). GHScrunch preserves that structure. Additionally, the program teases apart "Respiratory/skin sensitizer" classifications into separate respiratory and skin sensitization subcategories.
+For reference, these are the hazard classes that are listed as separate rows in the Japan GHS spreadsheets:
+Physical hazards
+Explosives
+Flammable gases
+Flammable aerosols
+Oxidizing gases
+Gases under pressure
+Flammable liquids
+Flammable solids
+Self-reactive substances and mixtures
+Pyrophoric liquids
+Pyrophoric solids
+Self-heating substances and mixtures
+Substances and mixtures, which in contact with water, emit flammable gases
+Oxidizing liquids
+Oxidizing solids
+Organic peroxides
+Corrosive to metals
+Health hazards
+Acute toxicity (oral)
+Acute toxicity (dermal)
+Acute toxicity (inhalation: gas)
+Acute toxicity (inhalation: vapour)
+Acute toxicity (inhalation: dust, mist)
+Skin corrosion / irritation
+Serious eye damage / eye irritation
+Respiratory/skin sensitizer
+Germ cell mutagenicity
+Carcinogenicity
+Toxic to reproduction
+Specific target organs/systemic toxicity following single exposure
+Specific target organs/systemic toxicity following repeated exposure
+Aspiration hazard
+Environmental hazards
+Hazardous to the aquatic environment (acute)
+Hazardous to the aquatic environment (chronic)
+
+Note that Acute toxicity is subdivided into 5 exposure routes, and aquatic toxicity is subdivided into acute/chronic. We preserve those subdivisions in the output of this program. Additionally, the program teases apart "Respiratory/skin sensitizer" classifications into separate respiratory and skin sensitization subcategories (for consistency with GreenScreen).
 
 For each hazard class, the spreadsheets tabulate the following results of chemical evaluations: 
 - Classification

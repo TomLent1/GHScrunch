@@ -9,9 +9,46 @@
 
 import xlrd
 import csv
+import argparse
 
 
-def h_statement(h_code):
+def ghs_hazard(ref):
+    # Look up the hazard class based on GHS chapter reference.
+    # Accurate to GHS Revision 4.
+    ghs_chapters = {
+        '2.1': 'Explosives',
+        '2.2': 'Flammable gases',
+        '2.3': 'Aerosols',
+        '2.4': 'Oxidizing gases',
+        '2.5': 'Gases under pressure',
+        '2.6': 'Flammable liquids',
+        '2.7': 'Flammable solids',
+        '2.8': 'Self-reactive substances and mixtures',
+        '2.9': 'Pyrophoric liquids',
+        '2.10': 'Pyrophoric solids',
+        '2.11': 'Self-heating substances and mixtures',
+        '2.12': 'Substances and mixtures which, in contact with water, emit flammable gases',
+        '2.13': 'Oxidizing liquids',
+        '2.14': 'Oxidizing solids',
+        '2.15': 'Organic peroxides',
+        '2.16': 'Corrosive to metals',
+        '3.1': 'Acute toxicity',
+        '3.2': 'Skin corrosion/irritation',
+        '3.3': 'Serious eye damage/irritation',
+        '3.4': 'Respiratory or skin sensitization',
+        '3.5': 'Germ cell mutagenicity',
+        '3.6': 'Carcinogenicity',
+        '3.7': 'Reproductive toxicity',
+        '3.8': 'Specific target organ toxicity - Single exposure',
+        '3.9': 'Specific target organ toxicity - Repeated exposure',
+        '3.10': 'Aspiration hazard',
+        '4.1': 'Hazardous to the aquatic environment',
+        '4.2': 'Hazardous to the ozone layer'
+    }
+    return ghs_chapters[ref]
+
+
+def h_statement(h):
     # H-statements: List from GHS Revision 4.
     # Did not include the abbreviated combinations (e.g. H302 + H332).
     h_statements = {
@@ -94,7 +131,7 @@ def h_statement(h_code):
         'H413': 'May cause long lasting harmful effects to aquatic life',
         'H420': 'Harms public health and the environment by destroying ozone in the upper atmosphere'
     }
-    return h_statements[h_code]
+    return h_statements[h]
 
 
 def splitsens(info):
@@ -302,58 +339,75 @@ def crunch_kr():
     # Process the Korea GHS classification (2011).
     chembook = xlrd.open_workbook('GHS-kr/GHS-kr-2011-04-15.xls')
     chemsheet = chembook.sheet_by_index(0)
-# There are defined, and sometimes distinct, values for each row within 
-# what appear as multi-row merged cells. This is good.
-#   Name:           (r, 1)
-#   CASRN:          (r, 3)
-#   Hazard class    (r, 4)
-#   Hazard category (r, 5)
-#   Pictogram code? (r, 6)
-#   unknown!        (r, 7)
-#   H-stmnt code    (r, 8) - make a function to look up full H-statement!
-#    print(chembook.encoding)
-    for r in range(16,1209):
+    outfile = open('GHS-kr/output/GHS-kr.csv', 'w', newline='')
+    listwriter = csv.writer(outfile)
+    listwriter.writerow(['Name', 'CASRN', 'Hazard class', 'Category', 
+                         'H-statement', 'M-factor'])
+    for r in range(16,1208):
+        # Name:           (r, 1)
+        # CASRN:          (r, 3)
+        # Don't overwrite name and CASRN with blanks from merged cells.
+        if chemsheet.cell_value(r, 1) != '':
+            name = chemsheet.cell_value(r, 1)
+        if chemsheet.cell_value(r, 3) != '':
+            casrn = chemsheet.cell_value(r, 3)
+        # Hazard class    (r, 4)
+        # Hazard category (r, 5)
+        # Pictogram code  (r, 6) - (not used anymore?)
+        # Signal word     (r, 7) - (in Korean)
+        # H-stmnt code    (r, 8)
+        # M-factor        (r, 9)
         haz_class_field = chemsheet.cell_value(r, 4)
-        haz_class_num = haz_class_field[haz_class_field.find('('):].strip('()')
-        haz_class_en = ''
-# Make a function to look up the English name of the hazard class.
-# For Acute Tox, need to deduce the exposure route too (can use Korean text)
-# 급성 독성-경구(3.1) = Acute toxicity - oral (3.1)
-# 급성 독성-경피(3.1) = Acute toxicity - dermal (3.1)
-# 급성 독성-흡입(3.1) = Acute toxicity - inhalation (3.1)
-# For Respiratory/Skin sensitization, we need to determine which.
-# 피부 과민성(3.4) = Skin sensitization (3.4)
-# 호흡기 과민성 (3.4) = Respiratory sensitization (3.4)
-# For Aquatic Tox, need to deduce Acute or Chronic
-# 수생환경유해성-급성(4.1) = Hazardous to the aquatic environment - acute (4.1)
-# 수생환경유해성-만성(4.1) = Hazardous to the aquatic environment - chronic (4.1)
-        if haz_class_num == '3.1':
+        ref = haz_class_field[haz_class_field.find('('):].strip('()')
+        haz_class_en = ghs_hazard(ref)
+        if ref == '3.1':
             if u'급성 독성-경구' in haz_class_field:
-                haz_class_en = 'Acute toxicity - oral (3.1)'
+                haz_class_en = 'Acute toxicity (oral)'
             elif u'급성 독성-경피' in haz_class_field:
-                haz_class_en = 'Acute toxicity - dermal (3.1)'
+                haz_class_en = 'Acute toxicity (dermal)'
             elif u'급성 독성-흡입' in haz_class_field:
-                haz_class_en = 'Acute toxicity - inhalation (3.1)'
+                haz_class_en = 'Acute toxicity (inhalation)'
             else:
                 print('Found a different hazard class 3.1 in row ' + str(r))
-        if haz_class_num == '3.4':
+        if ref == '3.4':
             if u'피부 과민성' in haz_class_field:
-                haz_class_en = 'Skin sensitization (3.4)'
+                haz_class_en = 'Skin sensitization'
             elif u'호흡기 과민성' in haz_class_field:
-                haz_class_en = 'Respiratory sensitization (3.4)'
+                haz_class_en = 'Respiratory sensitization'
             else:
                 print('Found a different hazard class 3.4 in row ' + str(r))
-        if haz_class_num == '4.1':
+        if ref == '4.1':
             if u'수생환경유해성-급성' in haz_class_field:
-                haz_class_en = 'Hazardous to the aquatic environment - acute (4.1)'
+                haz_class_en = 'Hazardous to the aquatic environment (acute)'
             elif u'수생환경유해성-만성' in haz_class_field:
-                haz_class_en = 'Hazardous to the aquatic environment - chronic (4.1)'
+                haz_class_en = 'Hazardous to the aquatic environment (chronic)'
             else:
                 print('Found a different hazard class 4.1 in row ' + str(r))
+        # Category values are integers stored as floats.
+        category = 'Category ' + str(int(chemsheet.cell_value(r, 5)))
+        h_code = chemsheet.cell_value(r, 8)
+        h_state = h_code + ' - ' + h_statement(h_code)
+        if chemsheet.cell_value(r, 9) != '':
+            m_factor = str(int(chemsheet.cell_value(r, 9)))
+        else: m_factor = ''
+        listwriter.writerow([name, casrn, haz_class_en, category, 
+                             h_state, m_factor])
+    outfile.close()
 
 
 def main():
-    crunch_jp()
-#    crunch_kr()
+    parser = argparse.ArgumentParser(description='Extract GHS hazard \
+                classifications from country-specific documents.') 
+    parser.add_argument('countries', action='store', nargs='+', 
+                choices=['jp', 'kr'], 
+                help='Process GHS classifications from these countries.')
+    args = parser.parse_args()
+    if 'jp' in args.countries:
+        print('Processing GHS-Japan.')
+        crunch_jp()
+    if 'kr' in args.countries:
+        print('Processing GHS-Korea.')
+        crunch_kr()
+
 
 main()

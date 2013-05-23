@@ -341,7 +341,7 @@ def crunch_kr():
     chemsheet = chembook.sheet_by_index(0)
     outfile = open('GHS-kr/output/GHS-kr.csv', 'w', newline='')
     listwriter = csv.writer(outfile)
-    listwriter.writerow(['Name', 'CASRN', 'Hazard class', 'Category', 
+    listwriter.writerow(['CASRN', 'Name', 'Hazard class', 'Category', 
                          'H-statement', 'M-factor'])
     for r in range(16,1208):
         # Name:           (r, 1)
@@ -390,7 +390,7 @@ def crunch_kr():
         if chemsheet.cell_value(r, 9) != '':
             m_factor = str(int(chemsheet.cell_value(r, 9)))
         else: m_factor = ''
-        listwriter.writerow([name, casrn, haz_class_en, category, 
+        listwriter.writerow([casrn, name, haz_class_en, category, 
                              h_state, m_factor])
     outfile.close()
 

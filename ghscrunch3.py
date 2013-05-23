@@ -350,7 +350,7 @@ def crunch_kr():
         if chemsheet.cell_value(r, 1) != '':
             name = chemsheet.cell_value(r, 1)
         if chemsheet.cell_value(r, 3) != '':
-            casrn = chemsheet.cell_value(r, 3)
+            casrn_field = chemsheet.cell_value(r, 3)
         # Hazard class    (r, 4)
         # Hazard category (r, 5)
         # Pictogram code  (r, 6) - (not used anymore?)
@@ -390,8 +390,10 @@ def crunch_kr():
         if chemsheet.cell_value(r, 9) != '':
             m_factor = str(int(chemsheet.cell_value(r, 9)))
         else: m_factor = ''
-        listwriter.writerow([casrn, name, haz_class_en, category, 
-                             h_state, m_factor])
+        # Ensure one CASRN per line.
+        for casrn in casrn_field.split(', '):
+            listwriter.writerow([casrn, name, haz_class_en, category, 
+                                 h_state, m_factor])
     outfile.close()
 
 

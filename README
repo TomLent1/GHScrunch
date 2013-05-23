@@ -18,6 +18,7 @@ Classification Results of 52 chemicals by METI (2007)
 Classification Results of 93 chemicals by METI and MOE (2008)
 -------------------------------------------------------------------------------
 Downloaded from: http://www.safe.nite.go.jp/english/ghs_index.html
+Files are in GHS-jp/, output in in GHS-jp/output/
 
 All three batches of classifications are distributed in series of Excel workbooks (xls), each containing up to 100 sheets. Each sheet contains the classification results for one chemical in an identical layout. Chemicals are identified by an index ID, CASRN, and chemical name. The 2006 classifications appear to be based on the first edition of GHS or on Revision 1. The subsequent classifications (which include new chemicals and updates to previously classified chemicals) are based on Revision 2. This program outputs the cumulative results of all the classifications and their updates. 
 
@@ -81,6 +82,7 @@ by the National Institute of Environmental Research
 -------------------------------------------------------------------------------
 Main page: http://ncis.nier.go.kr/ghs/
 Downloaded from: http://ncis.nier.go.kr/ghs/search/searchlist_view.jsp?seq=17
+Files are in GHS-kr/, output in in GHS-kr/output/
 
 This document is in 한국어, with only substance names in English. Fortunately, it is straightforwardly structured and includes numeric GHS chapter references for hazard classes, and H-statement codes. I was able to confirm my understanding of the document using Google Translate.
 

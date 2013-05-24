@@ -341,14 +341,20 @@ def crunch_kr():
     chemsheet = chembook.sheet_by_index(0)
     outfile = open('GHS-kr/output/GHS-kr.csv', 'w', newline='')
     listwriter = csv.writer(outfile)
-    listwriter.writerow(['CASRN', 'Name', 'Hazard class', 'Category', 
-                         'H-statement', 'M-factor'])
+    listwriter.writerow(['CASRN', 'Name', 'Synonyms', 'Hazard class', 
+                         'Category', 'H-statement', 'M-factor'])
     for r in range(16,1208):
         # Name:           (r, 1)
         # CASRN:          (r, 3)
         # Don't overwrite name and CASRN with blanks from merged cells.
         if chemsheet.cell_value(r, 1) != '':
-            name = chemsheet.cell_value(r, 1)
+            name_field = chemsheet.cell_value(r, 1)
+            # Split lists of synonyms into 2 fields.
+            names = name_field.split(';', 1)
+            for i in range(len(names)):
+                names[i] = names[i].strip()
+            while len(names) < 2:
+                names.append('')
         if chemsheet.cell_value(r, 3) != '':
             casrn_field = chemsheet.cell_value(r, 3)
         # Hazard class    (r, 4)
@@ -392,8 +398,8 @@ def crunch_kr():
         else: m_factor = ''
         # Ensure one CASRN per line.
         for casrn in casrn_field.split(', '):
-            listwriter.writerow([casrn, name, haz_class_en, category, 
-                                 h_state, m_factor])
+            listwriter.writerow([casrn] + names + 
+                                [haz_class_en, category, h_state, m_factor])
     outfile.close()
 
 

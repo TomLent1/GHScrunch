@@ -341,11 +341,12 @@ def crunch_kr():
     chemsheet = chembook.sheet_by_index(0)
     outfile = open('GHS-kr/output/GHS-kr.csv', 'w', newline='')
     listwriter = csv.writer(outfile)
-    # For practical purposes I am going to combine the Hazard class and
-    # category fields into one, let's call it Classification. 
-    listwriter.writerow(['CASRN', 'Name', 'Synonyms', 'Classification', 
+    # For practical purposes I am going to combine the hazard class and
+    # category fields into one. 
+    listwriter.writerow(['CASRN', 'Name', 'Synonyms', 'Hazard class/category', 
                          'H-statement', 'M-factor'])
-    # This is for counting the number of classifications.
+    # It can be helpful to enumerate the unique class/category combinations.
+    # Let's just call these "sublists".
     sublists = []
     for r in range(16,1208):
         # Name:           (r, 1)
@@ -400,8 +401,9 @@ def crunch_kr():
         if chemsheet.cell_value(r, 9) != '':
             m_factor = str(int(chemsheet.cell_value(r, 9)))
         else: m_factor = ''
-        # Make the combined "Classification" field:
+        # Make the combined hazard class/category field:
         s = haz_class_en + ' - ' + category
+        # Keep track of those.
         if s not in sublists:
             sublists.append(s)
         # Ensure one CASRN per line:
@@ -409,6 +411,7 @@ def crunch_kr():
             listwriter.writerow([casrn] + names + [s, h_state, m_factor])
     outfile.close()
     sublists.sort()
+    # Print some helpful information about the sublists.
     print('Number of sublists:', len(sublists))
     for sub in sublists:
         print(sub)

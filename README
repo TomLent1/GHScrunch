@@ -84,9 +84,36 @@ Main page: http://ncis.nier.go.kr/ghs/
 Downloaded from: http://ncis.nier.go.kr/ghs/search/searchlist_view.jsp?seq=17
 Files are in GHS-kr/, output in in GHS-kr/output/
 
-This document is in 한국어, with only substance names in English. Fortunately, it is straightforwardly structured and includes numeric GHS chapter references for hazard classes, and H-statement codes. I was able to confirm my understanding of the document using Google Translate.
+This document is in 한국어, with only substance names in English. Fortunately, it is straightforwardly structured and includes numeric GHS chapter references for hazard classes, and H-statement codes. I was able to confirm my understanding of the document using Google Translate. The program outputs a list of substance names and CASRN, hazard class names in English combined with category numbers, H-statement codes + full English H-statements, and M-factors.
 
-Each line describes one substance with one hazard classification. Columns E-F are the hazard class and category, respectively (e.g. the first one is Oxidizing solids (2.14), Category 3). Columns G-J are for labeling, respectively: symbol (coded), signal word, and hazard statement (coded), and M-factor. There are multi-row merged cells that span classifications for the same CASRN. Sometimes you get a CASRN for each row when using xlrd to read the cells, sometimes not.
+For reference, these are the hazard classes that are represented in this list:
+  PHYSICAL HAZARDS:
+	Flammable gases
+	Gases under pressure
+	Flammable liquids
+	Flammable solids
+	Substances and mixtures which, in contact with water, emit flammable gases
+	Oxidizing solids
+	Organic peroxides
+  HEALTH HAZARDS:
+    Acute toxicity (oral)
+	Acute toxicity (dermal)
+	Acute toxicity (inhalation)
+	Skin corrosion/irritation
+	Serious eye damage/irritation
+	Respiratory sensitization
+	Skin sensitization
+	Germ cell mutagenicity
+	Carcinogenicity
+	Reproductive toxicity
+	Specific target organ toxicity - Single exposure
+	Specific target organ toxicity - Repeated exposure
+	Aspiration hazard
+  ENVIRONMENTAL HAZARDS:
+	Hazardous to the aquatic environment (acute)
+	Hazardous to the aquatic environment (chronic)
+
+In the spreadsheet, each line describes one substance with one hazard classification. Columns E-F are the hazard class and category, respectively (e.g. the first one is Oxidizing solids (2.14), Category 3). Columns G-J are for labeling, respectively: symbol (coded), signal word, and hazard statement (coded), and M-factor. There are multi-row merged cells that span classifications for the same CASRN. Sometimes you get a CASRN for each row when using xlrd to read the cells, sometimes not.
 
 Using the hazard class names allows us (via Google Translate) to distinguish the following hazards that have the same GHS chapter number:
 	급성 독성-경구 (3.1) = Acute toxicity - oral
@@ -96,5 +123,3 @@ Using the hazard class names allows us (via Google Translate) to distinguish the
 	호흡기 과민성 (3.4) = Respiratory sensitization
 	수생환경유해성-급성 (4.1) = Hazardous to the aquatic environment - acute
 	수생환경유해성-만성 (4.1) = Hazardous to the aquatic environment - chronic
-
-This program outputs a list of substance names and CASRN, hazard class names in English, Category numbers, H-statement codes + full English H-statements, and M-factors.

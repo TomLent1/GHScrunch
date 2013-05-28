@@ -341,8 +341,13 @@ def crunch_kr():
     chemsheet = chembook.sheet_by_index(0)
     outfile = open('GHS-kr/output/GHS-kr.csv', 'w', newline='')
     listwriter = csv.writer(outfile)
-    listwriter.writerow(['CASRN', 'Name', 'Synonyms', 'Hazard class', 
-                         'Category', 'H-statement', 'M-factor'])
+    # listwriter.writerow(['CASRN', 'Name', 'Synonyms', 'Hazard class', 
+    #                      'Category', 'H-statement', 'M-factor'])
+    # For a specific application of this program, I'm going to lump together
+    # the Class, Category, H-statement, and M-factor into one field (later).
+    listwriter.writerow(['CASRN', 'Name', 'Synonyms', 'Classification'])
+    # This is for counting the number of such fields (78).
+    # sublists = []
     for r in range(16,1208):
         # Name:           (r, 1)
         # CASRN:          (r, 3)
@@ -396,11 +401,22 @@ def crunch_kr():
         if chemsheet.cell_value(r, 9) != '':
             m_factor = str(int(chemsheet.cell_value(r, 9)))
         else: m_factor = ''
-        # Ensure one CASRN per line.
+        # Make the combined "Classification" field:
+        s = haz_class_en + ' - ' + category + ' - ' + h_state
+        if m_factor != '':
+             s = s + ' (M-factor: ' + m_factor + ')'
+        # if s not in sublists:
+        #     sublists.append(s)
+        # Ensure one CASRN per line:
         for casrn in casrn_field.split(', '):
-            listwriter.writerow([casrn] + names + 
-                                [haz_class_en, category, h_state, m_factor])
+            # listwriter.writerow([casrn] + names + 
+            #                     [haz_class_en, category, h_state, m_factor])
+            listwriter.writerow([casrn] + names + [s])
     outfile.close()
+    # sublists.sort()
+    # print('Number of sublists:', len(sublists))
+    # for sub in sublists:
+    #     print(sub)
 
 
 def main():

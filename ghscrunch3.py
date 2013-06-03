@@ -432,4 +432,5 @@ def main():
         crunch_kr()
 
 
-main()
+if __name__ == '__main__':
+    main()

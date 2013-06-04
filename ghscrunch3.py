@@ -166,6 +166,7 @@ def update(chemical, hazard_class, datalist):
     elif datalist[1] != '':
         chemical[hazard_class] = datalist
 
+
 def update_all(chemicals, source_file):
     # For Japan GHS classifications.
     # Creates or updates the dict of chemical classifications from a given
@@ -189,7 +190,12 @@ def update_all(chemicals, source_file):
             if casrn not in chemicals:
                 chemicals[casrn] = dict(name=chemname)
             # We are going to extract columns 2-7 for each of the rows.
-            # Hazard class name is in col 2, Classification is in col 3, ...
+            # col 2: Hazard class name
+            # col 3: Classification
+            # col 4: Symbol
+            # col 5: Signal word
+            # col 6: Hazard statement
+            # col 7: Rationale for classification
             update(chemicals[casrn], 'explosive', chemsheet.row_values(5)[2:8] + [date])
             update(chemicals[casrn], 'flamm_gas', chemsheet.row_values(6)[2:8] + [date])
             update(chemicals[casrn], 'flamm_aer', chemsheet.row_values(7)[2:8] + [date])
@@ -334,6 +340,18 @@ def crunch_jp():
         for c in chemicals.keys():
             listwriter.writerow([c] + [chemicals[c]['name']])
 
+    # Experiment: enumerate all the hazard statements to see if we can
+    # back-translate them into H-statement codes.
+    hstatements = []
+    with open('GHS-jp/output/hstatements.txt', 'w') as outfile:
+        for c in chemicals.keys():
+            for h in hazard_classes:
+                hs = chemicals[c][h][4]
+                if hs not in hstatements:
+                    hstatements.append(hs)
+        for x in hstatements:
+            print(x, file=outfile)
+
 
 def crunch_kr():
     # Process the Korea GHS classification (2011).
@@ -341,12 +359,12 @@ def crunch_kr():
     chemsheet = chembook.sheet_by_index(0)
     outfile = open('GHS-kr/output/GHS-kr.csv', 'w', newline='')
     listwriter = csv.writer(outfile)
-    # For practical purposes I am going to combine the hazard class and
-    # category fields into one. 
-    listwriter.writerow(['CASRN', 'Name', 'Synonyms', 'Hazard class/category', 
-                         'H-statement', 'M-factor'])
-    # It can be helpful to enumerate the unique class/category combinations.
-    # Let's just call these "sublists".
+    # For practical purposes, I am going to combine the hazard class,
+    # category, and H-statement fields into one 'Hazard sublist' field. 
+    listwriter.writerow(['CASRN', 'Name', 'Synonyms', 'Hazard sublist', 
+                         'M-factor'])
+    # I also want to enumerate the unique class/category/H-statement
+    # combinations (sublists).
     sublists = []
     for r in range(16,1208):
         # Name:           (r, 1)
@@ -398,30 +416,34 @@ def crunch_kr():
         category = 'Category ' + str(int(chemsheet.cell_value(r, 5)))
         h_code = chemsheet.cell_value(r, 8)
         h_state = h_code + ' - ' + h_statement(h_code)
+        # Make the combined hazard class/category/H-statement field:
+        s = haz_class_en + ' - ' + category + ' [' + h_state + ']'
+        # Make M-factor field (though not really using it for anything now).
         if chemsheet.cell_value(r, 9) != '':
             m_factor = str(int(chemsheet.cell_value(r, 9)))
-        else: m_factor = ''
-        # Make the combined hazard class/category field:
-        s = haz_class_en + ' - ' + category
-        # Keep track of those.
+        else:
+            m_factor = ''
+        # Keep track of sublists.
         if s not in sublists:
             sublists.append(s)
         # Ensure one CASRN per line:
         for casrn in casrn_field.split(', '):
-            listwriter.writerow([casrn] + names + [s, h_state, m_factor])
+            listwriter.writerow([casrn] + names + [s, m_factor])
     outfile.close()
     sublists.sort()
-    # Print some helpful information about the sublists.
-    print('Number of sublists:', len(sublists))
+    # Output some helpful information about the hazard sublists.
+    outtxt = open('GHS-kr/output/hazards.txt', 'w')
+    print('Number of hazard sublists:', len(sublists), file=outtxt)
     for sub in sublists:
-        print(sub)
+        print(sub, file=outtxt)
+    outtxt.close()
 
 
 def main():
     parser = argparse.ArgumentParser(description='Extract GHS hazard \
                 classifications from country-specific documents.') 
     parser.add_argument('countries', action='store', nargs='+', 
-                choices=['jp', 'kr'], 
+                choices=['jp', 'kr', 'nz'], 
                 help='Process GHS classifications from these countries.')
     args = parser.parse_args()
     if 'jp' in args.countries:
@@ -430,7 +452,8 @@ def main():
     if 'kr' in args.countries:
         print('Processing GHS-Korea.')
         crunch_kr()
-
+    if 'nz' in args.countries:
+        print('Kia Ora! GHS-NZ coming soon.')
 
 if __name__ == '__main__':
     main()

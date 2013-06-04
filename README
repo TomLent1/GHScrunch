@@ -84,7 +84,7 @@ Main page: http://ncis.nier.go.kr/ghs/
 Downloaded from: http://ncis.nier.go.kr/ghs/search/searchlist_view.jsp?seq=17
 Files are in GHS-kr/, output in in GHS-kr/output/
 
-This document is in 한국어, with only substance names in English. Fortunately, it is straightforwardly structured and includes numeric GHS chapter references for hazard classes, and H-statement codes. I was able to confirm my understanding of the document using Google Translate. The program outputs a list of substance names and CASRN, hazard class names in English combined with category numbers, H-statement codes + full English H-statements, and M-factors.
+This document is in 한국어, with only substance names in English. Fortunately, it is straightforwardly structured and includes numeric GHS chapter references for hazard classes, and H-statement codes. I was able to confirm my understanding of the document using Google Translate. The program creates GHS-kr.csv, containing a list of substance names; CASRN; a field combining hazard class, category, and H-statements (in English); and M-factors. It further outputs a file called hazards.txt, containing a list of all the combined hazard class/category/H-statement fields that appear in the dataset.
 
 For reference, these are the hazard classes that are represented in this list:
   PHYSICAL HAZARDS:

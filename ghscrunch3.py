@@ -1,11 +1,9 @@
 #!/usr/local/bin/python3.3
 
 # ghscrunch3.py
-# Extract GHS hazard classification information for chemicals out of various
-# international government documents, and output as a series of CSV files. 
-# By Akos Kokai. 
+# Extract GHS chemical hazard classification information out of various
+# international government documents. By Akos Kokai.
 # Uses the xlrd module (http://www.python-excel.org/).
-
 
 import xlrd
 import csv
@@ -432,11 +430,188 @@ def crunch_kr():
     outfile.close()
     sublists.sort()
     # Output some helpful information about the hazard sublists.
-    outtxt = open('GHS-kr/output/hazards.txt', 'w')
-    print('Number of hazard sublists:', len(sublists), file=outtxt)
+    subtxt = open('GHS-kr/output/hazards.txt', 'w')
+    print('Number of hazard sublists:', len(sublists), file=subtxt)
     for sub in sublists:
-        print(sub, file=outtxt)
-    outtxt.close()
+        print(sub, file=subtxt)
+    subtxt.close()
+
+
+def crunch_nz():
+    # Process the HSNO CCID export.
+    # Translate HSNO classifications into GHS classifications.
+    hsno_ghs = {
+                # These are GHS translations of the HSNO classes/categories,
+                # used to create a 'Hazard description' field.
+                '1.1': ['Explosives', 'Division 1.1'],
+                '1.2': ['Explosives', 'Division 1.2'],
+                '1.3': ['Explosives', 'Division 1.3'],
+                '1.4': ['Explosives', 'Division 1.4'],
+                '1.5': ['Explosives', 'Division 1.5'],
+                '1.6': ['Explosives', 'Division 1.6'],
+                '2.1.1A': ['Flammable gases', 'Category 1'],
+                '2.1.1B': ['Flammable gases', 'Category 2'],
+                '2.1.2A': ['Flammable aerosols', 'Category 1'],
+                '3.1A': ['Flammable liquids', 'Category 1'],
+                '3.1B': ['Flammable liquids', 'Category 2'],
+                '3.1C': ['Flammable liquids', 'Category 3'],
+                '3.1D': ['Flammable liquids', 'Category 4'],
+                '4.1.1A': ['Flammable solids', 'Category 1'],
+                '4.1.1B': ['Flammable solids', 'Category 2'],
+                '4.1.2A': ['Self-reactive substances and mixtures', 'Type A'],
+                '4.1.2B': ['Self-reactive substances and mixtures', 'Type B'],
+                '4.1.2C': ['Self-reactive substances and mixtures', 'Type C'],
+                '4.1.2D': ['Self-reactive substances and mixtures', 'Type D'],
+                '4.1.2E': ['Self-reactive substances and mixtures', 'Type E'],
+                '4.1.2F': ['Self-reactive substances and mixtures', 'Type F'],
+                '4.1.2G': ['Self-reactive substances and mixtures', 'Type G'],
+                # HSNO doesn't distinguish pyrophoric liquids and solids.
+                '4.2A': ['Pyrophoric substances', 'Category 1'],
+                '4.2B': ['Self-heating substances and mixtures', 'Category 1'],
+                '4.2C': ['Self-heating substances and mixtures', 'Category 2'],
+                '4.3A': ['Substances and mixtures, which in contact with water, emit flammable gases', 'Category 1'],
+                '4.3B': ['Substances and mixtures, which in contact with water, emit flammable gases', 'Category 2'],
+                '4.3C': ['Substances and mixtures, which in contact with water, emit flammable gases', 'Category 3'],
+                # HSNO doesn't distinguish between oxidizing liquids and solids 
+                # but does distinguish them from oxidizing gases.
+                '5.1.1A': ['Oxidizing liquids/solids', 'Category 1'],
+                '5.1.1B': ['Oxidizing liquids/solids', 'Category 2'],
+                '5.1.1C': ['Oxidizing liquids/solids', 'Category 3'],
+                '5.1.2A': ['Oxidizing gases', 'Category 1'],
+                '5.2A': ['Organic peroxides', 'Type A'],
+                '5.2B': ['Organic peroxides', 'Type B'],
+                '5.2C': ['Organic peroxides', 'Type C'],
+                '5.2D': ['Organic peroxides', 'Type D'],
+                '5.2E': ['Organic peroxides', 'Type E'],
+                '5.2F': ['Organic peroxides', 'Type F'],
+                '5.2G': ['Organic peroxides', 'Type G'],
+                '6.1A (dermal)': ['Acute toxicity: Dermal', 'Category 1'],
+                '6.1A (inhalation)': ['Acute toxicity: Inhalation', 'Category 1'],
+                '6.1A (oral)': ['Acute toxicity: Oral', 'Category 1'],
+                '6.1B (dermal)': ['Acute toxicity: Dermal', 'Category 2'],
+                '6.1B (inhalation)': ['Acute toxicity: Inhalation', 'Category 2'],
+                '6.1B (oral)': ['Acute toxicity: Oral', 'Category 2'],
+                '6.1C (dermal)': ['Acute toxicity: Dermal', 'Category 3'],
+                '6.1C (inhalation)': ['Acute toxicity: Inhalation', 'Category 3'],
+                '6.1C (oral)': ['Acute toxicity: Oral', 'Category 3'],
+                '6.1D (dermal)': ['Acute toxicity: Dermal', 'Category 4'],
+                '6.1D (inhalation)': ['Acute toxicity: Inhalation', 'Category 4'],
+                '6.1D (oral)': ['Acute toxicity: Oral', 'Category 4'],
+                '6.1E (dermal)': ['Acute toxicity: Dermal', 'Category 5'],
+                '6.1E (inhalation)': ['Acute toxicity: Inhalation', 'Category 5'],
+                '6.1E (oral)': ['Acute toxicity: Oral', 'Category 5'],
+                '6.3A': ['Skin corrosion/irritation', 'Category 2'],
+                '6.3B': ['Skin corrosion/irritation', 'Category 3'],
+                # 6.4A is both Category 2A and 2B.
+                '6.4A': ['Serious eye damage/eye irritation', 'Category 2'],
+                '6.5A (respiratory)': ['Respiratory sensitization', 'Category 1'],
+                '6.5B (contact)': ['Skin sensitization', 'Category 1'],
+                # 6.6A is both Category 1A and 1B.
+                '6.6A': ['Germ cell mutagenicity', 'Category 1'],
+                '6.6B': ['Germ cell mutagenicity', 'Category 2'],
+                # 6.7A is both Category 1A and 1B.
+                '6.7A': ['Carcinogenicity', 'Category 1'],
+                '6.7B': ['Carcinogenicity', 'Category 2'],
+                # 6.8A is both Category 1A and 1B.
+                '6.8A': ['Reproductive toxicity', 'Category 1'],
+                '6.8B': ['Reproductive toxicity', 'Category 2'],
+                '6.8C': ['Reproductive toxicity - Effects on or via lactation', ''],
+                # HSNO doesn't distinguish between single or repeated exposure,
+                # but does distinguish among exposure routes.
+                '6.9A (dermal)': ['Specific Target Organ Systemic Toxicity', 'Category 1'],
+                '6.9A (inhalation)': ['Specific Target Organ Systemic Toxicity', 'Category 1'],
+                '6.9A (oral)': ['Specific Target Organ Systemic Toxicity', 'Category 1'],
+                '6.9A (other)': ['Specific Target Organ Systemic Toxicity', 'Category 1'],
+                '6.9B (dermal)': ['Specific Target Organ Systemic Toxicity', 'Category 2'],
+                '6.9B (inhalation)': ['Specific Target Organ Systemic Toxicity', 'Category 2'],
+                '6.9B (oral)': ['Specific Target Organ Systemic Toxicity', 'Category 2'],
+                '6.9B (other)': ['Specific Target Organ Systemic Toxicity', 'Category 2'],
+                '8.1A': ['Corrosive to metals', 'Category 1'],
+                '8.2A': ['Skin corrosion/irritation', 'Category 1A'],
+                '8.2B': ['Skin corrosion/irritation', 'Category 1B'],
+                '8.2C': ['Skin corrosion/irritation', 'Category 1C'],
+                '8.3A': ['Serious eye damage/eye irritation', 'Category 1'],
+                # In 9.1A, HSNO doesn't distinguish between acute and chronic.
+                '9.1A (algal)': ['Aquatic toxicity (Acute or Chronic)', 'Category 1'],
+                '9.1A (crustacean)': ['Aquatic toxicity (Acute or Chronic)', 'Category 1'],
+                '9.1A (fish)': ['Aquatic toxicity (Acute or Chronic)', 'Category 1'],
+                '9.1A (other)': ['Aquatic toxicity (Acute or Chronic)', 'Category 1'],
+                '9.1B (algal)': ['Aquatic toxicity (Chronic)', 'Category 2'],
+                '9.1B (crustacean)': ['Aquatic toxicity (Chronic)', 'Category 2'],
+                '9.1B (fish)': ['Aquatic toxicity (Chronic)', 'Category 2'],
+                '9.1B (other)': ['Aquatic toxicity (Chronic)', 'Category 2'],
+                '9.1C (algal)': ['Aquatic toxicity (Chronic)', 'Category 3'],
+                '9.1C (crustacean)': ['Aquatic toxicity (Chronic)', 'Category 3'],
+                '9.1C (fish)': ['Aquatic toxicity (Chronic)', 'Category 3'],
+                '9.1C (other)': ['Aquatic toxicity (Chronic)', 'Category 3'],
+                # The mapping of 9.1D to GHS is very odd.
+                '9.1D (algal)': ['Aquatic toxicity', 'Category 2-3 (Acute) or Category 4 (Chronic)'],
+                '9.1D (crustacean)': ['Aquatic toxicity', 'Category 2-3 (Acute) or Category 4 (Chronic)'],
+                '9.1D (fish)': ['Aquatic toxicity', 'Category 2-3 (Acute) or Category 4 (Chronic)'],
+                '9.1D (other)': ['Aquatic toxicity', 'Category 2-3 (Acute) or Category 4 (Chronic)'],
+                # Leave out classes that aren't GHS-translatable.
+                '3.2A': '', # Liquid desensitized explosives
+                '3.2B': '', # Liquid desensitized explosives
+                '3.2C': '', # Liquid desensitized explosives
+                '4.1.3A': '', # Solid desensitized explosives: high hazard
+                '4.1.3B': '', # Solid desensitized explosives: medium hazard
+                '4.1.3C': '', # Solid desensitized explosives: low hazard
+                '9.2A': '', # Ecotoxic to soil environment
+                '9.2B': '', # Ecotoxic to soil environment
+                '9.2C': '', # Ecotoxic to soil environment
+                '9.2D': '', # Ecotoxic to soil environment
+                '9.3A': '', # Ecotoxic to terrestrial vertebrates
+                '9.3B': '', # Ecotoxic to terrestrial vertebrates
+                '9.3C': '', # Ecotoxic to terrestrial vertebrates
+                '9.4A': '', # Ecotoxic to terrestrial invertebrates
+                '9.4B': '', # Ecotoxic to terrestrial invertebrates
+                '9.4C': '', # Ecotoxic to terrestrial invertebrates
+                }
+    ccidbook = xlrd.open_workbook('GHS-nz/CCID Key Studies (4 June 2013).xls')
+    ccid = ccidbook.sheet_by_index(0)
+    outfile = open('GHS-nz/output/GHS-nz.csv', 'w', newline='')
+    listwriter = csv.writer(outfile)
+    # For practical purposes, I want to combine the classification code and
+    # text into one field, 'HSNO Classification'. And I will write the GHS 
+    # translation into a separate field that I will call 'Hazard description'.
+    # I'm omitting the Approval and Key Study fields from the output.
+    listwriter.writerow(['CASRN', 'Substance name', 'HSNO Classification', 
+                         'Hazard description'])
+    # I also want to enumerate the unique classifications (hazard sublists).
+    sublists = []
+    for r in range(1, ccid.nrows):
+        # CASRN                 (r, 0)
+        # Substance name        (r, 1)
+        # Approval              (r, 2) - ignored
+        # Classification Text   (r, 3)
+        # Classification Code   (r, 4)
+        # Key Study             (r, 5) - could be useful but ignored here
+        casrn = str(ccid.cell_value(r, 0)).strip()
+        name = str(ccid.cell_value(r, 1)).strip()
+        c = str(ccid.cell_value(r, 4))
+        t = str(ccid.cell_value(r, 3))
+        # Being anal about inconsistent spaces in the fields.
+        if '(' in c:
+            c = c[:c.index('(')].strip() + ' ' + c[c.index('('):].strip()
+        if ':' in t:
+            t = t[:t.index(':')].strip() + ': ' + t[t.index(':')+1:].strip()
+        s = c + ' - ' + t
+        if hsno_ghs[c] != '':
+            # For my particular use, I need this as a sentence. 
+            g = 'This hazard corresponds to GHS ' + hsno_ghs[c][0] + ' - ' + hsno_ghs[c][1] + '.'
+        else:
+            g = ''
+        if s not in sublists:
+            sublists.append(s)
+        listwriter.writerow([casrn, name, s, g])
+    outfile.close()
+    sublists.sort()
+    # Output some helpful information about the hazard sublists.
+    subtxt = open('GHS-nz/output/hazards.txt', 'w')
+    print('Number of hazard sublists:', len(sublists), file=subtxt)
+    for sub in sublists:
+        print(sub, file=subtxt)
+    subtxt.close()
 
 
 def main():
@@ -447,13 +622,14 @@ def main():
                 help='Process GHS classifications from these countries.')
     args = parser.parse_args()
     if 'jp' in args.countries:
-        print('Processing GHS-Japan.')
+        print('Processing Japan GHS classifications.')
         crunch_jp()
     if 'kr' in args.countries:
-        print('Processing GHS-Korea.')
+        print('Processing Republic of Korea GHS classifications.')
         crunch_kr()
     if 'nz' in args.countries:
-        print('Kia Ora! GHS-NZ coming soon.')
+        print('Processing Aotearoa New Zealand HSNO classifications.')
+        crunch_nz()
 
 if __name__ == '__main__':
     main()

@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3.3
 
-# ghscrunch3.py
+# ghscrunch.py
 # Extract GHS chemical hazard classification information out of various
 # international government documents. By Akos Kokai.
 # Uses the xlrd module (http://www.python-excel.org/).

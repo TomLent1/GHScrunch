@@ -1,0 +1,96 @@
+Code,HSNO Classification,Hazard description
+2.1.1A,2.1.1A - Flammable Gases: high hazard,GHS: Flammable gases - Category 1
+2.1.1B,2.1.1B - Flammable Gases: medium hazard,GHS: Flammable gases - Category 2
+3.1A,3.1A - Flammable Liquids: very high hazard,GHS: Flammable liquids - Category 1
+3.1B,3.1B - Flammable Liquids: high hazard,GHS: Flammable liquids - Category 2
+3.1C,3.1C - Flammable Liquids: medium hazard,GHS: Flammable liquids - Category 3
+3.1D,3.1D - Flammable Liquids: low hazard,GHS: Flammable liquids - Category 4
+4.1.1A,4.1.1A - Readily combustible solids and solids that may cause fire through friction: medium hazard,GHS: Flammable solids - Category 1
+4.1.1B,4.1.1B - Readily combustible solids and solids that may cause fire through friction: low hazard,GHS: Flammable solids - Category 2
+4.1.2B,4.1.2B - Self Reactive Substances: type B,GHS: Self-reactive substances and mixtures - Type B
+4.1.2C,4.1.2C - Self Reactive Substances: type C,GHS: Self-reactive substances and mixtures - Type C
+4.1.2D,4.1.2D - Self Reactive Substances: type D,GHS: Self-reactive substances and mixtures - Type D
+4.1.3A,4.1.3A - Solid Desensitised Explosives: high hazard,
+4.1.3B,4.1.3B - Solid Desensitised Explosives: medium hazard,
+4.1.3C,4.1.3C - Solid Desensitised Explosives: low hazard,
+4.2A,4.2A - Spontaneously Combustible Substances: pyrophoric substances: high hazard,GHS: Pyrophoric substances - Category 1
+4.2B,4.2B - Spontaneously Combustible Substances: self-heating substances:medium hazard,GHS: Self-heating substances and mixtures - Category 1
+4.2C,4.2C - Spontaneously Combustible Substances: self-heating substances: low hazard,GHS: Self-heating substances and mixtures - Category 2
+4.3A,4.3A - Solids that emit flammable gas when in contact with water: high hazard,"GHS: Substances and mixtures, which in contact with water, emit flammable gases - Category 1"
+4.3B,4.3B - Solids that emit flammable gas when in contact with water: medium hazard,"GHS: Substances and mixtures, which in contact with water, emit flammable gases - Category 2"
+4.3C,4.3C - Solids that emit flammable gas when in contact with water: low hazard,"GHS: Substances and mixtures, which in contact with water, emit flammable gases - Category 3"
+5.1.1A,5.1.1A - Oxidising substances that are liquids or solids: high hazard,GHS: Oxidizing liquids/solids - Category 1
+5.1.1B,5.1.1B - Oxidising substances that are liquids or solids: medium hazard,GHS: Oxidizing liquids/solids - Category 2
+5.1.1C,5.1.1C - Oxidising substances that are liquids or solids: low hazard,GHS: Oxidizing liquids/solids - Category 3
+5.1.2A,5.1.2A - Oxidising substances that are gases,GHS: Oxidizing gases - Category 1
+5.2B,5.2B - Organic peroxides: type B,GHS: Organic peroxides - Type B
+5.2C,5.2C - Organic peroxides: type C,GHS: Organic peroxides - Type C
+5.2D,5.2D - Organic peroxides: type D,GHS: Organic peroxides - Type D
+5.2E,5.2E - Organic peroxides: type E,GHS: Organic peroxides - Type E
+5.2F,5.2F - Organic peroxides: type F,GHS: Organic peroxides - Type F
+6.1A (dermal),6.1A (dermal) - Acutely toxic,GHS: Acute toxicity: Dermal - Category 1
+6.1A (inhalation),6.1A (inhalation) - Acutely toxic,GHS: Acute toxicity: Inhalation - Category 1
+6.1A (oral),6.1A (oral) - Acutely toxic,GHS: Acute toxicity: Oral - Category 1
+6.1B (dermal),6.1B (dermal) - Acutely toxic,GHS: Acute toxicity: Dermal - Category 2
+6.1B (inhalation),6.1B (inhalation) - Acutely toxic,GHS: Acute toxicity: Inhalation - Category 2
+6.1B (oral),6.1B (oral) - Acutely toxic,GHS: Acute toxicity: Oral - Category 2
+6.1C (dermal),6.1C (dermal) - Acutely toxic,GHS: Acute toxicity: Dermal - Category 3
+6.1C (inhalation),6.1C (inhalation) - Acutely toxic,GHS: Acute toxicity: Inhalation - Category 3
+6.1C (oral),6.1C (oral) - Acutely toxic,GHS: Acute toxicity: Oral - Category 3
+6.1D (dermal),6.1D (dermal) - Acutely toxic,GHS: Acute toxicity: Dermal - Category 4
+6.1D (inhalation),6.1D (inhalation) - Acutely toxic,GHS: Acute toxicity: Inhalation - Category 4
+6.1D (oral),6.1D (oral) - Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+6.1E (dermal),6.1E (dermal) - Acutely toxic,GHS: Acute toxicity: Dermal - Category 5
+6.1E (inhalation),6.1E (inhalation) - Acutely toxic,GHS: Acute toxicity: Inhalation - Category 5
+6.1E (oral),6.1E (oral) - Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+6.3A,6.3A - Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+6.3B,6.3B - Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+6.4A,6.4A - Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+6.5A (respiratory),6.5A (respiratory) - Respiratory sensitisers,GHS: Respiratory sensitization - Category 1
+6.5B (contact),6.5B (contact) - Contact sensitisers,GHS: Skin sensitization - Category 1
+6.6A,6.6A - Known or presumed human mutagens,GHS: Germ cell mutagenicity - Category 1
+6.6B,6.6B - Suspected human mutagens,GHS: Germ cell mutagenicity - Category 2
+6.7A,6.7A - Known or presumed human carcinogens,GHS: Carcinogenicity - Category 1
+6.7B,6.7B - Suspected human carcinogens,GHS: Carcinogenicity - Category 2
+6.8A,6.8A - Known or presumed human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 1
+6.8B,6.8B - Suspected human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 2
+6.8C,6.8C - Produce toxic human reproductive or developmental effects on or via lactation,GHS: Reproductive toxicity - Effects on or via lactation
+6.9A (dermal),6.9A (dermal) - Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+6.9A (inhalation),6.9A (inhalation) - Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+6.9A (oral),6.9A (oral) - Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+6.9A (other),6.9A (other) - Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+6.9B (dermal),6.9B (dermal) - Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+6.9B (inhalation),6.9B (inhalation) - Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+6.9B (oral),6.9B (oral) - Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+6.9B (other),6.9B (other) - Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+8.1A,8.1A - Corrosive to metals,GHS: Corrosive to metals - Category 1
+8.2A,8.2A - Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1A
+8.2B,8.2B - Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1B
+8.2C,8.2C - Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+8.3A,8.3A - Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+9.1A (algal),9.1A (algal) - Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+9.1A (crustacean),9.1A (crustacean) - Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+9.1A (fish),9.1A (fish) - Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+9.1A (other),9.1A (other) - Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+9.1B (algal),9.1B (algal) - Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+9.1B (crustacean),9.1B (crustacean) - Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+9.1B (fish),9.1B (fish) - Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+9.1B (other),9.1B (other) - Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+9.1C (algal),9.1C (algal) - Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+9.1C (crustacean),9.1C (crustacean) - Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+9.1C (fish),9.1C (fish) - Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+9.1C (other),9.1C (other) - Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+9.1D (algal),9.1D (algal) - Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+9.1D (crustacean),9.1D (crustacean) - Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+9.1D (fish),9.1D (fish) - Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+9.1D (other),9.1D (other) - Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+9.2A,9.2A - Very ecotoxic in the soil environment,
+9.2B,9.2B - Ecotoxic in the soil environment,
+9.2C,9.2C - Harmful in the soil environment,
+9.2D,9.2D - Slightly harmful in the soil environment,
+9.3A,9.3A - Very ecotoxic to terrestrial vertebrates,
+9.3B,9.3B - Ecotoxic to terrestrial vertebrates,
+9.3C,9.3C - Harmful to terrestrial vertebrates,
+9.4A,9.4A - Very ecotoxic to terrestrial invertebrates,
+9.4B,9.4B - Ecotoxic to terrestrial invertebrates,
+9.4C,9.4C - Harmful to terrestrial invertebrates,

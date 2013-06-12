@@ -515,7 +515,7 @@ def crunch_nz():
                 # 6.8A is both Category 1A and 1B.
                 '6.8A': ['Reproductive toxicity', 'Category 1'],
                 '6.8B': ['Reproductive toxicity', 'Category 2'],
-                '6.8C': ['Reproductive toxicity - Effects on or via lactation', ''],
+                '6.8C': ['Reproductive toxicity', 'Effects on or via lactation'],
                 # HSNO doesn't distinguish between single or repeated exposure,
                 # but does distinguish among exposure routes.
                 '6.9A (dermal)': ['Specific Target Organ Systemic Toxicity', 'Category 1'],
@@ -549,7 +549,7 @@ def crunch_nz():
                 '9.1D (crustacean)': ['Aquatic toxicity', 'Category 2-3 (Acute) or Category 4 (Chronic)'],
                 '9.1D (fish)': ['Aquatic toxicity', 'Category 2-3 (Acute) or Category 4 (Chronic)'],
                 '9.1D (other)': ['Aquatic toxicity', 'Category 2-3 (Acute) or Category 4 (Chronic)'],
-                # Leave out classes that aren't GHS-translatable.
+                # Classes that aren't GHS-translatable:
                 '3.2A': '', # Liquid desensitized explosives
                 '3.2B': '', # Liquid desensitized explosives
                 '3.2C': '', # Liquid desensitized explosives
@@ -578,7 +578,7 @@ def crunch_nz():
     listwriter.writerow(['CASRN', 'Substance name', 'HSNO Classification', 
                          'Hazard description'])
     # I also want to enumerate the unique classifications (hazard sublists).
-    sublists = []
+    sublists = dict()
     for r in range(1, ccid.nrows):
         # CASRN                 (r, 0)
         # Substance name        (r, 1)
@@ -597,21 +597,22 @@ def crunch_nz():
             t = t[:t.index(':')].strip() + ': ' + t[t.index(':')+1:].strip()
         s = c + ' - ' + t
         if hsno_ghs[c] != '':
-            # For my particular use, I need this as a sentence. 
-            g = 'This hazard corresponds to GHS ' + hsno_ghs[c][0] + ' - ' + hsno_ghs[c][1] + '.'
+            g = 'GHS: ' + hsno_ghs[c][0] + ' - ' + hsno_ghs[c][1]
         else:
             g = ''
-        if s not in sublists:
-            sublists.append(s)
+        if c not in sublists:
+            sublists[c] = [s, g]
         listwriter.writerow([casrn, name, s, g])
     outfile.close()
-    sublists.sort()
     # Output some helpful information about the hazard sublists.
-    subtxt = open('GHS-nz/output/hazards.txt', 'w')
-    print('Number of hazard sublists:', len(sublists), file=subtxt)
-    for sub in sublists:
-        print(sub, file=subtxt)
-    subtxt.close()
+    subs = list(sublists.keys())
+    subs.sort()
+    subfile = open('GHS-nz/output/sublists.csv', 'w', newline='')
+    subwriter = csv.writer(subfile)
+    subwriter.writerow(['Code', 'HSNO Classification', 'Hazard description'])
+    for sl in subs:
+        subwriter.writerow([sl] + sublists[sl])
+    subfile.close()
 
 
 def main():

@@ -21,7 +21,7 @@ I use the official published classification documents from the following GHS imp
 * Data source: File 'CCID Key Studies (4 June 2013).xls', obtained through personal communication with NZ EPA.
 * Files are in GHS-nz/, output is in GHS-nz/output/
 
-The spreadsheet contains a database export of the HSNO CCID. It contains chemical names, CASRN, classification codes and text, and also a summary of the toxicological data that inform each classification. There is one classification per row in the spreadsheet (23168 classifications). This program simply adds GHS translations to each classification – according to the document cited above – and produces a condensed version of all the entries in a CSV file (some fields are merged or omitted). It also produces a table (CSV file) of all unique classification codes that appear in the dataset, along with the full text of their HSNO and corresponding GHS classifications.
+The spreadsheet contains a database export of the HSNO CCID. It contains chemical names, CASRN, classification codes and text, and also a summary of the toxicological data that inform each classification. There is one classification per row in the spreadsheet (23168 classifications). This program simply adds GHS translations to each classification – according to the document cited above – and produces a condensed version of all the entries in a CSV file (some fields are omitted). It also produces a table (CSV file) of all unique classification codes that appear in the dataset, along with the full text of their HSNO and corresponding GHS classifications.
 
 
 ### Japan: GHS Classifications ###

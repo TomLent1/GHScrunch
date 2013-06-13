@@ -571,12 +571,9 @@ def crunch_nz():
     ccid = ccidbook.sheet_by_index(0)
     outfile = open('GHS-nz/output/GHS-nz.csv', 'w', newline='')
     listwriter = csv.writer(outfile)
-    # For practical purposes, I want to combine the classification code and
-    # text into one field, 'HSNO Classification'. And I will write the GHS 
-    # translation into a separate field that I will call 'Hazard description'.
-    # I'm omitting the Approval and Key Study fields from the output.
-    listwriter.writerow(['CASRN', 'Substance name', 'HSNO Classification', 
-                         'Hazard description'])
+    # I'm omitting the 'Approval' and 'Key Study' fields from the output.
+    listwriter.writerow(['CASRN', 'Substance name', 'HSNO code', 
+                         'HSNO classification text', 'GHS correspondence'])
     # I also want to enumerate the unique classifications (hazard sublists).
     sublists = dict()
     for r in range(1, ccid.nrows):
@@ -597,19 +594,21 @@ def crunch_nz():
             t = t[:t.index(':')].strip() + ': ' + t[t.index(':')+1:].strip()
         s = c + ' - ' + t
         if hsno_ghs[c] != '':
+            # For my purposes I want it to say 'GHS: ' at the beginning.
             g = 'GHS: ' + hsno_ghs[c][0] + ' - ' + hsno_ghs[c][1]
         else:
             g = ''
         if c not in sublists:
             sublists[c] = [s, g]
-        listwriter.writerow([casrn, name, s, g])
+        listwriter.writerow([casrn, name, c, t, g])
     outfile.close()
     # Output some helpful information about the hazard sublists.
     subs = list(sublists.keys())
     subs.sort()
     subfile = open('GHS-nz/output/sublists.csv', 'w', newline='')
     subwriter = csv.writer(subfile)
-    subwriter.writerow(['Code', 'HSNO Classification', 'Hazard description'])
+    subwriter.writerow(['HSNO code', 'HSNO classification', 
+                        'GHS correspondence'])
     for sl in subs:
         subwriter.writerow([sl] + sublists[sl])
     subfile.close()

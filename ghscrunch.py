@@ -647,9 +647,10 @@ def crunch_nz():
     outfile_no = open('GHS-nz/output/GHS-nz-omit.csv', 'w', newline='')
     writer_yes = csv.writer(outfile_yes, dialect='excel')
     writer_no = csv.writer(outfile_no, dialect='excel')
-    writer_yes.writerow(['CASRN', 'Substance name', 'HSNO code',
-                         'HSNO classification text', 'GHS translation'])
-    writer_no.writerow(['CASRN', 'Substance name', 'HSNO codes'])
+    header = ['CASRN', 'Substance name', 'HSNO code',
+              'HSNO classification text', 'GHS translation']
+    writer_yes.writerow(header)
+    writer_no.writerow(header)
     # Now attempt to filter out 'redundant' substances: variants of another 
     # substance (identified by the same CASRN but different name, e.g. a 10%
     # solution), which duplicate its classification so there's no difference
@@ -671,20 +672,22 @@ def crunch_nz():
         for c in pclass:
             writer_yes.writerow([casrn, pname, c] + sublists[c][1:])
         # Next, screen the rest of the named substances against the principal.
-        # Since these should be variants of the principal substance, I'll add
-        # a flag to the CASRN field to help with identifier wrangling later.
+        # Since these all should be variants of the principal substance, I'll
+        # add a flag to the CASRN field to help with identifier wrangling.
         for i in range(len(names)):
             thisclass = sorted(chemicals[casrn][names[i]])
-            if thisclass != pclass:
-                # Non-redundant substances:
+            if thisclass == pclass and '%' in names[i]:
+                # Redundant substances:
+                # Based on inspection of the current dataset, I only want to
+                # filter out names that contain '%' (solutions).
                 for c in thisclass:
-                    writer_yes.writerow(
+                    writer_no.writerow(
                         [casrn + '_var' + str(i), names[i], c] + 
                          sublists[c][1:])
             else:
-                # Redundant substances: 
+                # Non-redundant substances:
                 for c in thisclass:
-                    writer_no.writerow(
+                    writer_yes.writerow(
                         [casrn + '_var' + str(i), names[i], c] + 
                          sublists[c][1:])
     outfile_yes.close()

@@ -15357,6 +15357,10 @@ CASRN,Substance name,HSNO code,HSNO classification text,GHS translation
 66455-14-9,"Alcohols, C12-13, ethoxylated EO4.5-6",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
 66455-14-9,"Alcohols, C12-13, ethoxylated EO4.5-6",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
 66455-14-9,"Alcohols, C12-13, ethoxylated EO4.5-6",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+66455-14-9_var0,"Alcohols, C12-13, ethoxylated EO5",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+66455-14-9_var0,"Alcohols, C12-13, ethoxylated EO5",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+66455-14-9_var0,"Alcohols, C12-13, ethoxylated EO5",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+66455-14-9_var0,"Alcohols, C12-13, ethoxylated EO5",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
 66455-14-9_var1,"Alcohols, C12-13, ethoxylated EO6.5",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
 66455-14-9_var1,"Alcohols, C12-13, ethoxylated EO6.5",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
 66455-14-9_var1,"Alcohols, C12-13, ethoxylated EO6.5",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1

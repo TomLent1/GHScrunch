@@ -1,4 +1,4 @@
-CASRN,Substance name,HSNO codes
+CASRN,Substance name,HSNO code,HSNO classification text,GHS translation
 10025-91-9_var0,"Antimony (III) chloride, >26% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
 10025-91-9_var0,"Antimony (III) chloride, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
 10025-91-9_var0,"Antimony (III) chloride, >26% in a non hazardous diluent",9.1B (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
@@ -611,10 +611,6 @@ CASRN,Substance name,HSNO codes
 6440-58-0_var0,"Hydantoin, >26% in a non hazardous diluent",9.2D,Slightly harmful in the soil environment,
 64401-02-1_var0,"Bisphenol A ethoxylate diacrylate, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
 64401-02-1_var0,"Bisphenol A ethoxylate diacrylate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
-66455-14-9_var0,"Alcohols, C12-13, ethoxylated EO5",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
-66455-14-9_var0,"Alcohols, C12-13, ethoxylated EO5",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
-66455-14-9_var0,"Alcohols, C12-13, ethoxylated EO5",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
-66455-14-9_var0,"Alcohols, C12-13, ethoxylated EO5",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
 67-48-1_var0,"Choline chloride, =50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
 67-48-1_var0,"Choline chloride, =50% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
 67-48-1_var0,"Choline chloride, =50% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2

@@ -16,12 +16,18 @@ I use the official published classification documents from the following GHS imp
 
 ### Aotearoa New Zealand: HSNO Chemical Classifications ###
 
-* The Environmental Protection Authority's [Chemical Classification and Information Database (CCID)](http://www.epa.govt.nz/search-databases/Pages/HSNO-CCID.aspx), which details the chemicals classified in accordance with the Hazardous Substance and New Organisms (HSNO) regulations.
-* The correlation between HSNO classifications and GHS Rev. 3 classifications is described in [this document](http://www.epa.govt.nz/Publications/hsnogen-ghs-nz-hazard.pdf) (PDF).
-* Data source: File 'CCID Key Studies (4 June 2013).xls', obtained through personal communication with NZ EPA.
-* Files are in GHS-nz/, output is in GHS-nz/output/
+* Classifications from the Environmental Protection Authority's [Chemical Classification and Information Database (CCID)](http://www.epa.govt.nz/search-databases/Pages/HSNO-CCID.aspx)
+* Data source: File `CCID Key Studies (4 June 2013).xls`, obtained through personal communication with NZ EPA.
+* The correlation between HSNO classifications and GHS Rev. 3 classifications is described in [a document](http://www.epa.govt.nz/Publications/hsnogen-ghs-nz-hazard.pdf) (PDF), which is also included in this repo.
+* Files are in `GHS-nz/`, output is in `GHS-nz/output/`
 
-The spreadsheet contains a database export of the HSNO CCID. It contains chemical names, CASRN, classification codes and text, and also a summary of the toxicological data that inform each classification. There is one classification per row in the spreadsheet (23168 classifications). This program simply adds GHS translations to each classification – according to the document cited above – and produces a condensed version of all the entries in a CSV file (some fields are omitted). It also produces a table (CSV file) of all unique classification codes that appear in the dataset, along with the full text of their HSNO and corresponding GHS classifications.
+The spreadsheet contains a database export of the HSNO CCID. It contains chemical names, CASRN, classification codes and text, and also a summary of the toxicological data that inform each classification. There is one classification per row in the spreadsheet (23168 classifications). 
+
+This program adds GHS translations to each classification, according to the document cited above. The main output of the program is `GHS-nz.csv`, which contains chemical IDs, names, and classifications (toxicological summaries and bureaucratic identifiers are omitted).
+
+It also filters out the records for certain substances that might be considered redundant from a broad chemical hazard assessment perspective. Namely, commercial preparations or variants of other substances. The following algorithm was devised for this specific dataset. The program looks at substances which share the same CASRN but have different names. Among these, it sorts the names alphabetically and identifies the first name as the 'principal' substance. Then it looks through the other substances with the same CASRN. 'Redundant' substances are those which have a name that contains the principal substance name, and also have an identical set of classifications as the principal substance (based on the sorted list of HSNO codes). The classifications of the redundant substances are not written to the main output file. Instead, they are written to `GHS-nz-omit.csv`.  
+
+Finally, the program also produces a table (CSV) of all unique classification codes that appear in the dataset, along with the full text of their HSNO and corresponding GHS classifications.
 
 
 ### Japan: GHS Classifications ###
@@ -29,14 +35,14 @@ The spreadsheet contains a database export of the HSNO CCID. It contains chemica
 * Classification results of 1424 chemicals by Inter-ministerial Committee (2006)
 * Classification Results of 52 chemicals by METI (2007)
 * Classification Results of 93 chemicals by METI and MOE (2008)
-* Downloaded from [NITE GHS website](http://www.safe.nite.go.jp/english/ghs_index.html)
-* Files are in GHS-jp/, output is in GHS-jp/output/
+* All were downloaded from [NITE GHS website](http://www.safe.nite.go.jp/english/ghs_index.html)
+* Files are in `GHS-jp/`, output is in `GHS-jp/output/`
 
 All three batches of classifications are distributed in series of Excel workbooks (xls), each containing up to 100 sheets. Each sheet contains the classification results for one chemical in an identical layout. Chemicals are identified by an index ID, CASRN, and chemical name. The 2006 classifications appear to be based on the first edition of GHS or on Revision 1. The subsequent classifications (which include new chemicals and updates to previously classified chemicals) are based on Revision 2. This program compiles the cumulative results of all the classifications and their updates and produces output (CSV files) organized by hazard class. 
 
 For reference, these are the hazard classes that are listed as separate rows in the Japan GHS spreadsheets.
 
-#### PHYSICAL HAZARDS:
+PHYSICAL HAZARDS:
 * Explosives
 * Flammable gases
 * Flammable aerosols
@@ -54,7 +60,7 @@ For reference, these are the hazard classes that are listed as separate rows in 
 * Organic peroxides
 * Corrosive to metals
 
-#### HEALTH HAZARDS:
+HEALTH HAZARDS:
 * Acute toxicity (oral)
 * Acute toxicity (dermal)
 * Acute toxicity (inhalation: gas)
@@ -70,7 +76,7 @@ For reference, these are the hazard classes that are listed as separate rows in 
 * Specific target organs/systemic toxicity following repeated exposure
 * Aspiration hazard
 
-#### ENVIRONMENTAL HAZARDS:
+ENVIRONMENTAL HAZARDS:
 * Hazardous to the aquatic environment (acute)
 * Hazardous to the aquatic environment (chronic)
 
@@ -97,13 +103,13 @@ The hazard statement could be informative, but I still need to figure out what t
 * The amended list of GHS classification and labelling for toxic chemicals (2011) by the National Institute of Environmental Research
 * [NIER GHS Main page](http://ncis.nier.go.kr/ghs/)
 * Downloaded from [this page](http://ncis.nier.go.kr/ghs/search/searchlist_view.jsp?seq=17)
-* Files are in GHS-kr/, output is in GHS-kr/output/
+* Files are in `GHS-kr/`, output is in `GHS-kr/output/`
 
-The document is in 한국어, with only substance names in English. Fortunately, it is straightforwardly structured and includes numeric GHS chapter references for hazard classes, and H-statement codes. I was able to confirm my understanding of the document using Google Translate. This program produces a table (CSV file) of substance names; CASRN; combined hazard class, category, and H-statements (in English); and M-factors. It further produces a text file containing a list of all unique combined hazard class/category/H-statement fields that appear in the dataset.
+The document is in 한국어, with only substance names in English. Fortunately, it is straightforwardly structured and includes numeric GHS chapter references for hazard classes, and H-statement codes. I was able to confirm my understanding of the document using Google Translate. This program produces a table (CSV) of substance names; CASRN; combined hazard class, category, and H-statements (in English); and M-factors. It further produces a text file containing a list of all unique combined hazard class/category/H-statement fields that appear in the dataset.
 
 For reference, these are the hazard classes that are represented in the Korea GHS classification list.
 
-#### PHYSICAL HAZARDS:
+PHYSICAL HAZARDS:
 * Flammable gases
 * Gases under pressure
 * Flammable liquids
@@ -112,7 +118,7 @@ For reference, these are the hazard classes that are represented in the Korea GH
 * Oxidizing solids
 * Organic peroxides
 
-#### HEALTH HAZARDS:
+HEALTH HAZARDS:
 * Acute toxicity (oral)
 * Acute toxicity (dermal)
 * Acute toxicity (inhalation)
@@ -127,7 +133,7 @@ For reference, these are the hazard classes that are represented in the Korea GH
 * Specific target organ toxicity - Repeated exposure
 * Aspiration hazard
 
-#### ENVIRONMENTAL HAZARDS:
+ENVIRONMENTAL HAZARDS:
 * Hazardous to the aquatic environment (acute)
 * Hazardous to the aquatic environment (chronic)
 

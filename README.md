@@ -8,8 +8,8 @@ A Python program for extracting Globally Harmonised System (GHS) hazard classifi
 For information on the Globally Harmonised System of Classification and Labelling of Chemicals, see [the UNECE's GHS website](http://www.unece.org/trans/danger/publi/ghs/ghs_welcome_e.html).
 
 
-Information sources
--------------------
+Information sources and explanation
+-----------------------------------
 
 I use the official published classification documents from the following GHS implementations, all of which are included with this repo.
 
@@ -25,7 +25,7 @@ The spreadsheet contains a database export of the HSNO CCID. It contains chemica
 
 This program adds GHS translations to each classification, according to the document cited above. The main output of the program is `GHS-nz.csv`, which contains chemical IDs, names, and classifications (toxicological summaries and bureaucratic identifiers are omitted).
 
-It also filters out the records for certain substances that might be considered redundant from a broad chemical hazard assessment perspective. Namely, commercial preparations or variants of other substances. The following algorithm was devised for this specific dataset. The program looks at substances which share the same CASRN but have different names. Among these, it sorts the names alphabetically and identifies the first name as the 'principal' substance. Then it looks through the other substances with the same CASRN. 'Redundant' substances are those which have a name that contains the principal substance name, and also have an identical set of classifications as the principal substance (based on the sorted list of HSNO codes). The classifications of the redundant substances are not written to the main output file. Instead, they are written to `GHS-nz-omit.csv`.  
+It also filters out the records for certain substances that might be considered redundant from a broad chemical hazard assessment perspective: namely, commercial preparations or variants (usually solutions) of other substances. The following algorithm seems to work well for this dataset. The program looks at substances which share the same CASRN but have different names. Among these, identifies the 'principal' substance (see code for details; the gist is that pure substances don't have '%' in their name). Then it looks through the other substances with the same CASRN. 'Redundant' substances are those which have an identical set of classifications as the principal substance (based on the sorted list of HSNO codes). The classifications of the redundant substances are not written to the main output file. Instead, they are written to `GHS-nz-omit.csv`. I recommend looking at this output and checking for unintended omissions.
 
 Finally, the program also produces a table (CSV) of all unique classification codes that appear in the dataset, along with the full text of their HSNO and corresponding GHS classifications.
 
@@ -40,47 +40,7 @@ Finally, the program also produces a table (CSV) of all unique classification co
 
 All three batches of classifications are distributed in series of Excel workbooks (xls), each containing up to 100 sheets. Each sheet contains the classification results for one chemical in an identical layout. Chemicals are identified by an index ID, CASRN, and chemical name. The 2006 classifications appear to be based on the first edition of GHS or on Revision 1. The subsequent classifications (which include new chemicals and updates to previously classified chemicals) are based on Revision 2. This program compiles the cumulative results of all the classifications and their updates and produces output (CSV files) organized by hazard class. 
 
-For reference, these are the hazard classes that are listed as separate rows in the Japan GHS spreadsheets.
-
-PHYSICAL HAZARDS:
-* Explosives
-* Flammable gases
-* Flammable aerosols
-* Oxidizing gases
-* Gases under pressure
-* Flammable liquids
-* Flammable solids
-* Self-reactive substances and mixtures
-* Pyrophoric liquids
-* Pyrophoric solids
-* Self-heating substances and mixtures
-* Substances and mixtures, which in contact with water, emit flammable gases
-* Oxidizing liquids
-* Oxidizing solids
-* Organic peroxides
-* Corrosive to metals
-
-HEALTH HAZARDS:
-* Acute toxicity (oral)
-* Acute toxicity (dermal)
-* Acute toxicity (inhalation: gas)
-* Acute toxicity (inhalation: vapour)
-* Acute toxicity (inhalation: dust, mist)
-* Skin corrosion / irritation
-* Serious eye damage / eye irritation
-* Respiratory/skin sensitizer
-* Germ cell mutagenicity
-* Carcinogenicity
-* Toxic to reproduction
-* Specific target organs/systemic toxicity following single exposure
-* Specific target organs/systemic toxicity following repeated exposure
-* Aspiration hazard
-
-ENVIRONMENTAL HAZARDS:
-* Hazardous to the aquatic environment (acute)
-* Hazardous to the aquatic environment (chronic)
-
-Note that Acute toxicity is subdivided into 5 exposure routes, and aquatic toxicity is subdivided into acute/chronic. We preserve those subdivisions in the output of this program. Additionally, the program teases apart "Respiratory/skin sensitizer" classifications into separate respiratory and skin sensitization subcategories (for consistency with GreenScreen).
+For consistency with standard GHS and GreenScreen, the program teases apart "Respiratory/skin sensitizer" classifications into separate respiratory and skin sensitization subcategories. 
 
 For each hazard class, the spreadsheets tabulate the following results of chemical evaluations: 
 - Classification
@@ -90,12 +50,12 @@ For each hazard class, the spreadsheets tabulate the following results of chemic
 - Rationale for classification
 
 The Classification field may contain any of the following things:
-- A GHS category number and/or name, which depends on criteria set out specifically for each hazard class. 
+- A GHS classification - i.e., a category number and/or name specific to the hazard class. 
 - "Not Classified" - This means that the available evidence did not meet the hazard criteria.
 - "Classification not possible" - This means that there were no data with which to evaluate the substance. Different from "Not classified."
 - "Not applicable" - Classification criteria are not applicable to this substance.
 
-The hazard statement could be informative, but I still need to figure out what to do with them.
+The hazard statement fields could be informative, but I still need to figure out what to do with them.
 
 
 ### Republic of Korea: GHS Classifications ###
@@ -106,36 +66,6 @@ The hazard statement could be informative, but I still need to figure out what t
 * Files are in `GHS-kr/`, output is in `GHS-kr/output/`
 
 The document is in 한국어, with only substance names in English. Fortunately, it is straightforwardly structured and includes numeric GHS chapter references for hazard classes, and H-statement codes. I was able to confirm my understanding of the document using Google Translate. This program produces a table (CSV) of substance names; CASRN; combined hazard class, category, and H-statements (in English); and M-factors. It further produces a text file containing a list of all unique combined hazard class/category/H-statement fields that appear in the dataset.
-
-For reference, these are the hazard classes that are represented in the Korea GHS classification list.
-
-PHYSICAL HAZARDS:
-* Flammable gases
-* Gases under pressure
-* Flammable liquids
-* Flammable solids
-* Substances and mixtures which, in contact with water, emit flammable gases
-* Oxidizing solids
-* Organic peroxides
-
-HEALTH HAZARDS:
-* Acute toxicity (oral)
-* Acute toxicity (dermal)
-* Acute toxicity (inhalation)
-* Skin corrosion/irritation
-* Serious eye damage/irritation
-* Respiratory sensitization
-* Skin sensitization
-* Germ cell mutagenicity
-* Carcinogenicity
-* Reproductive toxicity
-* Specific target organ toxicity - Single exposure
-* Specific target organ toxicity - Repeated exposure
-* Aspiration hazard
-
-ENVIRONMENTAL HAZARDS:
-* Hazardous to the aquatic environment (acute)
-* Hazardous to the aquatic environment (chronic)
 
 In the spreadsheet, each line describes one substance with one hazard classification. Columns E-F are the hazard class and category, respectively (e.g. the first one is Oxidizing solids (2.14), Category 3). Columns G-J are for labelling, respectively: symbol (coded), signal word, and hazard statement (coded), and M-factor. The program takes into account the multi-row merged cells which span classifications for the same CASRN (to avoid having many empty CASRN fields).
 

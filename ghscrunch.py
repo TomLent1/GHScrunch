@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3.3
+#!/usr/local/bin/python3
 
 # ghscrunch.py
 # Extract GHS chemical hazard classification information out of various
@@ -605,9 +605,10 @@ def crunch_nz():
         # Classification Code   (r, 4)
         # Key Study             (r, 5) - could be useful but ignored here
         casrn = str(ccid.cell_value(r, 0)).strip()
-        # There is conveniently one substance without a CASRN.
+        # There is conveniently one substance without a CASRN. If there were
+        # more, it might pose a problem for the redundancy filtering (below).
         if casrn == '':
-            casrn = '0'
+            casrn = 'no_id'
         name = ccid.cell_value(r, 1).strip()
         c = str(ccid.cell_value(r, 4))  # Classification code
         t = ccid.cell_value(r, 3)       # Classification text
@@ -654,27 +655,38 @@ def crunch_nz():
     # solution), which duplicate its classification so there's no difference
     # in terms of safety. Output omitted substances separately.
     # This is done for practical reasons only.
-    for casrn in chemicals.keys():
+    for casrn in sorted(chemicals.keys()):
         names = sorted(chemicals[casrn].keys())
-        # The first name should be the principal (never redundant) substance.
-        firstclass = chemicals[casrn][names[0]]
-        firstclass.sort()
-        for c in firstclass:
-            writer_yes.writerow([casrn, names[0], c] + sublists[c][1:])
-        for i in range(1, len(names)):
-            thisclass = chemicals[casrn][names[i]]
-            thisclass.sort()
-            if names[0] in names[i] and thisclass == firstclass:
-                # Redundant substances: don't bother listing classifications
-                # individually, just dump all the codes at the end of the row.
-                writer_no.writerow(
-                    [casrn, names[i], 
-                     str(thisclass).strip('[]').replace("'", '')])
-            else:
-                # Non-redundant substances.
-                # Now we want to put each classification in its own row.
+        # Find the principal (definitely non-redundant) substance from the 
+        # list of names. Default to the first name if they all contain %.
+        p = 0
+        for i in range(len(names)):
+            if '%' not in names[i]:
+                p = i
+                break
+        # Having found the principal substance, take it out of the list, and 
+        # save & output its classifications.
+        pname = names.pop(p)
+        pclass = sorted(chemicals[casrn][pname])
+        for c in pclass:
+            writer_yes.writerow([casrn, pname, c] + sublists[c][1:])
+        # Next, screen the rest of the named substances against the principal.
+        # Since these should be variants of the principal substance, I'll add
+        # a flag to the CASRN field to help with identifier wrangling later.
+        for i in range(len(names)):
+            thisclass = sorted(chemicals[casrn][names[i]])
+            if thisclass != pclass:
+                # Non-redundant substances:
                 for c in thisclass:
-                    writer_yes.writerow([casrn, names[i], c] + sublists[c][1:])
+                    writer_yes.writerow(
+                        [casrn + '_var' + str(i), names[i], c] + 
+                         sublists[c][1:])
+            else:
+                # Redundant substances: 
+                for c in thisclass:
+                    writer_no.writerow(
+                        [casrn + '_var' + str(i), names[i], c] + 
+                         sublists[c][1:])
     outfile_yes.close()
     outfile_no.close()
     # Output some helpful information about the classification sublists.

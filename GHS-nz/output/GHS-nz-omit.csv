@@ -1,177 +1,855 @@
 CASRN,Substance name,HSNO codes
-20427-59-2,"Copper hydroxide, >26% in a non hazardous diluent","6.1D (oral), 6.3B, 6.5B (contact), 6.9B (inhalation), 8.3A, 9.1A (crustacean), 9.1A (fish), 9.3B"
-3844-45-9,"C.I. Acid blue 9, disodium salt, >10% in a non hazardous diluent","6.3B, 6.4A"
-16961-83-4,"Hexafluorosilicic acid, >5% in a non hazardous diluent","8.2C, 8.3A"
-25265-71-8,"Dipropylene glycol, >10% in a non hazardous diluent","6.3B, 6.4A"
-10034-88-5,"Sodium hydrogen sulphate, monohydrate, >3% in a non hazardous diluent",8.3A
-67-48-1,"Choline chloride, =50% in a non hazardous diluent","6.1E (oral), 6.3B, 6.4A"
-2492-26-4,"Sodium 2-mercaptobenzothiazole, >5% in a non hazardous diluent","8.2C, 8.3A"
-112-02-7,"Cetrimonium chloride, >25% in a non hazardous diluent","6.1D (oral), 6.1E (dermal), 6.1E (inhalation), 6.3A, 6.4A, 9.1A (algal), 9.1A (crustacean), 9.1A (fish), 9.3B"
-151-21-3,"Dodecyl sodium sulphate, >33% in a non hazardous diluent","6.1C (dermal), 6.1D (oral), 6.3B, 6.4A, 9.1D (algal), 9.1D (crustacean), 9.1D (fish), 9.2D, 9.3C"
-7439-97-6,"Mercury, >26% in a non hazardous diluent","6.1B (inhalation), 6.1B (oral), 6.5B (contact), 6.8A, 6.9A (inhalation), 8.1A, 9.1A (algal), 9.1A (crustacean), 9.1A (fish), 9.1A (other), 9.2B, 9.3A"
-102-71-6,"Triethanolamine, >50% in a non hazardous diluent","6.1E (oral), 6.3B, 6.4A, 9.2D"
-112-77-6,"Oleoyl chloride, >5% in a non hazardous diluent","8.2C, 8.3A"
-12224-98-5,"C.I. Pigment red 81, >1% in a non hazardous diluent",6.9B (oral)
-110-26-9,"2-Propenamide, N,N'-methylenebis, >25% in a non hazardous diluent","6.1D (oral), 9.3C"
-9003-04-7,"Sodium polyacrylate, >10% in a non hazardous diluent",6.4A
-3006-15-3,"Dihexyl sodium sulphosuccinate, >25% in a non hazardous diluent","6.1D (oral), 9.3C"
-148-18-5,"Sodium diethyldithiocarbamate, >25% in a non hazardous diluent","6.1D (oral), 9.3C"
-127-68-4,"3-Nitrobenzenesulphonic acid sodium salt, >10% in a non hazardous diluent","6.4A, 6.5B (contact)"
-63451-35-4,"Hydroxy naphthol blue, disodium salt, >1% in a non hazardous diluent",6.7A
-132-27-4,"Sodium orthophenylphenate, >26% in a non hazardous diluent","6.1D (oral), 6.1E (inhalation), 6.3A, 6.5B (contact), 6.6B, 6.7B, 6.9B (oral), 8.3A, 9.1A (algal), 9.1A (crustacean), 9.1D (fish), 9.3C"
-1344-09-8,"Sodium silicate with a molar ratio SiO2:Na2O = 1.6, >25% in a non hazardous diluent","6.1D (oral), 8.2C, 8.3A, 9.3C"
-7550-35-8,"Lithium bromide, >25% in a non hazardous diluent","6.1D (oral), 9.3C"
-142-90-5,"Dodecyl methacrylate, >26% in a non hazardous diluent","6.3A, 6.4A, 9.1A (algal), 9.1A (crustacean), 9.1A (fish)"
-10035-04-8,"Calcium chloride dihydrate, >26% in a non hazardous diluent","6.1D (oral), 6.3A, 6.4A, 9.3C"
-7789-02-8,"Chromium (III) nitrate, nonahydrate, >10% in a non hazardous diluent","5.1.1C, 6.3A, 6.4A"
-569-64-2,"Malachite green, >33% in a non hazardous diluent","6.1C (oral), 6.3A, 6.8B, 8.3A, 9.1A (crustacean), 9.1A (fish), 9.3B"
-5989-27-5,"Limonene, D-, >50% in a non hazardous diluent","3.1C, 6.1E (oral), 6.3B, 6.4A, 6.5B (contact), 9.1A (crustacean), 9.1A (fish), 9.2B"
-6358-30-1,"C.I. Pigment violet 23, >10% in a non hazardous diluent",6.4A
-9016-45-9,"Polyethylene glycol nonylphenyl ether, >50% in a non hazardous diluent","6.1E (dermal), 6.1E (oral), 6.3B, 6.4A, 9.1B (crustacean), 9.1B (fish), 9.1C (algal)"
-1344-43-0,"Manganese (II) oxide, >26% in a non hazardous diluent","6.3A, 6.4A, 6.9B (inhalation), 9.3C"
-151-50-8,"Potassium cyanide, >26% in a non hazardous diluent","6.1A (dermal), 6.1A (inhalation), 6.1A (oral), 6.3B, 6.4A, 6.5B (contact), 6.8B, 6.9A (oral), 8.1A, 9.1A (algal), 9.1A (crustacean), 9.1A (fish), 9.2A, 9.3A, 9.4A"
-25322-69-4,"Polypropylene glycol, >26% in a non hazardous diluent","6.1D (oral), 6.4A, 9.3C"
-67-64-1,"2-Propanone, >60% in a non hazardous diluent","3.1B, 6.1E (oral), 6.3B, 6.4A"
-68308-55-4,"Tallow, hydrogenated, N-aminoethylethanolamine ester, amide, >5% in a non hazardous diluent","8.2C, 8.3A"
-98-00-0,"Furfuryl alcohol, >25% in a non hazardous diluent","6.1D (dermal), 6.1D (inhalation), 6.1D (oral)"
-10326-27-9,"Barium chloride, dihydrate, >33% in a non hazardous diluent","6.1C (oral), 9.3B"
-10294-56-1,"Phosphorous acid, >26% in a non hazardous diluent","6.1D (oral), 8.1A, 8.2C, 8.3A, 9.3C"
-5332-73-0,"3-Methoxypropylamine, >25% in a non hazardous diluent","3.1B, 6.1D (oral), 6.5B (contact), 8.2B, 9.3C"
-1312-76-1,"Potassium silicate, >25% in a non hazardous diluent","6.1D (oral), 6.3A, 6.4A, 9.3C"
-78-70-6,"Linalool, >50% in a non hazardous diluent","3.1D, 6.1E (oral), 6.3A"
-1401-55-4,"Tannins, >50% in a non hazardous diluent","6.1E (oral), 6.4A, 9.1C (fish)"
-1344-37-2,"Chromium orange, >26% in a non hazardous diluent","6.6B, 6.7A, 6.8A, 6.9B (oral), 9.1A (fish)"
-10101-89-0,"Trisodium phosphate, >10% in a non hazardous diluent","6.3A, 6.4A"
-103-90-2,"Paracetamol (4-hydroxyacetanilide), >26% in a non hazardous diluent","6.1D (oral), 9.1C (algal), 9.1C (crustacean), 9.1C (fish), 9.3C"
-101-37-1,"2,4,6-Tris(allyloxy)-1,3,5-triazine, >26% in a non hazardous diluent","6.1D (oral), 9.1B (algal), 9.1B (crustacean), 9.1B (fish), 9.3C"
-9000-90-2,"alpha-Amylase, >1% in a non hazardous diluent",6.5A (respiratory)
-5949-29-1,"Citric acid, monohydrate, >10% in a non hazardous diluent","6.3B, 8.3A"
-1313-99-1,"Nickel (II) oxide, >26% in a non hazardous diluent","6.5B (contact), 6.7A, 9.1D (algal), 9.1D (crustacean), 9.1D (fish)"
-10124-56-8,"Sodium hexametaphosphate, >50% in a non hazardous diluent","6.1E (oral), 8.2C, 8.3A"
-50-01-1,"Guanidinium chloride, >25% in a non hazardous diluent","6.1C (dermal), 6.1D (oral), 8.2C, 8.3A, 9.3C"
-10192-30-0,"Ammonium bisulphite, >5% in a non hazardous diluent","8.2C, 8.3A"
-131-56-6,"2,4-Dihydroxybenzophenone, >10% in a non hazardous diluent","6.3A, 6.4A"
-109-21-7,"Butyl butyrate, >1% in a non hazardous diluent",3.1C
-77-92-9,"Citric acid, >50% in a non hazardous diluent","6.1E (inhalation), 6.3B, 8.3A"
-127-17-3,"Pyruvic acid, >5% in a non hazardous diluent","8.2C, 8.3A"
-13410-01-0,"Sodium selenate, >26% in a non hazardous diluent","6.1B (inhalation), 6.1B (oral), 6.4A, 6.6B, 6.9A (oral), 9.1A (algal), 9.1A (crustacean), 9.1B (fish), 9.2A, 9.3A"
-9004-32-4,"Sodium carboxymethylcellulose, >26% in a non hazardous diluent",9.1C (crustacean)
-7784-46-5,"Sodium arsenite, >26% in a non hazardous diluent","6.1C (dermal), 6.1C (inhalation), 6.1C (oral), 6.7A, 9.1D (algal), 9.1D (crustacean), 9.1D (fish), 9.3B"
-25155-30-0,"Sodium lauryl benzene sulphonate, >26% in a non hazardous diluent","6.1D (oral), 6.3A, 8.3A, 9.1D (algal), 9.1D (crustacean), 9.1D (fish), 9.3C"
-2855-13-2,"Isophoronediamine, >26% in a non hazardous diluent","6.1D (dermal), 6.1D (oral), 6.5B (contact), 8.2C, 8.3A, 9.1C (algal), 9.1C (crustacean), 9.1C (fish), 9.3C"
-9006-65-9,"Dimethicone, >10% in a non hazardous diluent",6.4A
-7681-38-1,"Sodium hydrogen sulphate, >3% in a non hazardous diluent","8.2C, 8.3A"
-1308-06-1,"Cobalt oxide, >1% in a non hazardous diluent","6.5B (contact), 6.7B"
-110-97-4,"Diisopropanolamine, >10% in a non hazardous diluent",6.4A
-88-99-3,"Phthalic acid, >10% in a non hazardous diluent","6.3A, 6.4A"
-112-80-1,"Oleic acid, >10% in a non hazardous diluent","6.3A, 6.4A"
-1675-54-3,"Bis-[4-(2,3-epoxypropoxy)phenyl]propane, >10% in a non hazardous diluent","6.3A, 6.4A, 6.5B (contact)"
-14808-60-7,"Silica, crystalline (quartz), >1 - 10% in a non hazardous diluent","6.7A, 6.9A (inhalation)"
-14808-60-7,"Silica, crystalline (quartz), >10% in a non hazardous diluent","6.7A, 6.9A (inhalation)"
-108-74-7,"1,3,5-Trimethylhexahydro-1,3,5-triazine, >25% in a non hazardous diluent","3.1C, 6.1D (dermal), 6.1D (oral), 6.3A, 6.4A, 9.3C"
-51580-86-0,"Sodium dichloroisocyanurate, dihydrate, >26% in a non hazardous diluent","6.1D (oral), 6.4A, 9.1A (algal), 9.1A (crustacean), 9.1A (fish), 9.3C"
-61791-24-0,"Soya alkylamine, ethoxylated, >26% in a non hazardous diluent","6.1D (oral), 9.1A (fish), 9.1B (crustacean)"
-9016-87-9,"Polymethylene polyphenylisocyanate, >10% in a non hazardous diluent","6.1B (inhalation), 6.3B, 6.4A, 6.9A (inhalation)"
-10025-91-9,"Antimony (III) chloride, >26% in a non hazardous diluent","8.2C, 8.3A, 9.1B (algal), 9.1B (crustacean), 9.1B (fish)"
-1314-13-2,"Zinc oxide, >26% in a non hazardous diluent","9.1A (algal), 9.1A (crustacean), 9.1A (fish), 9.3C"
-8044-71-1,"Cetrimide, >26% in a non hazardous diluent","6.1D (oral), 6.5B (contact), 8.2C, 8.3A, 9.1A (algal), 9.1A (crustacean), 9.3C"
-928-95-0,"2-Hexen-1-ol, trans-, >1% in a non hazardous diluent",3.1C
-26447-40-5,"Methylenediphenyl diisocyanate, >10% in a non hazardous diluent","6.1B (inhalation), 6.3B, 6.5A (respiratory), 6.5B (contact), 6.9A (inhalation)"
-3088-31-1,"Diethylene glycol monolauryl ether sodium sulphate, >10% in a non hazardous diluent","6.3A, 6.4A, 6.5B (contact)"
-25085-99-8,"Bisphenol A/ epichlorohydrin resin, >26% in a non hazardous diluent","6.1D (dermal), 6.1D (inhalation), 6.1D (oral), 9.1B (algal), 9.1B (crustacean), 9.1B (fish)"
-53408-94-9,"Tin (II) methanesulphonate, >25% in a non hazardous diluent","6.1D (oral), 6.5B (contact), 8.2C, 8.3A, 9.3C"
-64-02-8,"Tetrasodium EDTA, >26% in a non hazardous diluent","6.1D (oral), 6.4A, 9.3C"
-67-63-0,"2-Propanol, >72% in a non hazardous diluent","3.1B, 6.1E (oral), 6.3B, 6.4A"
-7758-23-8,"Calcium bis(dihydrogen phosphate), >10% in a non hazardous diluent","6.3A, 6.4A"
-354-38-1,"2,2,2-Trifluoroacetamide, >10% in a non hazardous diluent","6.3A, 6.4A"
-13598-36-2,"Ortho phosphorous acid, >26% in a non hazardous diluent","6.1D (oral), 8.1A, 8.2C, 8.3A, 9.3C"
-513-79-1,"Cobaltous carbonate, >26% in a non hazardous diluent","6.1D (dermal), 6.1D (inhalation), 6.1D (oral), 6.3B, 6.4A, 6.5A (respiratory), 6.5B (contact), 6.7B, 6.8B, 6.9A (inhalation), 6.9A (oral), 9.3B"
-9036-19-5,"Ethoxylated octyl phenol, >50% in a non hazardous diluent","6.1E (oral), 6.3B, 6.4A, 9.1A (algal), 9.1B (crustacean), 9.1B (fish)"
-63449-41-2,"Alkyl dimethyl benzyl ammonium chloride, >26% in a non hazardous diluent","6.1C (dermal), 6.1C (oral), 6.5A (respiratory), 6.5B (contact), 6.9B (dermal), 8.2C, 8.3A, 9.1A (algal), 9.1A (crustacean), 9.1A (fish), 9.3B"
-2809-21-4,"Etidronic acid, >26% in a non hazardous diluent","6.1D (oral), 8.3A, 9.1C (other), 9.3C"
-93763-70-3,"Perlite, >10% in a non hazardous diluent",6.4A
-10124-43-3,"Cobalt (II) sulphate, >26% in a non hazardous diluent","6.1D (oral), 6.3A, 6.4A, 6.5A (respiratory), 6.5B (contact), 6.7B, 6.8B, 6.9A (inhalation), 6.9A (oral), 9.1A (algal), 9.1A (crustacean), 9.1A (fish), 9.3B"
-106-21-8,"Tetrahydrogeraniol, >50% in a non hazardous diluent","6.1E (dermal), 6.3A, 9.1B (algal), 9.1B (crustacean), 9.1D (fish)"
-6419-19-8,"Aminotri(methylenephosphonic acid), >56% in a non hazardous diluent","6.1E (oral), 6.3A, 6.4A"
-7790-62-7,"Potassium pyrosulphate, >5% in a non hazardous diluent","8.2C, 8.3A"
-25154-52-3,"Monononylphenol, >26% in a non hazardous diluent","6.1D (oral), 6.1E (inhalation), 8.2B, 8.3A, 9.1A (algal), 9.1A (crustacean), 9.1A (fish), 9.2C, 9.3C"
-1313-13-9,"Manganese (IV) oxide, >26% in a non hazardous diluent","6.1B (inhalation), 6.1D (oral), 6.4A, 6.8B, 6.8C, 6.9A (inhalation), 9.3C"
-1306-23-6,"Cadmium sulphide, >26% in a non hazardous diluent","6.1D (oral), 6.7B, 6.9A (inhalation), 6.9A (oral), 9.1D (algal), 9.1D (crustacean), 9.1D (fish), 9.3C"
-7782-91-4,"Molybdic acid, >10% in a non hazardous diluent","6.4A, 6.9A (inhalation), 6.9A (oral)"
-57-09-0,"Cetrimonium bromide, >26% in a non hazardous diluent","6.1D (oral), 6.5B (contact), 8.2C, 8.3A, 9.1A (algal), 9.1A (crustacean), 9.3B"
-107-92-6,"Butyric acid, >5% in a non hazardous diluent","8.2C, 8.3A"
-7758-11-4,"Dipotassium phosphate, >26% in a non hazardous diluent","6.1D (oral), 9.3C"
-75-12-7,"Formamide, >1% in a non hazardous diluent",6.8A
-573-58-0,"C.I. Direct red 28, >1% in a non hazardous diluent","6.7A, 6.8B"
-2437-29-8,"Malachite green oxalate, >25% in a non hazardous diluent","6.1D (dermal), 6.1D (oral), 9.3C"
-72-57-1,"C.I. Direct Blue 14, >1% in a non hazardous diluent",6.7B
-107-75-5,"Hydroxycitronellal, >26% in a non hazardous diluent","6.4A, 6.5B (contact), 9.1D (algal), 9.1D (crustacean), 9.1D (fish)"
-10213-79-3,"Sodium metasilicate, pentahydrate, >50% in a non hazardous diluent","6.1D (oral), 8.2C, 8.3A, 9.3C"
-111-41-1,"2-(2-Aminoethylamino) ethanol, >5% in a non hazardous diluent","6.5B (contact), 6.8A, 8.2C, 8.3A"
-7772-98-7,"Sodium thiosulphate, >10% in a non hazardous diluent","6.3A, 6.4A, 6.5B (contact)"
-68439-46-3,"Alcohols, C9-11, ethoxylated, >26% in a non hazardous diluent","6.1D (oral), 6.3A, 8.3A, 9.1D (algal), 9.1D (crustacean), 9.1D (fish), 9.3C"
-71-36-3,"1-Butanol, >40% in a non hazardous diluent","3.1C, 6.1D (oral), 6.1E (dermal), 6.1E (inhalation), 6.3A, 8.3A, 9.3C"
-110-63-4,"1,4-Butanediol, >25% in a non hazardous diluent","6.1D (oral), 9.3C"
-139-89-9,"Trisodium N-hydroxyethylethylenediaminetriacetate, >10% in a non hazardous diluent",6.4A
-12259-92-6,"Ammonium polysulphide, >5% in a non hazardous diluent","4.2A, 8.2C, 8.3A"
-28434-00-6,"Esbioallethrin, >26% in a non hazardous diluent","6.1D (inhalation), 6.1D (oral), 9.1A (algal), 9.1A (crustacean), 9.1A (fish), 9.3C"
-1309-64-4,"Antimony trioxide, >10% in a non hazardous diluent","6.3A, 6.4A, 6.7B, 6.9A (inhalation)"
-621-82-9,"Cinnamic acid, >10% in a non hazardous diluent","6.3A, 6.4A"
-20018-09-1,"Diiodomethyl-p-tolyl sulphone, >26% in a non hazardous diluent","6.9B (oral), 8.3A, 9.1A (algal), 9.1A (crustacean), 9.1A (fish)"
-16090-02-1,"C.I. Fluorescent brightener 260, >10% in a non hazardous diluent",6.3A
-7778-80-5,"Dipotassium sulphate , >10% in a non hazardous diluent",6.3B
-9084-06-4,"Sodium polynaphthalene sulphonate, >50% in a non hazardous diluent",6.1E (oral)
-7783-56-4,"Antimony (III) fluoride, >34% in a non hazardous diluent","6.1C (dermal), 6.1C (inhalation), 6.1C (oral), 9.1B (algal), 9.1B (crustacean), 9.1B (fish), 9.3B"
-13462-88-9,"Nickel (II) bromide, anhydrous, >26% in a non hazardous diluent","6.5B (contact), 9.1A (algal), 9.1A (crustacean), 9.1A (fish)"
-64-17-5,"Ethanol, >50% in a non hazardous diluent","3.1B, 6.4A"
-1303-28-2,"Arsenic oxide, >26% in a non hazardous diluent","6.1B (inhalation), 6.1B (oral), 6.3A, 6.4A, 6.5B (contact), 6.7A, 6.8A, 6.9A (oral), 8.1A, 9.1A (algal), 9.1C (fish), 9.3A"
-67-56-1,"Methanol, >50% in a non hazardous diluent","3.1B, 6.1C (dermal), 6.1C (inhalation), 6.1C (oral), 6.4A, 6.8B, 6.9A (inhalation), 9.3C"
-68239-93-0,"Dibasic acid ester/ diethylenetriamine/ epichlorohydrin, >5% in a non hazardous diluent","8.2C, 8.3A"
-105-59-9,"Methyl diethanolamine, >25% in a non hazardous diluent","6.1D (oral), 6.3B, 6.4A, 9.3C"
-122-20-3,"Triisopropanolamine, >50% in a non hazardous diluent","6.1E (inhalation), 6.1E (oral), 6.3A, 8.3A, 9.1C (algal)"
-56-93-9,"Benzyltrimethylammonium chloride, >25% in a non hazardous diluent","6.1D (oral), 6.3A, 6.4A, 9.3C"
-123-99-9,"Azelaic acid, >10% in a non hazardous diluent",6.4A
-68411-30-3,"Benzenesulphonic acid, C10-13-alkyl derivs., sodium salts, >25% in a non hazardous diluent","6.1D (oral), 6.3A, 8.3A, 9.1D (algal), 9.1D (crustacean), 9.1D (fish), 9.3C"
-1325-82-2,"C.I. Pigment violet 3, >1% in a non hazardous diluent",6.9B (oral)
-110-17-8,"Fumaric acid, >25% in a non hazardous diluent","6.4A, 9.1D (algal)"
-12656-85-8,"C.I. Pigment red 104, >26% in a non hazardous diluent","6.6B, 6.7A, 6.8A, 6.9B (oral), 9.1A (fish)"
-1333-86-4,"Carbon black, >10% in a non hazardous diluent","6.3B, 6.4A, 6.7B"
-544-76-3,"Hexadecane, >50% in a non hazardous diluent","6.1E (oral), 6.3A"
-6440-58-0,"Hydantoin, >26% in a non hazardous diluent","6.3B, 6.5B (contact), 6.6B, 9.1D (algal), 9.1D (crustacean), 9.1D (fish), 9.2D"
-57-13-6,"Urea, >26% in a non hazardous diluent","6.1D (oral), 6.3B, 6.4A, 9.3C"
-1335-32-6,"Lead acetate, basic, >26% in a non hazardous diluent","6.7B, 6.8A, 6.9A (oral), 9.1A (algal), 9.1A (crustacean), 9.1A (fish)"
-9002-93-1,"Octoxynol, >26% in a non hazardous diluent","6.1D (oral), 6.3B, 8.3A, 9.1A (algal), 9.1B (fish), 9.3C"
-139-33-3,"Disodium EDTA, >50% in a non hazardous diluent","6.1E (oral), 6.3B, 6.4A"
-61791-42-2,"Sodium methyl cocoyl taurate, >10% in a non hazardous diluent",6.4A
-25265-77-4,"2,2,4-Trimethylpentane-1,3-diol monoisobutyrate, >50% in a non hazardous diluent","6.1E (oral), 9.1C (algal), 9.1C (fish)"
-108-80-5,"Cyanuric acid, >10% in a non hazardous diluent",6.4A
-18472-51-0,"Chlorhexidine gluconate, >26% in a non hazardous diluent","6.1D (oral), 6.3A, 6.4A, 9.1A (crustacean), 9.1A (fish), 9.3C"
-5470-11-1,"Hydroxylammonium chloride, >26% in a non hazardous diluent","6.1D (oral), 6.3A, 6.4A, 6.5B (contact), 6.9A (oral), 9.1A (algal), 9.1A (crustacean), 9.1A (fish), 9.3C"
-137-20-2,"Sodium methyl oleoyl taurate, >26% in a non hazardous diluent","6.1D (oral), 9.3C"
-117-81-7,"Di-s-octyl phthalate, >26% in a non hazardous diluent","6.8A, 6.9B (oral), 9.1C (algal), 9.1D (crustacean), 9.1D (fish)"
-64401-02-1,"Bisphenol A ethoxylate diacrylate, >10% in a non hazardous diluent","6.3A, 6.4A"
-104-67-6,"1,4-Undecanolide, >10% in a non hazardous diluent",6.3A
-631-61-8,"Ammonium acetate, >10% in a non hazardous diluent","6.3B, 6.4A"
-22763-03-7,"Tripotassium orthophosphate, >10% in a non hazardous diluent","6.3A, 6.4A"
-7784-27-2,"Aluminium nitrate nonahydrate, >10% in a non hazardous diluent","5.1.1C, 6.3A, 6.4A"
-8004-92-0,"C.I. Acid Yellow 3, >26% in a non hazardous diluent","6.1D (oral), 9.3C"
-26264-06-2,"Calcium dodecylbenzenesulphonate, >26% in a non hazardous diluent","6.1D (oral), 6.3A, 8.3A, 9.1D (algal), 9.1D (crustacean), 9.1D (fish), 9.3C"
-1309-42-8,"Magnesium hydroxide, >10% in a non hazardous diluent",6.4A
-68439-45-2,"Alcohols, C6-12, ethoxylated (5 > EO < 20), >26% in a non hazardous diluent","6.1D (oral), 6.3A, 8.3A, 9.1D (algal), 9.1D (crustacean), 9.1D (fish), 9.3C"
-75-57-0,"Tetramethylammonium chloride, >33% in a non hazardous diluent","6.1C (dermal), 6.1C (oral), 9.3B"
-68650-39-5,"Cocoamphocarboxy glycinate, >10% in a non hazardous diluent","6.3A, 6.4A"
-109-63-7,"Boron trifluoride-diethyl ether complex, >25% in a non hazardous diluent","6.1D (inhalation), 6.1D (oral), 6.9A (inhalation), 8.2C, 8.3A, 9.3C"
-78-93-3,"2-Butanone, >50% in a non hazardous diluent","3.1B, 6.1E (oral), 6.3B, 6.4A, 6.9B (inhalation)"
-302-17-0,"Chloral hydrate, >10% in a non hazardous diluent","6.3A, 6.4A"
-1762-95-4,"Ammonium thiocyanate, >26% in a non hazardous diluent","6.1D (dermal), 6.1D (inhalation), 6.1D (oral), 9.1C (fish), 9.3B"
-68915-31-1,"Polyphosphoric acids, sodium salts, >1% in a non hazardous diluent",6.9B (oral)
-12125-02-9,"Ammonium chloride, >26% in a non hazardous diluent","6.1D (oral), 6.3B, 6.4A, 8.1A, 9.1C (fish), 9.3C"
-95154-01-1,"(Benzothiazol-2-ylthio)succinic acid, >1% in a non hazardous diluent",6.5B (contact)
-497-19-8,"Sodium carbonate, >44% in a non hazardous diluent","6.1D (inhalation), 6.1E (oral), 6.3A, 6.4A"
-1300-72-7,"Benzenesulphonic acid, dimethyl-, sodium salt, >26% in a non hazardous diluent","6.1D (oral), 6.4A, 9.3C"
-1332-40-7,"Copper oxychloride, >26% in a non hazardous diluent","6.1D (oral), 6.5B (contact), 6.9B (oral), 9.1A (crustacean), 9.1D (fish), 9.3C"
-10378-23-1,"Tetrasodium EDTA, dihydrate, >26% in a non hazardous diluent","6.1D (oral), 6.4A, 9.1C (algal), 9.1C (crustacean), 9.1C (fish), 9.3C"
-107-22-2,"Glyoxal, >25% in a non hazardous diluent","6.1D (inhalation), 6.3A, 6.4A, 6.5B (contact), 6.6B, 9.3C"
-7733-02-0,"Zinc sulphate, >26% in a non hazardous diluent","6.1D (oral), 6.9B (oral), 8.3A, 9.1A (algal), 9.1A (crustacean), 9.1A (fish), 9.3C"
-9002-98-6,"Polyethyleneimine, >26% in a non hazardous diluent","9.1B (algal), 9.1B (crustacean), 9.1B (fish)"
-822-16-2,"Sodium stearate, >10% in a non hazardous diluent",6.4A
+10025-91-9_var0,"Antimony (III) chloride, >26% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+10025-91-9_var0,"Antimony (III) chloride, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+10025-91-9_var0,"Antimony (III) chloride, >26% in a non hazardous diluent",9.1B (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+10025-91-9_var0,"Antimony (III) chloride, >26% in a non hazardous diluent",9.1B (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+10025-91-9_var0,"Antimony (III) chloride, >26% in a non hazardous diluent",9.1B (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+10034-88-5_var0,"Sodium hydrogen sulphate, monohydrate, >3% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+10035-04-8_var1,"Calcium chloride dihydrate, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+10035-04-8_var1,"Calcium chloride dihydrate, >26% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+10035-04-8_var1,"Calcium chloride dihydrate, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+10035-04-8_var1,"Calcium chloride dihydrate, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+10035-10-6_var0,"Hydrobromic acid, 47-60% aqueous solution",6.1B (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 2
+10035-10-6_var0,"Hydrobromic acid, 47-60% aqueous solution",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+10035-10-6_var0,"Hydrobromic acid, 47-60% aqueous solution",8.1A,Corrosive to metals,GHS: Corrosive to metals - Category 1
+10035-10-6_var0,"Hydrobromic acid, 47-60% aqueous solution",8.2B,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1B
+10035-10-6_var0,"Hydrobromic acid, 47-60% aqueous solution",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+10035-10-6_var0,"Hydrobromic acid, 47-60% aqueous solution",9.3C,Harmful to terrestrial vertebrates,
+10035-10-6_var1,"Hydrogen bromide, >26% in a non hazardous diluent",6.1B (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 2
+10035-10-6_var1,"Hydrogen bromide, >26% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+10035-10-6_var1,"Hydrogen bromide, >26% in a non hazardous diluent",8.1A,Corrosive to metals,GHS: Corrosive to metals - Category 1
+10035-10-6_var1,"Hydrogen bromide, >26% in a non hazardous diluent",8.2B,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1B
+10035-10-6_var1,"Hydrogen bromide, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+10035-10-6_var1,"Hydrogen bromide, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+101-37-1_var0,"2,4,6-Tris(allyloxy)-1,3,5-triazine, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+101-37-1_var0,"2,4,6-Tris(allyloxy)-1,3,5-triazine, >26% in a non hazardous diluent",9.1B (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+101-37-1_var0,"2,4,6-Tris(allyloxy)-1,3,5-triazine, >26% in a non hazardous diluent",9.1B (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+101-37-1_var0,"2,4,6-Tris(allyloxy)-1,3,5-triazine, >26% in a non hazardous diluent",9.1B (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+101-37-1_var0,"2,4,6-Tris(allyloxy)-1,3,5-triazine, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+101-77-9_var3,"4,4'-Methylene dianiline, >33% in a non hazardous diluent",6.1C (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 3
+101-77-9_var3,"4,4'-Methylene dianiline, >33% in a non hazardous diluent",6.1C (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 3
+101-77-9_var3,"4,4'-Methylene dianiline, >33% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+101-77-9_var3,"4,4'-Methylene dianiline, >33% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+101-77-9_var3,"4,4'-Methylene dianiline, >33% in a non hazardous diluent",6.6B,Suspected human mutagens,GHS: Germ cell mutagenicity - Category 2
+101-77-9_var3,"4,4'-Methylene dianiline, >33% in a non hazardous diluent",6.7B,Suspected human carcinogens,GHS: Carcinogenicity - Category 2
+101-77-9_var3,"4,4'-Methylene dianiline, >33% in a non hazardous diluent",6.9B (inhalation),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+101-77-9_var3,"4,4'-Methylene dianiline, >33% in a non hazardous diluent",6.9B (oral),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+101-77-9_var3,"4,4'-Methylene dianiline, >33% in a non hazardous diluent",9.1C (algal),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+101-77-9_var3,"4,4'-Methylene dianiline, >33% in a non hazardous diluent",9.1C (fish),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+101-77-9_var3,"4,4'-Methylene dianiline, >33% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+10101-89-0_var0,"Trisodium phosphate, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+10101-89-0_var0,"Trisodium phosphate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+10124-37-5_var0,"Calcium nitrate, >25% in a non hazardous diluent",5.1.1C,Oxidising substances that are liquids or solids: low hazard,GHS: Oxidizing liquids/solids - Category 3
+10124-37-5_var0,"Calcium nitrate, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+10124-37-5_var0,"Calcium nitrate, >25% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+10124-37-5_var0,"Calcium nitrate, >25% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+10124-43-3_var1,"Cobalt (II) sulphate, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+10124-43-3_var1,"Cobalt (II) sulphate, >26% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+10124-43-3_var1,"Cobalt (II) sulphate, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+10124-43-3_var1,"Cobalt (II) sulphate, >26% in a non hazardous diluent",6.5A (respiratory),Respiratory sensitisers,GHS: Respiratory sensitization - Category 1
+10124-43-3_var1,"Cobalt (II) sulphate, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+10124-43-3_var1,"Cobalt (II) sulphate, >26% in a non hazardous diluent",6.7B,Suspected human carcinogens,GHS: Carcinogenicity - Category 2
+10124-43-3_var1,"Cobalt (II) sulphate, >26% in a non hazardous diluent",6.8B,Suspected human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 2
+10124-43-3_var1,"Cobalt (II) sulphate, >26% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+10124-43-3_var1,"Cobalt (II) sulphate, >26% in a non hazardous diluent",6.9A (oral),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+10124-43-3_var1,"Cobalt (II) sulphate, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+10124-43-3_var1,"Cobalt (II) sulphate, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+10124-43-3_var1,"Cobalt (II) sulphate, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+10124-43-3_var1,"Cobalt (II) sulphate, >26% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+10124-56-8_var1,"Sodium hexametaphosphate, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+10124-56-8_var1,"Sodium hexametaphosphate, >50% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+10124-56-8_var1,"Sodium hexametaphosphate, >50% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+10192-30-0_var0,"Ammonium bisulphite, >5% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+10192-30-0_var0,"Ammonium bisulphite, >5% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+102-71-6_var1,"Triethanolamine, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+102-71-6_var1,"Triethanolamine, >50% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+102-71-6_var1,"Triethanolamine, >50% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+102-71-6_var1,"Triethanolamine, >50% in a non hazardous diluent",9.2D,Slightly harmful in the soil environment,
+10213-79-3_var1,"Sodium metasilicate, pentahydrate, >50% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+10213-79-3_var1,"Sodium metasilicate, pentahydrate, >50% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+10213-79-3_var1,"Sodium metasilicate, pentahydrate, >50% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+10213-79-3_var1,"Sodium metasilicate, pentahydrate, >50% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+10294-56-1_var0,"Phosphorous acid, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+10294-56-1_var0,"Phosphorous acid, >26% in a non hazardous diluent",8.1A,Corrosive to metals,GHS: Corrosive to metals - Category 1
+10294-56-1_var0,"Phosphorous acid, >26% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+10294-56-1_var0,"Phosphorous acid, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+10294-56-1_var0,"Phosphorous acid, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+103-90-2_var0,"Paracetamol (4-hydroxyacetanilide), >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+103-90-2_var0,"Paracetamol (4-hydroxyacetanilide), >26% in a non hazardous diluent",9.1C (algal),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+103-90-2_var0,"Paracetamol (4-hydroxyacetanilide), >26% in a non hazardous diluent",9.1C (crustacean),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+103-90-2_var0,"Paracetamol (4-hydroxyacetanilide), >26% in a non hazardous diluent",9.1C (fish),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+103-90-2_var0,"Paracetamol (4-hydroxyacetanilide), >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+10326-27-9_var0,"Barium chloride, dihydrate, >33% in a non hazardous diluent",6.1C (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 3
+10326-27-9_var0,"Barium chloride, dihydrate, >33% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+10377-60-3_var0,"Magnesium nitrate, >10% in a non hazardous diluent",5.1.1C,Oxidising substances that are liquids or solids: low hazard,GHS: Oxidizing liquids/solids - Category 3
+10377-60-3_var0,"Magnesium nitrate, >10% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+10377-60-3_var0,"Magnesium nitrate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+10378-23-1_var0,"Tetrasodium EDTA, dihydrate, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+10378-23-1_var0,"Tetrasodium EDTA, dihydrate, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+10378-23-1_var0,"Tetrasodium EDTA, dihydrate, >26% in a non hazardous diluent",9.1C (algal),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+10378-23-1_var0,"Tetrasodium EDTA, dihydrate, >26% in a non hazardous diluent",9.1C (crustacean),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+10378-23-1_var0,"Tetrasodium EDTA, dihydrate, >26% in a non hazardous diluent",9.1C (fish),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+10378-23-1_var0,"Tetrasodium EDTA, dihydrate, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+104-67-6_var0,"1,4-Undecanolide, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+105-59-9_var0,"Methyl diethanolamine, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+105-59-9_var0,"Methyl diethanolamine, >25% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+105-59-9_var0,"Methyl diethanolamine, >25% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+105-59-9_var0,"Methyl diethanolamine, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+106-21-8_var1,"Tetrahydrogeraniol, >50% in a non hazardous diluent",6.1E (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 5
+106-21-8_var1,"Tetrahydrogeraniol, >50% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+106-21-8_var1,"Tetrahydrogeraniol, >50% in a non hazardous diluent",9.1B (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+106-21-8_var1,"Tetrahydrogeraniol, >50% in a non hazardous diluent",9.1B (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+106-21-8_var1,"Tetrahydrogeraniol, >50% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+107-22-2_var0,"Glyoxal, >25% in a non hazardous diluent",6.1D (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 4
+107-22-2_var0,"Glyoxal, >25% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+107-22-2_var0,"Glyoxal, >25% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+107-22-2_var0,"Glyoxal, >25% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+107-22-2_var0,"Glyoxal, >25% in a non hazardous diluent",6.6B,Suspected human mutagens,GHS: Germ cell mutagenicity - Category 2
+107-22-2_var0,"Glyoxal, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+107-75-5_var1,"Hydroxycitronellal, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+107-75-5_var1,"Hydroxycitronellal, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+107-75-5_var1,"Hydroxycitronellal, >26% in a non hazardous diluent",9.1D (algal),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+107-75-5_var1,"Hydroxycitronellal, >26% in a non hazardous diluent",9.1D (crustacean),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+107-75-5_var1,"Hydroxycitronellal, >26% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+107-92-6_var0,"Butyric acid, >5% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+107-92-6_var0,"Butyric acid, >5% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+108-65-6_var1,"Propylene glycol monoethyl ether acetate, >10% in a non hazardous diluent",3.1C,Flammable Liquids: medium hazard,GHS: Flammable liquids - Category 3
+108-65-6_var1,"Propylene glycol monoethyl ether acetate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+108-74-7_var0,"1,3,5-Trimethylhexahydro-1,3,5-triazine, >25% in a non hazardous diluent",3.1C,Flammable Liquids: medium hazard,GHS: Flammable liquids - Category 3
+108-74-7_var0,"1,3,5-Trimethylhexahydro-1,3,5-triazine, >25% in a non hazardous diluent",6.1D (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 4
+108-74-7_var0,"1,3,5-Trimethylhexahydro-1,3,5-triazine, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+108-74-7_var0,"1,3,5-Trimethylhexahydro-1,3,5-triazine, >25% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+108-74-7_var0,"1,3,5-Trimethylhexahydro-1,3,5-triazine, >25% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+108-74-7_var0,"1,3,5-Trimethylhexahydro-1,3,5-triazine, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+108-80-5_var0,"Cyanuric acid, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+109-21-7_var0,"Butyl butyrate, >1% in a non hazardous diluent",3.1C,Flammable Liquids: medium hazard,GHS: Flammable liquids - Category 3
+109-63-7_var0,"Boron trifluoride-diethyl ether complex, >25% in a non hazardous diluent",6.1D (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 4
+109-63-7_var0,"Boron trifluoride-diethyl ether complex, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+109-63-7_var0,"Boron trifluoride-diethyl ether complex, >25% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+109-63-7_var0,"Boron trifluoride-diethyl ether complex, >25% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+109-63-7_var0,"Boron trifluoride-diethyl ether complex, >25% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+109-63-7_var0,"Boron trifluoride-diethyl ether complex, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+109-94-4_var0,"Ethyl formate, >56% in a non hazardous diluent",3.1B,Flammable Liquids: high hazard,GHS: Flammable liquids - Category 2
+109-94-4_var0,"Ethyl formate, >56% in a non hazardous diluent",6.1D (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 4
+109-94-4_var0,"Ethyl formate, >56% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+109-94-4_var0,"Ethyl formate, >56% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+109-94-4_var0,"Ethyl formate, >56% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+109-94-4_var0,"Ethyl formate, >56% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+110-17-8_var0,"Fumaric acid, >25% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+110-17-8_var0,"Fumaric acid, >25% in a non hazardous diluent",9.1D (algal),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+110-26-9_var0,"2-Propenamide, N,N'-methylenebis, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+110-26-9_var0,"2-Propenamide, N,N'-methylenebis, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+110-63-4_var0,"1,4-Butanediol, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+110-63-4_var0,"1,4-Butanediol, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+110-97-4_var0,"Diisopropanolamine, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+111-41-1_var0,"2-(2-Aminoethylamino) ethanol, >5% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+111-41-1_var0,"2-(2-Aminoethylamino) ethanol, >5% in a non hazardous diluent",6.8A,Known or presumed human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 1
+111-41-1_var0,"2-(2-Aminoethylamino) ethanol, >5% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+111-41-1_var0,"2-(2-Aminoethylamino) ethanol, >5% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+111-76-2_var0,"Ethylene glycol monobutyl ether, >25% in a non hazardous diluent",3.1D,Flammable Liquids: low hazard,GHS: Flammable liquids - Category 4
+111-76-2_var0,"Ethylene glycol monobutyl ether, >25% in a non hazardous diluent",6.1D (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 4
+111-76-2_var0,"Ethylene glycol monobutyl ether, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+111-76-2_var0,"Ethylene glycol monobutyl ether, >25% in a non hazardous diluent",6.1E (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 5
+111-76-2_var0,"Ethylene glycol monobutyl ether, >25% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+111-76-2_var0,"Ethylene glycol monobutyl ether, >25% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+111-76-2_var0,"Ethylene glycol monobutyl ether, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+112-02-7_var0,"Cetrimonium chloride, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+112-02-7_var0,"Cetrimonium chloride, >25% in a non hazardous diluent",6.1E (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 5
+112-02-7_var0,"Cetrimonium chloride, >25% in a non hazardous diluent",6.1E (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 5
+112-02-7_var0,"Cetrimonium chloride, >25% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+112-02-7_var0,"Cetrimonium chloride, >25% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+112-02-7_var0,"Cetrimonium chloride, >25% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+112-02-7_var0,"Cetrimonium chloride, >25% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+112-02-7_var0,"Cetrimonium chloride, >25% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+112-02-7_var0,"Cetrimonium chloride, >25% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+112-77-6_var0,"Oleoyl chloride, >5% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+112-77-6_var0,"Oleoyl chloride, >5% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+112-80-1_var0,"Oleic acid, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+112-80-1_var0,"Oleic acid, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+117-81-7_var1,"Di-s-octyl phthalate, >26% in a non hazardous diluent",6.8A,Known or presumed human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 1
+117-81-7_var1,"Di-s-octyl phthalate, >26% in a non hazardous diluent",6.9B (oral),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+117-81-7_var1,"Di-s-octyl phthalate, >26% in a non hazardous diluent",9.1C (algal),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+117-81-7_var1,"Di-s-octyl phthalate, >26% in a non hazardous diluent",9.1D (crustacean),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+117-81-7_var1,"Di-s-octyl phthalate, >26% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+12125-02-9_var1,"Ammonium chloride, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+12125-02-9_var1,"Ammonium chloride, >26% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+12125-02-9_var1,"Ammonium chloride, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+12125-02-9_var1,"Ammonium chloride, >26% in a non hazardous diluent",8.1A,Corrosive to metals,GHS: Corrosive to metals - Category 1
+12125-02-9_var1,"Ammonium chloride, >26% in a non hazardous diluent",9.1C (fish),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+12125-02-9_var1,"Ammonium chloride, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+122-20-3_var0,"Triisopropanolamine, >50% in a non hazardous diluent",6.1E (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 5
+122-20-3_var0,"Triisopropanolamine, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+122-20-3_var0,"Triisopropanolamine, >50% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+122-20-3_var0,"Triisopropanolamine, >50% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+122-20-3_var0,"Triisopropanolamine, >50% in a non hazardous diluent",9.1C (algal),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+12224-98-5_var0,"C.I. Pigment red 81, >1% in a non hazardous diluent",6.9B (oral),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+12259-92-6_var0,"Ammonium polysulphide, >5% in a non hazardous diluent",4.2A,Spontaneously Combustible Substances: pyrophoric substances: high hazard,GHS: Pyrophoric substances - Category 1
+12259-92-6_var0,"Ammonium polysulphide, >5% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+12259-92-6_var0,"Ammonium polysulphide, >5% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+123-35-3_var2,"Myrcene, >25% in a non hazardous diluent",3.1C,Flammable Liquids: medium hazard,GHS: Flammable liquids - Category 3
+123-35-3_var2,"Myrcene, >25% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+123-35-3_var2,"Myrcene, >25% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+123-35-3_var2,"Myrcene, >25% in a non hazardous diluent",6.8B,Suspected human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 2
+123-35-3_var2,"Myrcene, >25% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+123-35-3_var2,"Myrcene, >25% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+123-35-3_var2,"Myrcene, >25% in a non hazardous diluent",9.1B (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+123-42-2_var1,"Diacetone, >79% in a non hazardous diluent",3.1C,Flammable Liquids: medium hazard,GHS: Flammable liquids - Category 3
+123-42-2_var1,"Diacetone, >79% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+123-42-2_var1,"Diacetone, >79% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+123-42-2_var1,"Diacetone, >79% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+123-99-9_var0,"Azelaic acid, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+12656-85-8_var0,"C.I. Pigment red 104, >26% in a non hazardous diluent",6.6B,Suspected human mutagens,GHS: Germ cell mutagenicity - Category 2
+12656-85-8_var0,"C.I. Pigment red 104, >26% in a non hazardous diluent",6.7A,Known or presumed human carcinogens,GHS: Carcinogenicity - Category 1
+12656-85-8_var0,"C.I. Pigment red 104, >26% in a non hazardous diluent",6.8A,Known or presumed human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 1
+12656-85-8_var0,"C.I. Pigment red 104, >26% in a non hazardous diluent",6.9B (oral),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+12656-85-8_var0,"C.I. Pigment red 104, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+127-17-3_var1,"Pyruvic acid, >5% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+127-17-3_var1,"Pyruvic acid, >5% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+127-68-4_var0,"3-Nitrobenzenesulphonic acid sodium salt, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+127-68-4_var0,"3-Nitrobenzenesulphonic acid sodium salt, >10% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+1300-72-7_var0,"Benzenesulphonic acid, dimethyl-, sodium salt, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+1300-72-7_var0,"Benzenesulphonic acid, dimethyl-, sodium salt, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+1300-72-7_var0,"Benzenesulphonic acid, dimethyl-, sodium salt, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+1303-28-2_var0,"Arsenic oxide, >26% in a non hazardous diluent",6.1B (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 2
+1303-28-2_var0,"Arsenic oxide, >26% in a non hazardous diluent",6.1B (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 2
+1303-28-2_var0,"Arsenic oxide, >26% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+1303-28-2_var0,"Arsenic oxide, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+1303-28-2_var0,"Arsenic oxide, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+1303-28-2_var0,"Arsenic oxide, >26% in a non hazardous diluent",6.7A,Known or presumed human carcinogens,GHS: Carcinogenicity - Category 1
+1303-28-2_var0,"Arsenic oxide, >26% in a non hazardous diluent",6.8A,Known or presumed human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 1
+1303-28-2_var0,"Arsenic oxide, >26% in a non hazardous diluent",6.9A (oral),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+1303-28-2_var0,"Arsenic oxide, >26% in a non hazardous diluent",8.1A,Corrosive to metals,GHS: Corrosive to metals - Category 1
+1303-28-2_var0,"Arsenic oxide, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+1303-28-2_var0,"Arsenic oxide, >26% in a non hazardous diluent",9.1C (fish),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+1303-28-2_var0,"Arsenic oxide, >26% in a non hazardous diluent",9.3A,Very ecotoxic to terrestrial vertebrates,
+1306-23-6_var1,"Cadmium sulphide, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+1306-23-6_var1,"Cadmium sulphide, >26% in a non hazardous diluent",6.7B,Suspected human carcinogens,GHS: Carcinogenicity - Category 2
+1306-23-6_var1,"Cadmium sulphide, >26% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+1306-23-6_var1,"Cadmium sulphide, >26% in a non hazardous diluent",6.9A (oral),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+1306-23-6_var1,"Cadmium sulphide, >26% in a non hazardous diluent",9.1D (algal),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+1306-23-6_var1,"Cadmium sulphide, >26% in a non hazardous diluent",9.1D (crustacean),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+1306-23-6_var1,"Cadmium sulphide, >26% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+1306-23-6_var1,"Cadmium sulphide, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+1308-06-1_var0,"Cobalt oxide, >1% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+1308-06-1_var0,"Cobalt oxide, >1% in a non hazardous diluent",6.7B,Suspected human carcinogens,GHS: Carcinogenicity - Category 2
+1309-42-8_var0,"Magnesium hydroxide, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+1309-64-4_var1,"Antimony trioxide, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+1309-64-4_var1,"Antimony trioxide, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+1309-64-4_var1,"Antimony trioxide, >10% in a non hazardous diluent",6.7B,Suspected human carcinogens,GHS: Carcinogenicity - Category 2
+1309-64-4_var1,"Antimony trioxide, >10% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+131-56-6_var0,"2,4-Dihydroxybenzophenone, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+131-56-6_var0,"2,4-Dihydroxybenzophenone, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+1312-76-1_var0,"Potassium silicate, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+1312-76-1_var0,"Potassium silicate, >25% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+1312-76-1_var0,"Potassium silicate, >25% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+1312-76-1_var0,"Potassium silicate, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+1313-13-9_var0,"Manganese (IV) oxide, >26% in a non hazardous diluent",6.1B (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 2
+1313-13-9_var0,"Manganese (IV) oxide, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+1313-13-9_var0,"Manganese (IV) oxide, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+1313-13-9_var0,"Manganese (IV) oxide, >26% in a non hazardous diluent",6.8B,Suspected human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 2
+1313-13-9_var0,"Manganese (IV) oxide, >26% in a non hazardous diluent",6.8C,Produce toxic human reproductive or developmental effects on or via lactation,GHS: Reproductive toxicity - Effects on or via lactation
+1313-13-9_var0,"Manganese (IV) oxide, >26% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+1313-13-9_var0,"Manganese (IV) oxide, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+1313-99-1_var0,"Nickel (II) oxide, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+1313-99-1_var0,"Nickel (II) oxide, >26% in a non hazardous diluent",6.7A,Known or presumed human carcinogens,GHS: Carcinogenicity - Category 1
+1313-99-1_var0,"Nickel (II) oxide, >26% in a non hazardous diluent",9.1D (algal),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+1313-99-1_var0,"Nickel (II) oxide, >26% in a non hazardous diluent",9.1D (crustacean),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+1313-99-1_var0,"Nickel (II) oxide, >26% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+1314-13-2_var0,"Zinc oxide, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+1314-13-2_var0,"Zinc oxide, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+1314-13-2_var0,"Zinc oxide, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+1314-13-2_var0,"Zinc oxide, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+132-27-4_var0,"Sodium orthophenylphenate, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+132-27-4_var0,"Sodium orthophenylphenate, >26% in a non hazardous diluent",6.1E (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 5
+132-27-4_var0,"Sodium orthophenylphenate, >26% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+132-27-4_var0,"Sodium orthophenylphenate, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+132-27-4_var0,"Sodium orthophenylphenate, >26% in a non hazardous diluent",6.6B,Suspected human mutagens,GHS: Germ cell mutagenicity - Category 2
+132-27-4_var0,"Sodium orthophenylphenate, >26% in a non hazardous diluent",6.7B,Suspected human carcinogens,GHS: Carcinogenicity - Category 2
+132-27-4_var0,"Sodium orthophenylphenate, >26% in a non hazardous diluent",6.9B (oral),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+132-27-4_var0,"Sodium orthophenylphenate, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+132-27-4_var0,"Sodium orthophenylphenate, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+132-27-4_var0,"Sodium orthophenylphenate, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+132-27-4_var0,"Sodium orthophenylphenate, >26% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+132-27-4_var0,"Sodium orthophenylphenate, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+1325-82-2_var0,"C.I. Pigment violet 3, >1% in a non hazardous diluent",6.9B (oral),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+1332-40-7_var0,"Copper oxychloride, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+1332-40-7_var0,"Copper oxychloride, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+1332-40-7_var0,"Copper oxychloride, >26% in a non hazardous diluent",6.9B (oral),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+1332-40-7_var0,"Copper oxychloride, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+1332-40-7_var0,"Copper oxychloride, >26% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+1332-40-7_var0,"Copper oxychloride, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+1333-86-4_var0,"Carbon black, >10% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+1333-86-4_var0,"Carbon black, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+1333-86-4_var0,"Carbon black, >10% in a non hazardous diluent",6.7B,Suspected human carcinogens,GHS: Carcinogenicity - Category 2
+1335-32-6_var0,"Lead acetate, basic, >26% in a non hazardous diluent",6.7B,Suspected human carcinogens,GHS: Carcinogenicity - Category 2
+1335-32-6_var0,"Lead acetate, basic, >26% in a non hazardous diluent",6.8A,Known or presumed human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 1
+1335-32-6_var0,"Lead acetate, basic, >26% in a non hazardous diluent",6.9A (oral),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+1335-32-6_var0,"Lead acetate, basic, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+1335-32-6_var0,"Lead acetate, basic, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+1335-32-6_var0,"Lead acetate, basic, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+13410-01-0_var0,"Sodium selenate, >26% in a non hazardous diluent",6.1B (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 2
+13410-01-0_var0,"Sodium selenate, >26% in a non hazardous diluent",6.1B (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 2
+13410-01-0_var0,"Sodium selenate, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+13410-01-0_var0,"Sodium selenate, >26% in a non hazardous diluent",6.6B,Suspected human mutagens,GHS: Germ cell mutagenicity - Category 2
+13410-01-0_var0,"Sodium selenate, >26% in a non hazardous diluent",6.9A (oral),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+13410-01-0_var0,"Sodium selenate, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+13410-01-0_var0,"Sodium selenate, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+13410-01-0_var0,"Sodium selenate, >26% in a non hazardous diluent",9.1B (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+13410-01-0_var0,"Sodium selenate, >26% in a non hazardous diluent",9.2A,Very ecotoxic in the soil environment,
+13410-01-0_var0,"Sodium selenate, >26% in a non hazardous diluent",9.3A,Very ecotoxic to terrestrial vertebrates,
+1344-09-8_var1,"Sodium silicate with a molar ratio SiO2:Na2O = 1.6, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+1344-09-8_var1,"Sodium silicate with a molar ratio SiO2:Na2O = 1.6, >25% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+1344-09-8_var1,"Sodium silicate with a molar ratio SiO2:Na2O = 1.6, >25% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+1344-09-8_var1,"Sodium silicate with a molar ratio SiO2:Na2O = 1.6, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+1344-37-2_var0,"Chromium orange, >26% in a non hazardous diluent",6.6B,Suspected human mutagens,GHS: Germ cell mutagenicity - Category 2
+1344-37-2_var0,"Chromium orange, >26% in a non hazardous diluent",6.7A,Known or presumed human carcinogens,GHS: Carcinogenicity - Category 1
+1344-37-2_var0,"Chromium orange, >26% in a non hazardous diluent",6.8A,Known or presumed human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 1
+1344-37-2_var0,"Chromium orange, >26% in a non hazardous diluent",6.9B (oral),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+1344-37-2_var0,"Chromium orange, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+1344-43-0_var0,"Manganese (II) oxide, >26% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+1344-43-0_var0,"Manganese (II) oxide, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+1344-43-0_var0,"Manganese (II) oxide, >26% in a non hazardous diluent",6.9B (inhalation),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+1344-43-0_var0,"Manganese (II) oxide, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+13462-88-9_var0,"Nickel (II) bromide, anhydrous, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+13462-88-9_var0,"Nickel (II) bromide, anhydrous, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+13462-88-9_var0,"Nickel (II) bromide, anhydrous, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+13462-88-9_var0,"Nickel (II) bromide, anhydrous, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+13473-90-0_var0,"Aluminium nitrate, >43% in a non hazardous diluent",5.1.1C,Oxidising substances that are liquids or solids: low hazard,GHS: Oxidizing liquids/solids - Category 3
+13473-90-0_var0,"Aluminium nitrate, >43% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+13473-90-0_var0,"Aluminium nitrate, >43% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+13473-90-0_var0,"Aluminium nitrate, >43% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+13473-90-0_var0,"Aluminium nitrate, >43% in a non hazardous diluent",6.8B,Suspected human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 2
+13473-90-0_var0,"Aluminium nitrate, >43% in a non hazardous diluent",9.1B (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+13473-90-0_var0,"Aluminium nitrate, >43% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+13598-36-2_var0,"Ortho phosphorous acid, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+13598-36-2_var0,"Ortho phosphorous acid, >26% in a non hazardous diluent",8.1A,Corrosive to metals,GHS: Corrosive to metals - Category 1
+13598-36-2_var0,"Ortho phosphorous acid, >26% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+13598-36-2_var0,"Ortho phosphorous acid, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+13598-36-2_var0,"Ortho phosphorous acid, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+137-20-2_var1,"Sodium methyl oleoyl taurate, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+137-20-2_var1,"Sodium methyl oleoyl taurate, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+139-33-3_var1,"Disodium EDTA, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+139-33-3_var1,"Disodium EDTA, >50% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+139-33-3_var1,"Disodium EDTA, >50% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+139-89-9_var0,"Trisodium N-hydroxyethylethylenediaminetriacetate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+1401-55-4_var0,"Tannins, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+1401-55-4_var0,"Tannins, >50% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+1401-55-4_var0,"Tannins, >50% in a non hazardous diluent",9.1C (fish),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+141-78-6_var1,"Ethyl acetate, >82% in a non hazardous diluent",3.1B,Flammable Liquids: high hazard,GHS: Flammable liquids - Category 2
+141-78-6_var1,"Ethyl acetate, >82% in a non hazardous diluent",6.1E (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 5
+141-78-6_var1,"Ethyl acetate, >82% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+141-78-6_var1,"Ethyl acetate, >82% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+141-78-6_var1,"Ethyl acetate, >82% in a non hazardous diluent",6.9B (inhalation),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+142-90-5_var0,"Dodecyl methacrylate, >26% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+142-90-5_var0,"Dodecyl methacrylate, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+142-90-5_var0,"Dodecyl methacrylate, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+142-90-5_var0,"Dodecyl methacrylate, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+142-90-5_var0,"Dodecyl methacrylate, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+148-18-5_var0,"Sodium diethyldithiocarbamate, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+148-18-5_var0,"Sodium diethyldithiocarbamate, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+14808-60-7_var0,"Silica, crystalline (quartz), >1 - 10% in a non hazardous diluent",6.7A,Known or presumed human carcinogens,GHS: Carcinogenicity - Category 1
+14808-60-7_var0,"Silica, crystalline (quartz), >1 - 10% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+14808-60-7_var1,"Silica, crystalline (quartz), >10% in a non hazardous diluent",6.7A,Known or presumed human carcinogens,GHS: Carcinogenicity - Category 1
+14808-60-7_var1,"Silica, crystalline (quartz), >10% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+151-21-3_var2,"Dodecyl sodium sulphate, >33% in a non hazardous diluent",6.1C (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 3
+151-21-3_var2,"Dodecyl sodium sulphate, >33% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+151-21-3_var2,"Dodecyl sodium sulphate, >33% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+151-21-3_var2,"Dodecyl sodium sulphate, >33% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+151-21-3_var2,"Dodecyl sodium sulphate, >33% in a non hazardous diluent",9.1D (algal),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+151-21-3_var2,"Dodecyl sodium sulphate, >33% in a non hazardous diluent",9.1D (crustacean),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+151-21-3_var2,"Dodecyl sodium sulphate, >33% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+151-21-3_var2,"Dodecyl sodium sulphate, >33% in a non hazardous diluent",9.2D,Slightly harmful in the soil environment,
+151-21-3_var2,"Dodecyl sodium sulphate, >33% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",6.1A (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 1
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",6.1A (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 1
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",6.1A (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 1
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",6.8B,Suspected human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 2
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",6.9A (oral),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",8.1A,Corrosive to metals,GHS: Corrosive to metals - Category 1
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",9.2A,Very ecotoxic in the soil environment,
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",9.3A,Very ecotoxic to terrestrial vertebrates,
+151-50-8_var0,"Potassium cyanide, >26% in a non hazardous diluent",9.4A,Very ecotoxic to terrestrial invertebrates,
+16090-02-1_var0,"C.I. Fluorescent brightener 260, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+1675-54-3_var0,"Bis-[4-(2,3-epoxypropoxy)phenyl]propane, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+1675-54-3_var0,"Bis-[4-(2,3-epoxypropoxy)phenyl]propane, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+1675-54-3_var0,"Bis-[4-(2,3-epoxypropoxy)phenyl]propane, >10% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+16961-83-4_var0,"Hexafluorosilicic acid, >5% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+16961-83-4_var0,"Hexafluorosilicic acid, >5% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+1762-95-4_var0,"Ammonium thiocyanate, >26% in a non hazardous diluent",6.1D (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 4
+1762-95-4_var0,"Ammonium thiocyanate, >26% in a non hazardous diluent",6.1D (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 4
+1762-95-4_var0,"Ammonium thiocyanate, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+1762-95-4_var0,"Ammonium thiocyanate, >26% in a non hazardous diluent",9.1C (fish),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+1762-95-4_var0,"Ammonium thiocyanate, >26% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+18472-51-0_var1,"Chlorhexidine gluconate, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+18472-51-0_var1,"Chlorhexidine gluconate, >26% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+18472-51-0_var1,"Chlorhexidine gluconate, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+18472-51-0_var1,"Chlorhexidine gluconate, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+18472-51-0_var1,"Chlorhexidine gluconate, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+18472-51-0_var1,"Chlorhexidine gluconate, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+18662-53-8_var0,"Nitrilotriacetic acid trisodium salt monohydrate, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+18662-53-8_var0,"Nitrilotriacetic acid trisodium salt monohydrate, >25% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+18662-53-8_var0,"Nitrilotriacetic acid trisodium salt monohydrate, >25% in a non hazardous diluent",6.7B,Suspected human carcinogens,GHS: Carcinogenicity - Category 2
+18662-53-8_var0,"Nitrilotriacetic acid trisodium salt monohydrate, >25% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+20018-09-1_var0,"Diiodomethyl-p-tolyl sulphone, >26% in a non hazardous diluent",6.9B (oral),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+20018-09-1_var0,"Diiodomethyl-p-tolyl sulphone, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+20018-09-1_var0,"Diiodomethyl-p-tolyl sulphone, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+20018-09-1_var0,"Diiodomethyl-p-tolyl sulphone, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+20018-09-1_var0,"Diiodomethyl-p-tolyl sulphone, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+20427-59-2_var0,"Copper hydroxide, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+20427-59-2_var0,"Copper hydroxide, >26% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+20427-59-2_var0,"Copper hydroxide, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+20427-59-2_var0,"Copper hydroxide, >26% in a non hazardous diluent",6.9B (inhalation),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+20427-59-2_var0,"Copper hydroxide, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+20427-59-2_var0,"Copper hydroxide, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+20427-59-2_var0,"Copper hydroxide, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+20427-59-2_var0,"Copper hydroxide, >26% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+22763-03-7_var0,"Tripotassium orthophosphate, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+22763-03-7_var0,"Tripotassium orthophosphate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+23647-14-5_var0,"1,8-Dihydroxy-2-(4-sulfophenylazo) napthalene-3,6-disulfonic acid trisodium salt, >1% in a non hazardous diluent",6.7A,Known or presumed human carcinogens,GHS: Carcinogenicity - Category 1
+2437-29-8_var0,"Malachite green oxalate, >25% in a non hazardous diluent",6.1D (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 4
+2437-29-8_var0,"Malachite green oxalate, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+2437-29-8_var0,"Malachite green oxalate, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+2492-26-4_var0,"Sodium 2-mercaptobenzothiazole, >5% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+2492-26-4_var0,"Sodium 2-mercaptobenzothiazole, >5% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+25085-99-8_var0,"Bisphenol A/ epichlorohydrin resin, >26% in a non hazardous diluent",6.1D (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 4
+25085-99-8_var0,"Bisphenol A/ epichlorohydrin resin, >26% in a non hazardous diluent",6.1D (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 4
+25085-99-8_var0,"Bisphenol A/ epichlorohydrin resin, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+25085-99-8_var0,"Bisphenol A/ epichlorohydrin resin, >26% in a non hazardous diluent",9.1B (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+25085-99-8_var0,"Bisphenol A/ epichlorohydrin resin, >26% in a non hazardous diluent",9.1B (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+25085-99-8_var0,"Bisphenol A/ epichlorohydrin resin, >26% in a non hazardous diluent",9.1B (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+25154-52-3_var0,"Monononylphenol, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+25154-52-3_var0,"Monononylphenol, >26% in a non hazardous diluent",6.1E (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 5
+25154-52-3_var0,"Monononylphenol, >26% in a non hazardous diluent",8.2B,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1B
+25154-52-3_var0,"Monononylphenol, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+25154-52-3_var0,"Monononylphenol, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+25154-52-3_var0,"Monononylphenol, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+25154-52-3_var0,"Monononylphenol, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+25154-52-3_var0,"Monononylphenol, >26% in a non hazardous diluent",9.2C,Harmful in the soil environment,
+25154-52-3_var0,"Monononylphenol, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+25155-30-0_var0,"Sodium lauryl benzene sulphonate, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+25155-30-0_var0,"Sodium lauryl benzene sulphonate, >26% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+25155-30-0_var0,"Sodium lauryl benzene sulphonate, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+25155-30-0_var0,"Sodium lauryl benzene sulphonate, >26% in a non hazardous diluent",9.1D (algal),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+25155-30-0_var0,"Sodium lauryl benzene sulphonate, >26% in a non hazardous diluent",9.1D (crustacean),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+25155-30-0_var0,"Sodium lauryl benzene sulphonate, >26% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+25155-30-0_var0,"Sodium lauryl benzene sulphonate, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+25265-71-8_var0,"Dipropylene glycol, >10% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+25265-71-8_var0,"Dipropylene glycol, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+25265-77-4_var0,"2,2,4-Trimethylpentane-1,3-diol monoisobutyrate, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+25265-77-4_var0,"2,2,4-Trimethylpentane-1,3-diol monoisobutyrate, >50% in a non hazardous diluent",9.1C (algal),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+25265-77-4_var0,"2,2,4-Trimethylpentane-1,3-diol monoisobutyrate, >50% in a non hazardous diluent",9.1C (fish),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+25322-69-4_var0,"Polypropylene glycol, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+25322-69-4_var0,"Polypropylene glycol, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+25322-69-4_var0,"Polypropylene glycol, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+26264-06-2_var0,"Calcium dodecylbenzenesulphonate, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+26264-06-2_var0,"Calcium dodecylbenzenesulphonate, >26% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+26264-06-2_var0,"Calcium dodecylbenzenesulphonate, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+26264-06-2_var0,"Calcium dodecylbenzenesulphonate, >26% in a non hazardous diluent",9.1D (algal),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+26264-06-2_var0,"Calcium dodecylbenzenesulphonate, >26% in a non hazardous diluent",9.1D (crustacean),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+26264-06-2_var0,"Calcium dodecylbenzenesulphonate, >26% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+26264-06-2_var0,"Calcium dodecylbenzenesulphonate, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+26447-40-5_var0,"Methylenediphenyl diisocyanate, >10% in a non hazardous diluent",6.1B (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 2
+26447-40-5_var0,"Methylenediphenyl diisocyanate, >10% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+26447-40-5_var0,"Methylenediphenyl diisocyanate, >10% in a non hazardous diluent",6.5A (respiratory),Respiratory sensitisers,GHS: Respiratory sensitization - Category 1
+26447-40-5_var0,"Methylenediphenyl diisocyanate, >10% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+26447-40-5_var0,"Methylenediphenyl diisocyanate, >10% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+2809-21-4_var1,"Etidronic acid, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+2809-21-4_var1,"Etidronic acid, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+2809-21-4_var1,"Etidronic acid, >26% in a non hazardous diluent",9.1C (other),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+2809-21-4_var1,"Etidronic acid, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+28434-00-6_var0,"Esbioallethrin, >26% in a non hazardous diluent",6.1D (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 4
+28434-00-6_var0,"Esbioallethrin, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+28434-00-6_var0,"Esbioallethrin, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+28434-00-6_var0,"Esbioallethrin, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+28434-00-6_var0,"Esbioallethrin, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+28434-00-6_var0,"Esbioallethrin, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+2855-13-2_var0,"Isophoronediamine, >26% in a non hazardous diluent",6.1D (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 4
+2855-13-2_var0,"Isophoronediamine, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+2855-13-2_var0,"Isophoronediamine, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+2855-13-2_var0,"Isophoronediamine, >26% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+2855-13-2_var0,"Isophoronediamine, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+2855-13-2_var0,"Isophoronediamine, >26% in a non hazardous diluent",9.1C (algal),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+2855-13-2_var0,"Isophoronediamine, >26% in a non hazardous diluent",9.1C (crustacean),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+2855-13-2_var0,"Isophoronediamine, >26% in a non hazardous diluent",9.1C (fish),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+2855-13-2_var0,"Isophoronediamine, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+3006-15-3_var0,"Dihexyl sodium sulphosuccinate, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+3006-15-3_var0,"Dihexyl sodium sulphosuccinate, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+302-17-0_var0,"Chloral hydrate, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+302-17-0_var0,"Chloral hydrate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+3088-31-1_var0,"Diethylene glycol monolauryl ether sodium sulphate, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+3088-31-1_var0,"Diethylene glycol monolauryl ether sodium sulphate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+3088-31-1_var0,"Diethylene glycol monolauryl ether sodium sulphate, >10% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+31075-24-8_var1,"Polyoxyethylenedimethyliminoethylene dichloride, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+31075-24-8_var1,"Polyoxyethylenedimethyliminoethylene dichloride, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+354-38-1_var0,"2,2,2-Trifluoroacetamide, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+354-38-1_var0,"2,2,2-Trifluoroacetamide, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+3844-45-9_var0,"C.I. Acid blue 9, disodium salt, >10% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+3844-45-9_var0,"C.I. Acid blue 9, disodium salt, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+497-19-8_var2,"Sodium carbonate, >44% in a non hazardous diluent",6.1D (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 4
+497-19-8_var2,"Sodium carbonate, >44% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+497-19-8_var2,"Sodium carbonate, >44% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+497-19-8_var2,"Sodium carbonate, >44% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+50-01-1_var0,"Guanidinium chloride, >25% in a non hazardous diluent",6.1C (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 3
+50-01-1_var0,"Guanidinium chloride, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+50-01-1_var0,"Guanidinium chloride, >25% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+50-01-1_var0,"Guanidinium chloride, >25% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+50-01-1_var0,"Guanidinium chloride, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+513-79-1_var0,"Cobaltous carbonate, >26% in a non hazardous diluent",6.1D (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 4
+513-79-1_var0,"Cobaltous carbonate, >26% in a non hazardous diluent",6.1D (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 4
+513-79-1_var0,"Cobaltous carbonate, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+513-79-1_var0,"Cobaltous carbonate, >26% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+513-79-1_var0,"Cobaltous carbonate, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+513-79-1_var0,"Cobaltous carbonate, >26% in a non hazardous diluent",6.5A (respiratory),Respiratory sensitisers,GHS: Respiratory sensitization - Category 1
+513-79-1_var0,"Cobaltous carbonate, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+513-79-1_var0,"Cobaltous carbonate, >26% in a non hazardous diluent",6.7B,Suspected human carcinogens,GHS: Carcinogenicity - Category 2
+513-79-1_var0,"Cobaltous carbonate, >26% in a non hazardous diluent",6.8B,Suspected human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 2
+513-79-1_var0,"Cobaltous carbonate, >26% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+513-79-1_var0,"Cobaltous carbonate, >26% in a non hazardous diluent",6.9A (oral),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+513-79-1_var0,"Cobaltous carbonate, >26% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+51580-86-0_var0,"Sodium dichloroisocyanurate, dihydrate, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+51580-86-0_var0,"Sodium dichloroisocyanurate, dihydrate, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+51580-86-0_var0,"Sodium dichloroisocyanurate, dihydrate, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+51580-86-0_var0,"Sodium dichloroisocyanurate, dihydrate, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+51580-86-0_var0,"Sodium dichloroisocyanurate, dihydrate, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+51580-86-0_var0,"Sodium dichloroisocyanurate, dihydrate, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+5332-73-0_var0,"3-Methoxypropylamine, >25% in a non hazardous diluent",3.1B,Flammable Liquids: high hazard,GHS: Flammable liquids - Category 2
+5332-73-0_var0,"3-Methoxypropylamine, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+5332-73-0_var0,"3-Methoxypropylamine, >25% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+5332-73-0_var0,"3-Methoxypropylamine, >25% in a non hazardous diluent",8.2B,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1B
+5332-73-0_var0,"3-Methoxypropylamine, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+53408-94-9_var0,"Tin (II) methanesulphonate, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+53408-94-9_var0,"Tin (II) methanesulphonate, >25% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+53408-94-9_var0,"Tin (II) methanesulphonate, >25% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+53408-94-9_var0,"Tin (II) methanesulphonate, >25% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+53408-94-9_var0,"Tin (II) methanesulphonate, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+544-76-3_var0,"Hexadecane, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+544-76-3_var0,"Hexadecane, >50% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+5470-11-1_var0,"Hydroxylammonium chloride, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+5470-11-1_var0,"Hydroxylammonium chloride, >26% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+5470-11-1_var0,"Hydroxylammonium chloride, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+5470-11-1_var0,"Hydroxylammonium chloride, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+5470-11-1_var0,"Hydroxylammonium chloride, >26% in a non hazardous diluent",6.9A (oral),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+5470-11-1_var0,"Hydroxylammonium chloride, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+5470-11-1_var0,"Hydroxylammonium chloride, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+5470-11-1_var0,"Hydroxylammonium chloride, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+5470-11-1_var0,"Hydroxylammonium chloride, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+56-93-9_var0,"Benzyltrimethylammonium chloride, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+56-93-9_var0,"Benzyltrimethylammonium chloride, >25% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+56-93-9_var0,"Benzyltrimethylammonium chloride, >25% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+56-93-9_var0,"Benzyltrimethylammonium chloride, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+569-64-2_var0,"Malachite green, >33% in a non hazardous diluent",6.1C (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 3
+569-64-2_var0,"Malachite green, >33% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+569-64-2_var0,"Malachite green, >33% in a non hazardous diluent",6.8B,Suspected human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 2
+569-64-2_var0,"Malachite green, >33% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+569-64-2_var0,"Malachite green, >33% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+569-64-2_var0,"Malachite green, >33% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+569-64-2_var0,"Malachite green, >33% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+57-09-0_var0,"Cetrimonium bromide, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+57-09-0_var0,"Cetrimonium bromide, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+57-09-0_var0,"Cetrimonium bromide, >26% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+57-09-0_var0,"Cetrimonium bromide, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+57-09-0_var0,"Cetrimonium bromide, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+57-09-0_var0,"Cetrimonium bromide, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+57-09-0_var0,"Cetrimonium bromide, >26% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+57-13-6_var1,"Urea, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+57-13-6_var1,"Urea, >26% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+57-13-6_var1,"Urea, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+57-13-6_var1,"Urea, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+573-58-0_var0,"C.I. Direct red 28, >1% in a non hazardous diluent",6.7A,Known or presumed human carcinogens,GHS: Carcinogenicity - Category 1
+573-58-0_var0,"C.I. Direct red 28, >1% in a non hazardous diluent",6.8B,Suspected human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 2
+5949-29-1_var0,"Citric acid, monohydrate, >10% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+5949-29-1_var0,"Citric acid, monohydrate, >10% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+5989-27-5_var2,"Limonene, D-, >50% in a non hazardous diluent",3.1C,Flammable Liquids: medium hazard,GHS: Flammable liquids - Category 3
+5989-27-5_var2,"Limonene, D-, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+5989-27-5_var2,"Limonene, D-, >50% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+5989-27-5_var2,"Limonene, D-, >50% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+5989-27-5_var2,"Limonene, D-, >50% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+5989-27-5_var2,"Limonene, D-, >50% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+5989-27-5_var2,"Limonene, D-, >50% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+5989-27-5_var2,"Limonene, D-, >50% in a non hazardous diluent",9.2B,Ecotoxic in the soil environment,
+61791-24-0_var0,"Soya alkylamine, ethoxylated, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+61791-24-0_var0,"Soya alkylamine, ethoxylated, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+61791-24-0_var0,"Soya alkylamine, ethoxylated, >26% in a non hazardous diluent",9.1B (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+61791-42-2_var0,"Sodium methyl cocoyl taurate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+621-82-9_var0,"Cinnamic acid, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+621-82-9_var0,"Cinnamic acid, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+631-61-8_var0,"Ammonium acetate, >10% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+631-61-8_var0,"Ammonium acetate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+63449-41-2_var0,"Alkyl dimethyl benzyl ammonium chloride, >26% in a non hazardous diluent",6.1C (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 3
+63449-41-2_var0,"Alkyl dimethyl benzyl ammonium chloride, >26% in a non hazardous diluent",6.1C (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 3
+63449-41-2_var0,"Alkyl dimethyl benzyl ammonium chloride, >26% in a non hazardous diluent",6.5A (respiratory),Respiratory sensitisers,GHS: Respiratory sensitization - Category 1
+63449-41-2_var0,"Alkyl dimethyl benzyl ammonium chloride, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+63449-41-2_var0,"Alkyl dimethyl benzyl ammonium chloride, >26% in a non hazardous diluent",6.9B (dermal),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+63449-41-2_var0,"Alkyl dimethyl benzyl ammonium chloride, >26% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+63449-41-2_var0,"Alkyl dimethyl benzyl ammonium chloride, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+63449-41-2_var0,"Alkyl dimethyl benzyl ammonium chloride, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+63449-41-2_var0,"Alkyl dimethyl benzyl ammonium chloride, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+63449-41-2_var0,"Alkyl dimethyl benzyl ammonium chloride, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+63449-41-2_var0,"Alkyl dimethyl benzyl ammonium chloride, >26% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+63451-35-4_var0,"Hydroxy naphthol blue, disodium salt, >1% in a non hazardous diluent",6.7A,Known or presumed human carcinogens,GHS: Carcinogenicity - Category 1
+6358-30-1_var0,"C.I. Pigment violet 23, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+64-02-8_var1,"Tetrasodium EDTA, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+64-02-8_var1,"Tetrasodium EDTA, >26% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+64-02-8_var1,"Tetrasodium EDTA, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+64-17-5_var2,"Ethanol, >50% in a non hazardous diluent",3.1B,Flammable Liquids: high hazard,GHS: Flammable liquids - Category 2
+64-17-5_var2,"Ethanol, >50% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+6419-19-8_var0,"Aminotri(methylenephosphonic acid), >56% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+6419-19-8_var0,"Aminotri(methylenephosphonic acid), >56% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+6419-19-8_var0,"Aminotri(methylenephosphonic acid), >56% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+6440-58-0_var0,"Hydantoin, >26% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+6440-58-0_var0,"Hydantoin, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+6440-58-0_var0,"Hydantoin, >26% in a non hazardous diluent",6.6B,Suspected human mutagens,GHS: Germ cell mutagenicity - Category 2
+6440-58-0_var0,"Hydantoin, >26% in a non hazardous diluent",9.1D (algal),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+6440-58-0_var0,"Hydantoin, >26% in a non hazardous diluent",9.1D (crustacean),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+6440-58-0_var0,"Hydantoin, >26% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+6440-58-0_var0,"Hydantoin, >26% in a non hazardous diluent",9.2D,Slightly harmful in the soil environment,
+64401-02-1_var0,"Bisphenol A ethoxylate diacrylate, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+64401-02-1_var0,"Bisphenol A ethoxylate diacrylate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+66455-14-9_var0,"Alcohols, C12-13, ethoxylated EO5",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+66455-14-9_var0,"Alcohols, C12-13, ethoxylated EO5",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+66455-14-9_var0,"Alcohols, C12-13, ethoxylated EO5",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+66455-14-9_var0,"Alcohols, C12-13, ethoxylated EO5",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+67-48-1_var0,"Choline chloride, =50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+67-48-1_var0,"Choline chloride, =50% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+67-48-1_var0,"Choline chloride, =50% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+67-56-1_var4,"Methanol, >50% in a non hazardous diluent",3.1B,Flammable Liquids: high hazard,GHS: Flammable liquids - Category 2
+67-56-1_var4,"Methanol, >50% in a non hazardous diluent",6.1C (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 3
+67-56-1_var4,"Methanol, >50% in a non hazardous diluent",6.1C (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 3
+67-56-1_var4,"Methanol, >50% in a non hazardous diluent",6.1C (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 3
+67-56-1_var4,"Methanol, >50% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+67-56-1_var4,"Methanol, >50% in a non hazardous diluent",6.8B,Suspected human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 2
+67-56-1_var4,"Methanol, >50% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+67-56-1_var4,"Methanol, >50% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+67-63-0_var2,"2-Propanol, >72% in a non hazardous diluent",3.1B,Flammable Liquids: high hazard,GHS: Flammable liquids - Category 2
+67-63-0_var2,"2-Propanol, >72% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+67-63-0_var2,"2-Propanol, >72% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+67-63-0_var2,"2-Propanol, >72% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+67-64-1_var1,"2-Propanone, >60% in a non hazardous diluent",3.1B,Flammable Liquids: high hazard,GHS: Flammable liquids - Category 2
+67-64-1_var1,"2-Propanone, >60% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+67-64-1_var1,"2-Propanone, >60% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+67-64-1_var1,"2-Propanone, >60% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+68239-93-0_var0,"Dibasic acid ester/ diethylenetriamine/ epichlorohydrin, >5% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+68239-93-0_var0,"Dibasic acid ester/ diethylenetriamine/ epichlorohydrin, >5% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+68308-55-4_var0,"Tallow, hydrogenated, N-aminoethylethanolamine ester, amide, >5% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+68308-55-4_var0,"Tallow, hydrogenated, N-aminoethylethanolamine ester, amide, >5% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+68411-30-3_var1,"Benzenesulphonic acid, C10-13-alkyl derivs., sodium salts, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+68411-30-3_var1,"Benzenesulphonic acid, C10-13-alkyl derivs., sodium salts, >25% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+68411-30-3_var1,"Benzenesulphonic acid, C10-13-alkyl derivs., sodium salts, >25% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+68411-30-3_var1,"Benzenesulphonic acid, C10-13-alkyl derivs., sodium salts, >25% in a non hazardous diluent",9.1D (algal),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+68411-30-3_var1,"Benzenesulphonic acid, C10-13-alkyl derivs., sodium salts, >25% in a non hazardous diluent",9.1D (crustacean),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+68411-30-3_var1,"Benzenesulphonic acid, C10-13-alkyl derivs., sodium salts, >25% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+68411-30-3_var1,"Benzenesulphonic acid, C10-13-alkyl derivs., sodium salts, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+68439-45-2_var0,"Alcohols, C6-12, ethoxylated (5 > EO < 20), >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+68439-45-2_var0,"Alcohols, C6-12, ethoxylated (5 > EO < 20), >26% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+68439-45-2_var0,"Alcohols, C6-12, ethoxylated (5 > EO < 20), >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+68439-45-2_var0,"Alcohols, C6-12, ethoxylated (5 > EO < 20), >26% in a non hazardous diluent",9.1D (algal),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+68439-45-2_var0,"Alcohols, C6-12, ethoxylated (5 > EO < 20), >26% in a non hazardous diluent",9.1D (crustacean),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+68439-45-2_var0,"Alcohols, C6-12, ethoxylated (5 > EO < 20), >26% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+68439-45-2_var0,"Alcohols, C6-12, ethoxylated (5 > EO < 20), >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+68439-46-3_var0,"Alcohols, C9-11, ethoxylated, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+68439-46-3_var0,"Alcohols, C9-11, ethoxylated, >26% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+68439-46-3_var0,"Alcohols, C9-11, ethoxylated, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+68439-46-3_var0,"Alcohols, C9-11, ethoxylated, >26% in a non hazardous diluent",9.1D (algal),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+68439-46-3_var0,"Alcohols, C9-11, ethoxylated, >26% in a non hazardous diluent",9.1D (crustacean),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+68439-46-3_var0,"Alcohols, C9-11, ethoxylated, >26% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+68439-46-3_var0,"Alcohols, C9-11, ethoxylated, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+6864-37-5_var3,"4,4'-Methylenebis(2-methylcyclohexylamine), >33% in a non hazardous diluent",6.1C (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 3
+6864-37-5_var3,"4,4'-Methylenebis(2-methylcyclohexylamine), >33% in a non hazardous diluent",6.1C (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 3
+6864-37-5_var3,"4,4'-Methylenebis(2-methylcyclohexylamine), >33% in a non hazardous diluent",6.1C (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 3
+6864-37-5_var3,"4,4'-Methylenebis(2-methylcyclohexylamine), >33% in a non hazardous diluent",8.2B,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1B
+6864-37-5_var3,"4,4'-Methylenebis(2-methylcyclohexylamine), >33% in a non hazardous diluent",9.1B (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+6864-37-5_var3,"4,4'-Methylenebis(2-methylcyclohexylamine), >33% in a non hazardous diluent",9.1B (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+6864-37-5_var3,"4,4'-Methylenebis(2-methylcyclohexylamine), >33% in a non hazardous diluent",9.1B (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+6864-37-5_var3,"4,4'-Methylenebis(2-methylcyclohexylamine), >33% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+68650-39-5_var0,"Cocoamphocarboxy glycinate, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+68650-39-5_var0,"Cocoamphocarboxy glycinate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+68915-31-1_var0,"Polyphosphoric acids, sodium salts, >1% in a non hazardous diluent",6.9B (oral),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+71-36-3_var2,"1-Butanol, >40% in a non hazardous diluent",3.1C,Flammable Liquids: medium hazard,GHS: Flammable liquids - Category 3
+71-36-3_var2,"1-Butanol, >40% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+71-36-3_var2,"1-Butanol, >40% in a non hazardous diluent",6.1E (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 5
+71-36-3_var2,"1-Butanol, >40% in a non hazardous diluent",6.1E (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 5
+71-36-3_var2,"1-Butanol, >40% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+71-36-3_var2,"1-Butanol, >40% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+71-36-3_var2,"1-Butanol, >40% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+72-57-1_var0,"C.I. Direct Blue 14, >1% in a non hazardous diluent",6.7B,Suspected human carcinogens,GHS: Carcinogenicity - Category 2
+7439-97-6_var0,"Mercury, >26% in a non hazardous diluent",6.1B (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 2
+7439-97-6_var0,"Mercury, >26% in a non hazardous diluent",6.1B (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 2
+7439-97-6_var0,"Mercury, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+7439-97-6_var0,"Mercury, >26% in a non hazardous diluent",6.8A,Known or presumed human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 1
+7439-97-6_var0,"Mercury, >26% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+7439-97-6_var0,"Mercury, >26% in a non hazardous diluent",8.1A,Corrosive to metals,GHS: Corrosive to metals - Category 1
+7439-97-6_var0,"Mercury, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+7439-97-6_var0,"Mercury, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+7439-97-6_var0,"Mercury, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+7439-97-6_var0,"Mercury, >26% in a non hazardous diluent",9.1A (other),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+7439-97-6_var0,"Mercury, >26% in a non hazardous diluent",9.2B,Ecotoxic in the soil environment,
+7439-97-6_var0,"Mercury, >26% in a non hazardous diluent",9.3A,Very ecotoxic to terrestrial vertebrates,
+75-09-2_var0,"Dichloromethane, >71% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+75-09-2_var0,"Dichloromethane, >71% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+75-09-2_var0,"Dichloromethane, >71% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+75-09-2_var0,"Dichloromethane, >71% in a non hazardous diluent",6.7B,Suspected human carcinogens,GHS: Carcinogenicity - Category 2
+75-09-2_var0,"Dichloromethane, >71% in a non hazardous diluent",6.9B (inhalation),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+75-09-2_var0,"Dichloromethane, >71% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+75-12-7_var0,"Formamide, >1% in a non hazardous diluent",6.8A,Known or presumed human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 1
+75-57-0_var0,"Tetramethylammonium chloride, >33% in a non hazardous diluent",6.1C (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 3
+75-57-0_var0,"Tetramethylammonium chloride, >33% in a non hazardous diluent",6.1C (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 3
+75-57-0_var0,"Tetramethylammonium chloride, >33% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+7550-35-8_var0,"Lithium bromide, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+7550-35-8_var0,"Lithium bromide, >25% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+7631-99-4_var0,"Sodium nitrate, >64% in a non hazardous diluent",5.1.1C,Oxidising substances that are liquids or solids: low hazard,GHS: Oxidizing liquids/solids - Category 3
+7631-99-4_var0,"Sodium nitrate, >64% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+7631-99-4_var0,"Sodium nitrate, >64% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+7681-38-1_var0,"Sodium hydrogen sulphate, >3% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+7681-38-1_var0,"Sodium hydrogen sulphate, >3% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+77-92-9_var3,"Citric acid, >50% in a non hazardous diluent",6.1E (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 5
+77-92-9_var3,"Citric acid, >50% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+77-92-9_var3,"Citric acid, >50% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+7722-64-7_var2,"Potassium permanganate, >38% in a non hazardous diluent",5.1.1B,Oxidising substances that are liquids or solids: medium hazard,GHS: Oxidizing liquids/solids - Category 2
+7722-64-7_var2,"Potassium permanganate, >38% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+7722-64-7_var2,"Potassium permanganate, >38% in a non hazardous diluent",6.8B,Suspected human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 2
+7722-64-7_var2,"Potassium permanganate, >38% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+7722-64-7_var2,"Potassium permanganate, >38% in a non hazardous diluent",6.9B (oral),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+7722-64-7_var2,"Potassium permanganate, >38% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+7722-64-7_var2,"Potassium permanganate, >38% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+7722-64-7_var2,"Potassium permanganate, >38% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+7722-64-7_var2,"Potassium permanganate, >38% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+7722-64-7_var2,"Potassium permanganate, >38% in a non hazardous diluent",9.2A,Very ecotoxic in the soil environment,
+7722-64-7_var2,"Potassium permanganate, >38% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+7733-02-0_var1,"Zinc sulphate, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+7733-02-0_var1,"Zinc sulphate, >26% in a non hazardous diluent",6.9B (oral),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+7733-02-0_var1,"Zinc sulphate, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+7733-02-0_var1,"Zinc sulphate, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+7733-02-0_var1,"Zinc sulphate, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+7733-02-0_var1,"Zinc sulphate, >26% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+7733-02-0_var1,"Zinc sulphate, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+7758-11-4_var0,"Dipotassium phosphate, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+7758-11-4_var0,"Dipotassium phosphate, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+7758-19-2_var2,"Sodium chlorite, >46% in a non hazardous diluent",5.1.1B,Oxidising substances that are liquids or solids: medium hazard,GHS: Oxidizing liquids/solids - Category 2
+7758-19-2_var2,"Sodium chlorite, >46% in a non hazardous diluent",6.1B (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 2
+7758-19-2_var2,"Sodium chlorite, >46% in a non hazardous diluent",6.1B (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 2
+7758-19-2_var2,"Sodium chlorite, >46% in a non hazardous diluent",6.1C (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 3
+7758-19-2_var2,"Sodium chlorite, >46% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+7758-19-2_var2,"Sodium chlorite, >46% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+7758-19-2_var2,"Sodium chlorite, >46% in a non hazardous diluent",6.8A,Known or presumed human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 1
+7758-19-2_var2,"Sodium chlorite, >46% in a non hazardous diluent",6.9B (oral),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+7758-19-2_var2,"Sodium chlorite, >46% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+7758-19-2_var2,"Sodium chlorite, >46% in a non hazardous diluent",9.1D (algal),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+7758-19-2_var2,"Sodium chlorite, >46% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+7758-19-2_var2,"Sodium chlorite, >46% in a non hazardous diluent",9.2A,Very ecotoxic in the soil environment,
+7758-19-2_var2,"Sodium chlorite, >46% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+7758-23-8_var0,"Calcium bis(dihydrogen phosphate), >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+7758-23-8_var0,"Calcium bis(dihydrogen phosphate), >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+7772-98-7_var1,"Sodium thiosulphate, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+7772-98-7_var1,"Sodium thiosulphate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+7772-98-7_var1,"Sodium thiosulphate, >10% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+7778-80-5_var0,"Dipotassium sulphate , >10% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+7782-61-8_var0,"Iron (III) nitrate nonahydrate, >10% in a non hazardous diluent",5.1.1C,Oxidising substances that are liquids or solids: low hazard,GHS: Oxidizing liquids/solids - Category 3
+7782-61-8_var0,"Iron (III) nitrate nonahydrate, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+7782-61-8_var0,"Iron (III) nitrate nonahydrate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+7782-91-4_var1,"Molybdic acid, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+7782-91-4_var1,"Molybdic acid, >10% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+7782-91-4_var1,"Molybdic acid, >10% in a non hazardous diluent",6.9A (oral),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+7783-56-4_var0,"Antimony (III) fluoride, >34% in a non hazardous diluent",6.1C (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 3
+7783-56-4_var0,"Antimony (III) fluoride, >34% in a non hazardous diluent",6.1C (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 3
+7783-56-4_var0,"Antimony (III) fluoride, >34% in a non hazardous diluent",6.1C (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 3
+7783-56-4_var0,"Antimony (III) fluoride, >34% in a non hazardous diluent",9.1B (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+7783-56-4_var0,"Antimony (III) fluoride, >34% in a non hazardous diluent",9.1B (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+7783-56-4_var0,"Antimony (III) fluoride, >34% in a non hazardous diluent",9.1B (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+7783-56-4_var0,"Antimony (III) fluoride, >34% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+7784-27-2_var0,"Aluminium nitrate nonahydrate, >10% in a non hazardous diluent",5.1.1C,Oxidising substances that are liquids or solids: low hazard,GHS: Oxidizing liquids/solids - Category 3
+7784-27-2_var0,"Aluminium nitrate nonahydrate, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+7784-27-2_var0,"Aluminium nitrate nonahydrate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+7784-46-5_var0,"Sodium arsenite, >26% in a non hazardous diluent",6.1C (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 3
+7784-46-5_var0,"Sodium arsenite, >26% in a non hazardous diluent",6.1C (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 3
+7784-46-5_var0,"Sodium arsenite, >26% in a non hazardous diluent",6.1C (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 3
+7784-46-5_var0,"Sodium arsenite, >26% in a non hazardous diluent",6.7A,Known or presumed human carcinogens,GHS: Carcinogenicity - Category 1
+7784-46-5_var0,"Sodium arsenite, >26% in a non hazardous diluent",9.1D (algal),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+7784-46-5_var0,"Sodium arsenite, >26% in a non hazardous diluent",9.1D (crustacean),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+7784-46-5_var0,"Sodium arsenite, >26% in a non hazardous diluent",9.1D (fish),Slightly harmful in the aquatic environment or are otherwise designed for biocidal action,GHS: Aquatic toxicity - Category 2-3 (Acute) or Category 4 (Chronic)
+7784-46-5_var0,"Sodium arsenite, >26% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+7789-02-8_var0,"Chromium (III) nitrate, nonahydrate, >10% in a non hazardous diluent",5.1.1C,Oxidising substances that are liquids or solids: low hazard,GHS: Oxidizing liquids/solids - Category 3
+7789-02-8_var0,"Chromium (III) nitrate, nonahydrate, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+7789-02-8_var0,"Chromium (III) nitrate, nonahydrate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+7790-62-7_var0,"Potassium pyrosulphate, >5% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+7790-62-7_var0,"Potassium pyrosulphate, >5% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+78-70-6_var1,"Linalool, >50% in a non hazardous diluent",3.1D,Flammable Liquids: low hazard,GHS: Flammable liquids - Category 4
+78-70-6_var1,"Linalool, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+78-70-6_var1,"Linalool, >50% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+78-83-1_var1,"Isobutanol, >50% in a non hazardous diluent",3.1C,Flammable Liquids: medium hazard,GHS: Flammable liquids - Category 3
+78-83-1_var1,"Isobutanol, >50% in a non hazardous diluent",6.1E (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 5
+78-83-1_var1,"Isobutanol, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+78-83-1_var1,"Isobutanol, >50% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+78-83-1_var1,"Isobutanol, >50% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+78-93-3_var0,"2-Butanone, >50% in a non hazardous diluent",3.1B,Flammable Liquids: high hazard,GHS: Flammable liquids - Category 2
+78-93-3_var0,"2-Butanone, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+78-93-3_var0,"2-Butanone, >50% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+78-93-3_var0,"2-Butanone, >50% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+78-93-3_var0,"2-Butanone, >50% in a non hazardous diluent",6.9B (inhalation),Harmful to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 2
+8004-92-0_var0,"C.I. Acid Yellow 3, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+8004-92-0_var0,"C.I. Acid Yellow 3, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+8044-71-1_var0,"Cetrimide, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+8044-71-1_var0,"Cetrimide, >26% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+8044-71-1_var0,"Cetrimide, >26% in a non hazardous diluent",8.2C,Corrosive to dermal tissue,GHS: Skin corrosion/irritation - Category 1C
+8044-71-1_var0,"Cetrimide, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+8044-71-1_var0,"Cetrimide, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+8044-71-1_var0,"Cetrimide, >26% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+8044-71-1_var0,"Cetrimide, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+822-16-2_var0,"Sodium stearate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+87-90-1_var0,"Trichloroisocyanuric acid, >25% in a non hazardous diluent",5.1.1B,Oxidising substances that are liquids or solids: medium hazard,GHS: Oxidizing liquids/solids - Category 2
+87-90-1_var0,"Trichloroisocyanuric acid, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+87-90-1_var0,"Trichloroisocyanuric acid, >25% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+87-90-1_var0,"Trichloroisocyanuric acid, >25% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+87-90-1_var0,"Trichloroisocyanuric acid, >25% in a non hazardous diluent",9.1A (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+87-90-1_var0,"Trichloroisocyanuric acid, >25% in a non hazardous diluent",9.1A (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+87-90-1_var0,"Trichloroisocyanuric acid, >25% in a non hazardous diluent",9.2D,Slightly harmful in the soil environment,
+87-90-1_var0,"Trichloroisocyanuric acid, >25% in a non hazardous diluent",9.3B,Ecotoxic to terrestrial vertebrates,
+872-50-4_var2,"Methylpyrrolidone, >70% in a non hazardous diluent",3.1D,Flammable Liquids: low hazard,GHS: Flammable liquids - Category 4
+872-50-4_var2,"Methylpyrrolidone, >70% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+872-50-4_var2,"Methylpyrrolidone, >70% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+872-50-4_var2,"Methylpyrrolidone, >70% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+872-50-4_var2,"Methylpyrrolidone, >70% in a non hazardous diluent",6.8A,Known or presumed human reproductive or developmental toxicants,GHS: Reproductive toxicity - Category 1
+88-99-3_var0,"Phthalic acid, >10% in a non hazardous diluent",6.3A,Irritating to the skin,GHS: Skin corrosion/irritation - Category 2
+88-99-3_var0,"Phthalic acid, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+9000-90-2_var0,"alpha-Amylase, >1% in a non hazardous diluent",6.5A (respiratory),Respiratory sensitisers,GHS: Respiratory sensitization - Category 1
+9002-93-1_var0,"Octoxynol, >26% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4
+9002-93-1_var0,"Octoxynol, >26% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+9002-93-1_var0,"Octoxynol, >26% in a non hazardous diluent",8.3A,Corrosive to ocular tissue,GHS: Serious eye damage/eye irritation - Category 1
+9002-93-1_var0,"Octoxynol, >26% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+9002-93-1_var0,"Octoxynol, >26% in a non hazardous diluent",9.1B (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+9002-93-1_var0,"Octoxynol, >26% in a non hazardous diluent",9.3C,Harmful to terrestrial vertebrates,
+9002-98-6_var0,"Polyethyleneimine, >26% in a non hazardous diluent",9.1B (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+9002-98-6_var0,"Polyethyleneimine, >26% in a non hazardous diluent",9.1B (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+9002-98-6_var0,"Polyethyleneimine, >26% in a non hazardous diluent",9.1B (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+9003-04-7_var0,"Sodium polyacrylate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+9004-32-4_var0,"Sodium carboxymethylcellulose, >26% in a non hazardous diluent",9.1C (crustacean),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+9006-65-9_var0,"Dimethicone, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+9016-45-9_var1,"Polyethylene glycol nonylphenyl ether, >50% in a non hazardous diluent",6.1E (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 5
+9016-45-9_var1,"Polyethylene glycol nonylphenyl ether, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+9016-45-9_var1,"Polyethylene glycol nonylphenyl ether, >50% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+9016-45-9_var1,"Polyethylene glycol nonylphenyl ether, >50% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+9016-45-9_var1,"Polyethylene glycol nonylphenyl ether, >50% in a non hazardous diluent",9.1B (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+9016-45-9_var1,"Polyethylene glycol nonylphenyl ether, >50% in a non hazardous diluent",9.1B (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+9016-45-9_var1,"Polyethylene glycol nonylphenyl ether, >50% in a non hazardous diluent",9.1C (algal),Harmful in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 3
+9016-87-9_var0,"Polymethylene polyphenylisocyanate, >10% in a non hazardous diluent",6.1B (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 2
+9016-87-9_var0,"Polymethylene polyphenylisocyanate, >10% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+9016-87-9_var0,"Polymethylene polyphenylisocyanate, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+9016-87-9_var0,"Polymethylene polyphenylisocyanate, >10% in a non hazardous diluent",6.9A (inhalation),Toxic to human target organs or systems,GHS: Specific Target Organ Systemic Toxicity - Category 1
+9036-19-5_var2,"Ethoxylated octyl phenol, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+9036-19-5_var2,"Ethoxylated octyl phenol, >50% in a non hazardous diluent",6.3B,Mildly irritating to the skin,GHS: Skin corrosion/irritation - Category 3
+9036-19-5_var2,"Ethoxylated octyl phenol, >50% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+9036-19-5_var2,"Ethoxylated octyl phenol, >50% in a non hazardous diluent",9.1A (algal),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Acute or Chronic) - Category 1
+9036-19-5_var2,"Ethoxylated octyl phenol, >50% in a non hazardous diluent",9.1B (crustacean),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+9036-19-5_var2,"Ethoxylated octyl phenol, >50% in a non hazardous diluent",9.1B (fish),Very ecotoxic in the aquatic environment,GHS: Aquatic toxicity (Chronic) - Category 2
+9084-06-4_var0,"Sodium polynaphthalene sulphonate, >50% in a non hazardous diluent",6.1E (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 5
+928-95-0_var0,"2-Hexen-1-ol, trans-, >1% in a non hazardous diluent",3.1C,Flammable Liquids: medium hazard,GHS: Flammable liquids - Category 3
+93763-70-3_var0,"Perlite, >10% in a non hazardous diluent",6.4A,Irritating to the eye,GHS: Serious eye damage/eye irritation - Category 2
+95154-01-1_var0,"(Benzothiazol-2-ylthio)succinic acid, >1% in a non hazardous diluent",6.5B (contact),Contact sensitisers,GHS: Skin sensitization - Category 1
+98-00-0_var0,"Furfuryl alcohol, >25% in a non hazardous diluent",6.1D (dermal),Acutely toxic,GHS: Acute toxicity: Dermal - Category 4
+98-00-0_var0,"Furfuryl alcohol, >25% in a non hazardous diluent",6.1D (inhalation),Acutely toxic,GHS: Acute toxicity: Inhalation - Category 4
+98-00-0_var0,"Furfuryl alcohol, >25% in a non hazardous diluent",6.1D (oral),Acutely toxic,GHS: Acute toxicity: Oral - Category 4

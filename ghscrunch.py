@@ -676,19 +676,18 @@ def crunch_nz():
         # add a flag to the CASRN field to help with identifier wrangling.
         for i in range(len(names)):
             thisclass = sorted(chemicals[casrn][names[i]])
-            if thisclass == pclass and '%' in names[i]:
-                # Redundant substances:
-                # Based on inspection of the current dataset, I only want to
-                # filter out names that contain '%' (solutions).
+            if False not in [c in pclass for c in thisclass]:
+                # Redundant: All classifications are included within the
+                # principal substance's classifications.
                 for c in thisclass:
                     writer_no.writerow(
-                        [casrn + '_var' + str(i), names[i], c] + 
+                        ['_v' + str(i) + '_' + casrn, names[i], c] + 
                          sublists[c][1:])
             else:
-                # Non-redundant substances:
+                # Not redundant.      
                 for c in thisclass:
                     writer_yes.writerow(
-                        [casrn + '_var' + str(i), names[i], c] + 
+                        ['_v' + str(i) + '_' + casrn, names[i], c] + 
                          sublists[c][1:])
     outfile_yes.close()
     outfile_no.close()

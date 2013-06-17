@@ -635,13 +635,16 @@ def crunch_nz():
         # In the dictionary chemicals, each key will be a CASRN, and each 
         # corresponding value will itself be a dict; its keys will be
         # each different chemical name that's assigned to that CASRN.
-        # The values for those keys will be lists of classification codes.
+        # The values for those keys will be sets of classification codes.
+        # Note: if a chemical is listed with the same classification twice,
+        # it will only show up once in the output of this program. Seems to
+        # happen just a handful of times.
         if casrn not in chemicals:
-            chemicals[casrn] = dict([(name, [c])])
+            chemicals[casrn] = {name: set([c])}
         elif name not in chemicals[casrn]:
-            chemicals[casrn][name] = [c]
+            chemicals[casrn][name] = set([c])
         else: 
-            chemicals[casrn][name].append(c)
+            chemicals[casrn][name].add(c)
     # Create two output files...
     outfile_yes = open('GHS-nz/output/GHS-nz.csv', 'w', newline='')
     outfile_no = open('GHS-nz/output/GHS-nz-omit.csv', 'w', newline='')
@@ -651,12 +654,10 @@ def crunch_nz():
               'HSNO classification text', 'GHS translation']
     writer_yes.writerow(header)
     writer_no.writerow(header)
-    # Now attempt to filter out 'redundant' substances: variants of another 
-    # substance (identified by the same CASRN but different name, e.g. a 10%
-    # solution), which duplicate its classification so there's no difference
-    # in terms of safety. Output omitted substances separately.
-    # This is done for practical reasons only.
+    # Now attempt to filter out 'redundant' substances and output omitted
+    # substances separately. This is done for practical reasons only.
     for casrn in sorted(chemicals.keys()):
+        # The list of names given to this CASRN:
         names = sorted(chemicals[casrn].keys())
         # Find the principal (definitely non-redundant) substance from the 
         # list of names. Default to the first name if they all contain %.
@@ -665,27 +666,27 @@ def crunch_nz():
             if '%' not in names[i]:
                 p = i
                 break
-        # Having found the principal substance, take it out of the list, and 
-        # save & output its classifications.
+        # Having found the principal substance, pop it out of the list of
+        # names, save its set of classifications, and output them.
         pname = names.pop(p)
-        pclass = sorted(chemicals[casrn][pname])
-        for c in pclass:
+        pclass = chemicals[casrn][pname]
+        for c in sorted(pclass):
             writer_yes.writerow([casrn, pname, c] + sublists[c][1:])
         # Next, screen the rest of the named substances against the principal.
         # Since these all should be variants of the principal substance, I'll
         # add a flag to the CASRN field to help with identifier wrangling.
         for i in range(len(names)):
-            thisclass = sorted(chemicals[casrn][names[i]])
-            if False not in [c in pclass for c in thisclass]:
+            thisclass = chemicals[casrn][names[i]]
+            if thisclass <= pclass:
                 # Redundant: All classifications are included within the
                 # principal substance's classifications.
-                for c in thisclass:
+                for c in sorted(thisclass):
                     writer_no.writerow(
                         ['_v' + str(i) + '_' + casrn, names[i], c] + 
                          sublists[c][1:])
             else:
                 # Not redundant.      
-                for c in thisclass:
+                for c in sorted(thisclass):
                     writer_yes.writerow(
                         ['_v' + str(i) + '_' + casrn, names[i], c] + 
                          sublists[c][1:])

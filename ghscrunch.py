@@ -603,7 +603,7 @@ def crunch_nz():
         # Approval              (r, 2) - ignored
         # Classification Text   (r, 3)
         # Classification Code   (r, 4)
-        # Key Study             (r, 5) - could be useful but ignored here
+        # Key Study             (r, 5) - could be useful but ignored for now
         casrn = str(ccid.cell_value(r, 0)).strip()
         # There is conveniently one substance without a CASRN. If there were
         # more, it might pose a problem for the redundancy filtering (below).
@@ -646,32 +646,52 @@ def crunch_nz():
         else: 
             chemicals[casrn][name].add(c)
     # Create two output files...
-    outfile_yes = open('GHS-nz/output/GHS-nz.csv', 'w', newline='')
-    outfile_no = open('GHS-nz/output/GHS-nz-omit.csv', 'w', newline='')
-    writer_yes = csv.writer(outfile_yes, dialect='excel')
-    writer_no = csv.writer(outfile_no, dialect='excel')
+    outfile_inc = open('GHS-nz/output/GHS-nz.csv', 'w', newline='')
+    outfile_var = open('GHS-nz/output/variants.csv', 'w', newline='')
+    outfile_diff = open('GHS-nz/output/var-diff.csv', 'w', newline='')
+    outfile_exc = open('GHS-nz/output/exclude.csv', 'w', newline='')
+    writer_inc = csv.writer(outfile_inc, dialect='excel')
+    writer_var = csv.writer(outfile_var, dialect='excel')
+    writer_diff = csv.writer(outfile_diff, dialect='excel')
+    writer_exc = csv.writer(outfile_exc, dialect='excel')
     header = ['CASRN', 'Substance name', 'HSNO code',
               'HSNO classification text', 'GHS translation']
-    writer_yes.writerow(header)
-    writer_no.writerow(header)
-    # Now attempt to filter out 'redundant' substances and output omitted
-    # substances separately. This is done for practical reasons only.
+    writer_inc.writerow(header)
+    writer_var.writerow(header)
+    writer_exc.writerow(header)
+    writer_diff.writerow(
+        ['CASRN', 'Pure substance (program deduced)', 'Variant name',
+         'Additional classifications', 'Lacking classifications'])
+    # The following section attempts to filter the list so that pure
+    # substances, solutions, and 'redundant' solutions are output in separate
+    # files. This is done for practical reasons, to avoid minting hundreds of
+    # identifiers for differently-dilute solutions of the same chemical.
     for casrn in sorted(chemicals.keys()):
         # The list of names given to this CASRN:
         names = sorted(chemicals[casrn].keys())
         # Find the principal (definitely non-redundant) substance from the 
-        # list of names. Default to the first name if they all contain %.
-        p = 0
-        for i in range(len(names)):
-            if '%' not in names[i]:
-                p = i
+        # list of names. If they all contain %, then there's no pure substance.
+        p = -1
+        for k in range(len(names)):
+            if '%' not in names[k]:
+                p = k
                 break
+        # If we didn't find any pure substances, assume they are all 
+        # potentially non-redundant; output and continue to next CASRN.
+        if p == -1:
+            for j in range(len(names)):
+                classlist = sorted(chemicals[casrn][names[j]])
+                for c in classlist:
+                    writer_var.writerow(
+                        ['_v' + str(j) + '_' + casrn, names[j], c] + 
+                         sublists[c][1:])
+            continue
         # Having found the principal substance, pop it out of the list of
         # names, save its set of classifications, and output them.
         pname = names.pop(p)
         pclass = chemicals[casrn][pname]
         for c in sorted(pclass):
-            writer_yes.writerow([casrn, pname, c] + sublists[c][1:])
+            writer_inc.writerow([casrn, pname, c] + sublists[c][1:])
         # Next, screen the rest of the named substances against the principal.
         # Since these all should be variants of the principal substance, I'll
         # add a flag to the CASRN field to help with identifier wrangling.
@@ -681,22 +701,29 @@ def crunch_nz():
                 # Redundant: All classifications are included within the
                 # principal substance's classifications.
                 for c in sorted(thisclass):
-                    writer_no.writerow(
+                    writer_exc.writerow(
                         ['_v' + str(i) + '_' + casrn, names[i], c] + 
                          sublists[c][1:])
             else:
-                # Not redundant.      
+                # Not redundant, but set aside for further scrutiny.
+                writer_diff.writerow(
+                    [casrn, pname, names[i], 
+                     str(sorted(thisclass - pclass)).strip("[]'").replace("'",
+                                                                          ''),
+                     str(sorted(pclass - thisclass)).strip("[]'").replace("'",
+                                                                          '')])
                 for c in sorted(thisclass):
-                    writer_yes.writerow(
+                    writer_var.writerow(
                         ['_v' + str(i) + '_' + casrn, names[i], c] + 
                          sublists[c][1:])
-    outfile_yes.close()
-    outfile_no.close()
+    outfile_inc.close()
+    outfile_var.close()
+    outfile_diff.close()
+    outfile_exc.close()
     # Output some helpful information about the classification sublists.
     subs = sorted(sublists.keys())
     subfile = open('GHS-nz/output/sublists.csv', 'w', newline='')
     subwriter = csv.writer(subfile)
-    # These are the fields I want:
     subwriter.writerow(['HSNO code', 'HSNO classification', 'GHS translation'])
     for sl in subs:
         subwriter.writerow([sl] + [sublists[sl][0], sublists[sl][2]])

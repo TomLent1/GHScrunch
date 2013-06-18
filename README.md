@@ -33,14 +33,14 @@ Finally, the program also produces a table (CSV) of all unique classification co
 ### Japan: GHS Classifications ###
 
 * Classification results of 1424 chemicals by Inter-ministerial Committee (2006)
-* Classification Results of 52 chemicals by METI (2007)
-* Classification Results of 93 chemicals by METI and MOE (2008)
+* Classification Results of 52 chemicals by METI (2007) - 20 new chemicals, 32 revisions
+* Classification Results of 93 chemicals by METI and MOE (2008) - 89 new chemicals, 4 revisions
 * All were downloaded from [NITE GHS website](http://www.safe.nite.go.jp/english/ghs_index.html)
 * Files are in `GHS-jp/`, output is in `GHS-jp/output/`
 
-All three batches of classifications are distributed in series of Excel workbooks (xls), each containing up to 100 sheets. Each sheet contains the classification results for one chemical in an identical layout. Chemicals are identified by an index ID, CASRN, and chemical name. The 2006 classifications appear to be based on the first edition of GHS or on Revision 1. The subsequent classifications (which include new chemicals and updates to previously classified chemicals) are based on Revision 2. This program compiles the cumulative results of all the classifications and their updates and produces output (CSV files) organized by hazard class. 
+**What the program does:** Compiles the cumulative results of all chemical classifications and revisions. Produces output organized by hazard class: one CSV file per hazard class (e.g. `GHS-jp/output/mutagen.csv`), containing classifications of every individual chemical in the dataset for that hazard class. For consistency with standard GHS and GreenScreen, the program splits "Respiratory/skin sensitizer" classifications into separate respiratory and skin sensitization classes. Outputs an index of all chemicals in the dataset, `GHS-jp/output/index.csv`, for diagnostic purposes.
 
-For consistency with standard GHS and GreenScreen, the program teases apart "Respiratory/skin sensitizer" classifications into separate respiratory and skin sensitization subcategories. 
+**How the data source is organized:** All three batches of classifications (2006, 2007, 2008) are distributed in series of Excel workbooks, each containing up to 100 sheets. Each sheet contains the classification results for one chemical in an identical layout. Chemicals are identified by an index ID, CASRN, and chemical name. Japanese government's classification manual, used for the initial (2006) classifications, is included: `GHS-jp/ghs_manual_e(2005).pdf`. The subsequent classifications (which include new chemicals and updates to previously classified chemicals) are based on GHS Revision 2. 
 
 For each hazard class, the spreadsheets tabulate the following results of chemical evaluations: 
 - Classification
@@ -55,8 +55,6 @@ The Classification field may contain any of the following things:
 - "Classification not possible" - This means that there were no data with which to evaluate the substance. Different from "Not classified."
 - "Not applicable" - Classification criteria are not applicable to this substance.
 
-The hazard statement fields could be informative, but I still need to figure out what to do with them.
-
 
 ### Republic of Korea: GHS Classifications ###
 
@@ -65,11 +63,14 @@ The hazard statement fields could be informative, but I still need to figure out
 * Downloaded from [this page](http://ncis.nier.go.kr/ghs/search/searchlist_view.jsp?seq=17)
 * Files are in `GHS-kr/`, output is in `GHS-kr/output/`
 
-The document is in 한국어, with only substance names in English. Fortunately, it is straightforwardly structured and includes numeric GHS chapter references for hazard classes, and H-statement codes. I was able to confirm my understanding of the document using Google Translate. This program produces a table (CSV) of substance names; CASRN; combined hazard class, category, and H-statements (in English); and M-factors. It further produces a text file containing a list of all unique combined hazard class/category/H-statement fields that appear in the dataset.
+**What the program does:** 
+This program produces `GHS-kr/output/GHS-kr.csv` containing a table of substance names, CASRN, combined hazard class/category/H-statements (in English), and M-factors. It further produces a text file `GHS-kr/output/hazards.txt` containing a list of all unique combined hazard class/category/H-statement fields that appear in the dataset.
 
-In the spreadsheet, each line describes one substance with one hazard classification. Columns E-F are the hazard class and category, respectively (e.g. the first one is Oxidizing solids (2.14), Category 3). Columns G-J are for labelling, respectively: symbol (coded), signal word, and hazard statement (coded), and M-factor. The program takes into account the multi-row merged cells which span classifications for the same CASRN (to avoid having many empty CASRN fields).
+**How the data source is organized:** The document is in 한국어, with only substance names in English. It is straightforwardly structured and includes numeric GHS chapter references for hazard classes, and H-statement codes. I was able to convincingly translate the key elements of the document using Google Translate (some of my notes are in `GHS-kr/GHS-kr-trans-attempt.ods`, LibreOffice spreadsheet). 
 
-Using the hazard class names allows us (via Google Translate) to distinguish the following hazards that have the same GHS chapter number:
+In the original spreadsheet, each line describes one substance with one hazard classification. Columns E-F are the hazard class and category, respectively (e.g. the first one is Oxidizing solids (2.14), Category 3). Columns G-J are for labelling, respectively: symbol (coded), signal word, and hazard statement (coded), and M-factor. The program takes into account the multi-row merged cells which span classifications for the same CASRN (to avoid having many empty CASRN fields).
+
+Using the hazard class names allows (via Google Translate) distinguishing the following hazards that have the same GHS chapter number:
 * 급성 독성-경구 (3.1) = Acute toxicity - oral
 * 급성 독성-경피 (3.1) = Acute toxicity - dermal
 * 급성 독성-흡입 (3.1) = Acute toxicity - inhalation

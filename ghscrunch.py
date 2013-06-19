@@ -603,65 +603,64 @@ def crunch_nz():
         # Approval              (r, 2) - ignored
         # Classification Text   (r, 3)
         # Classification Code   (r, 4)
-        # Key Study             (r, 5) - could be useful but ignored for now
+        # Key Study             (r, 5)
         casrn = str(ccid.cell_value(r, 0)).strip()
         # There is conveniently one substance without a CASRN. If there were
         # more, it might pose a problem for the redundancy filtering (below).
         if casrn == '':
             casrn = 'no_id'
         name = ccid.cell_value(r, 1).strip()
+        # The following needs to be known for every substance:
         c = str(ccid.cell_value(r, 4))  # Classification code
-        t = ccid.cell_value(r, 3)       # Classification text
+        k = str(ccid.cell_value(r, 5))  # Key study
         # Fix inconsistent spaces around punctuation (for style):
         if '(' in c:
             c = c[:c.index('(')].strip() + ' ' + c[c.index('('):].strip()
-        if ':' in t:
-            t = t[:t.index(':')].strip() + ': ' + t[t.index(':')+1:].strip()
-        # I also want to combine classification codes and text, e.g.
-        #   "3.1D - Flammable Liquids: low hazard"
-        s = c + ' - ' + t
-        # Find the appropriate GHS translation, if any.
-        if hsno_ghs[c] != '':
-            # For my purposes I want it to say 'GHS: ' at the beginning.
-            g = 'GHS: ' + hsno_ghs[c][0] + ' - ' + hsno_ghs[c][1]
-        else:
-            g = ''
         # Keep track of what classifications actually show up in the dataset,
         # and store them in a dict where the keys are classification codes.
         if c not in sublists:
+            # Tidy up classification text:
+            t = ccid.cell_value(r, 3)
+            if ':' in t:
+                t = t[:t.index(':')].strip() + ': ' + \
+                    t[t.index(':')+1:].strip()
+            # I also want to combine classification codes and text, e.g.
+            #   "3.1D - Flammable Liquids: low hazard"
+            s = c + ' - ' + t
+            # Find the appropriate GHS translation, if any.
+            if hsno_ghs[c] != '':
+                # For my purposes I want it to say 'GHS: ' at the beginning.
+                g = 'GHS: ' + hsno_ghs[c][0] + ' - ' + hsno_ghs[c][1]
+            else:
+                g = ''
             sublists[c] = [s, t, g]
-        # Now put the chemical classifications into a data structure from
-        # which we can filter out redundant variants of substances.
-        # In the dictionary chemicals, each key will be a CASRN, and each 
-        # corresponding value will itself be a dict; its keys will be
-        # each different chemical name that's assigned to that CASRN.
-        # The values for those keys will be sets of classification codes.
-        # Note: if a chemical is listed with the same classification twice,
-        # it will only show up once in the output of this program. Seems to
-        # happen just a handful of times.
+        # Now put the chemical classifications into a convoluted data 
+        # structure from which we can filter out redundant variants.
+        # In the dictionary chemicals, each key is a CASRN, and each 
+        # corresponding value is itself a dictionary. The keys of that dict
+        # are all the different chemical names assigned to that CASRN.
+        # The values for those keys will be dictionaries (!) where the keys
+        # are classification codes and the values are key study summaries. 
         if casrn not in chemicals:
-            chemicals[casrn] = {name: set([c])}
+            chemicals[casrn] = {name: {c: k}}
         elif name not in chemicals[casrn]:
-            chemicals[casrn][name] = set([c])
+            chemicals[casrn][name] = {c: k}
+        elif c in chemicals[casrn][name]:
+            chemicals[casrn][name][c] = chemicals[casrn][name][c] + '\n' + k
         else: 
-            chemicals[casrn][name].add(c)
-    # Create two output files...
+            chemicals[casrn][name][c] = k
+    # Create output files...
     outfile_inc = open('GHS-nz/output/GHS-nz.csv', 'w', newline='')
     outfile_var = open('GHS-nz/output/variants.csv', 'w', newline='')
-    outfile_diff = open('GHS-nz/output/var-diff.csv', 'w', newline='')
     outfile_exc = open('GHS-nz/output/exclude.csv', 'w', newline='')
     writer_inc = csv.writer(outfile_inc, dialect='excel')
     writer_var = csv.writer(outfile_var, dialect='excel')
-    writer_diff = csv.writer(outfile_diff, dialect='excel')
     writer_exc = csv.writer(outfile_exc, dialect='excel')
     header = ['CASRN', 'Substance name', 'HSNO code',
-              'HSNO classification text', 'GHS translation']
+              'HSNO classification text', 'GHS translation', 'Key study']
     writer_inc.writerow(header)
     writer_var.writerow(header)
     writer_exc.writerow(header)
-    writer_diff.writerow(
-        ['CASRN', 'Pure substance (program deduced)', 'Variant name',
-         'Additional classifications', 'Lacking classifications'])
     # The following section attempts to filter the list so that pure
     # substances, solutions, and 'redundant' solutions are output in separate
     # files. This is done for practical reasons, to avoid minting hundreds of
@@ -672,53 +671,49 @@ def crunch_nz():
         # Find the principal (definitely non-redundant) substance from the 
         # list of names. If they all contain %, then there's no pure substance.
         p = -1
-        for k in range(len(names)):
-            if '%' not in names[k]:
-                p = k
+        for i in range(len(names)):
+            if '%' not in names[i]:
+                p = i
                 break
         # If we didn't find any pure substances, assume they are all 
         # potentially non-redundant; output and continue to next CASRN.
         if p == -1:
             for j in range(len(names)):
-                classlist = sorted(chemicals[casrn][names[j]])
-                for c in classlist:
+                thisclass = chemicals[casrn][names[j]]
+                for c in sorted(thisclass.keys()):
                     writer_var.writerow(
                         ['_v' + str(j) + '_' + casrn, names[j], c] + 
-                         sublists[c][1:])
+                         sublists[c][1:] + [thisclass[c]])
             continue
         # Having found the principal substance, pop it out of the list of
         # names, save its set of classifications, and output them.
         pname = names.pop(p)
         pclass = chemicals[casrn][pname]
-        for c in sorted(pclass):
-            writer_inc.writerow([casrn, pname, c] + sublists[c][1:])
+        pset = pclass.keys()
+        for c in sorted(pset):
+            writer_inc.writerow(
+                [casrn, pname, c] + sublists[c][1:] + [pclass[c]])
         # Next, screen the rest of the named substances against the principal.
         # Since these all should be variants of the principal substance, I'll
         # add a flag to the CASRN field to help with identifier wrangling.
-        for i in range(len(names)):
-            thisclass = chemicals[casrn][names[i]]
-            if thisclass <= pclass:
+        for n in range(len(names)):
+            thisclass = chemicals[casrn][names[n]]
+            thisset = set(thisclass.keys())
+            if thisset <= pset:
                 # Redundant: All classifications are included within the
                 # principal substance's classifications.
-                for c in sorted(thisclass):
+                for c in sorted(thisset):
                     writer_exc.writerow(
-                        ['_v' + str(i) + '_' + casrn, names[i], c] + 
-                         sublists[c][1:])
+                        ['_v' + str(n) + '_' + casrn, names[n], c] + 
+                         sublists[c][1:] + [thisclass[c]])
             else:
                 # Not redundant, but set aside for further scrutiny.
-                writer_diff.writerow(
-                    [casrn, pname, names[i], 
-                     str(sorted(thisclass - pclass)).strip("[]'").replace("'",
-                                                                          ''),
-                     str(sorted(pclass - thisclass)).strip("[]'").replace("'",
-                                                                          '')])
-                for c in sorted(thisclass):
+                for c in sorted(thisset):
                     writer_var.writerow(
-                        ['_v' + str(i) + '_' + casrn, names[i], c] + 
-                         sublists[c][1:])
+                        ['_v' + str(n) + '_' + casrn, names[n], c] + 
+                         sublists[c][1:] + [thisclass[c]])
     outfile_inc.close()
     outfile_var.close()
-    outfile_diff.close()
     outfile_exc.close()
     # Output some helpful information about the classification sublists.
     subs = sorted(sublists.keys())

@@ -21,20 +21,20 @@ I use the official published classification documents from the following GHS imp
 * The correlation between HSNO classifications and GHS Rev. 3 classifications is described in [a document](http://www.epa.govt.nz/Publications/hsnogen-ghs-nz-hazard.pdf) (PDF), which is also included in this repo.
 * Files are in `GHS-nz/`, output is in `GHS-nz/output/`
 
-The spreadsheet contains a database export of the HSNO CCID. It contains chemical names, CASRN, classification codes and text, and also a summary of the toxicological data that inform each classification. There is one classification per row in the spreadsheet (23168 classifications). 
+**What the program does:** Reads data exported from the HSNO CCID, and produces CSV files containing chemical IDs, names, classifications, and key studies (basis for classification). The program adds GHS translations to each HSNO classification, according to the document cited above. 
 
-This program adds GHS translations to each classification, according to the document cited above. The main output of the program is `GHS-nz.csv`, which contains chemical IDs, names, and classifications (toxicological summaries and bureaucratic identifiers are omitted).
+The program filters the dataset in order to separate information that might be considered redundant from a broad chemical hazard assessment perspective: classifications of solutions of other substances. The filtering algorithm looks at substances which share the same CASRN but have different names, and seems to work reasonably well for this dataset. Three output files are produced: The main file `GHS-nz/output/GHS-nz.csv` contains classifications of pure substances. 'Redundant' substances are written to `GHS-nz/output/exclude.csv`, and are almost all solutions whose classifications are a subset of the pure substance's classifications. Solutions that appear to have unique classifications (not a subset of the pure substance's classifications) are written to `GHS-nz/output/variants.csv`. In the latter two output files, CASRN values for each different substance are preceded by "_v" + a sequential number, to help with identifier wrangling.
 
-It also filters out the records for certain substances that might be considered redundant from a broad chemical hazard assessment perspective: namely, commercial preparations or variants (usually solutions) of other substances. The following algorithm seems to work well for this dataset. The program looks at substances which share the same CASRN but have different names. From an alphabetized list of names, it picks a 'principal' substance: the first one that doesn't have '%' in its name; or if they all have '%', then just the first one in the list. Then it looks through the remaining substances with that CASRN. 'Redundant' substances are those whose classifications are all included in the principal substance's set of classifications. The redundant substances are not listed in the main output file. Instead, they are written to `GHS-nz-omit.csv`.
+Finally, the program produces `GHS-nz/output/sublists.csv`, a table of all unique classification codes that appear in the dataset, along with the full text of their HSNO and corresponding GHS classifications.
 
-Finally, the program also produces a table (CSV) of all unique classification codes that appear in the dataset, along with the full text of their HSNO and corresponding GHS classifications.
+**How the data source is organized:** The spreadsheet is a data export from the HSNO CCID. It contains chemical names, CASRN, classification codes and text, and summaries of the key toxicological studies or data that inform each classification. There is one classification per row in the spreadsheet (23168 classifications). Substances are identified non-uniquely by CASRN, and uniquely by name – that is, multiple variants share the same CASRN.
 
 
 ### Japan: GHS Classifications ###
 
 * Classification results of 1424 chemicals by Inter-ministerial Committee (2006)
-* Classification Results of 52 chemicals by METI (2007) - 20 new chemicals, 32 revisions
-* Classification Results of 93 chemicals by METI and MOE (2008) - 89 new chemicals, 4 revisions
+* Classification Results of 52 chemicals by METI (2007) – 20 new chemicals, 32 revisions
+* Classification Results of 93 chemicals by METI and MOE (2008) – 89 new chemicals, 4 revisions
 * All were downloaded from [NITE GHS website](http://www.safe.nite.go.jp/english/ghs_index.html)
 * Files are in `GHS-jp/`, output is in `GHS-jp/output/`
 
@@ -63,8 +63,7 @@ The Classification field may contain any of the following things:
 * Downloaded from [this page](http://ncis.nier.go.kr/ghs/search/searchlist_view.jsp?seq=17)
 * Files are in `GHS-kr/`, output is in `GHS-kr/output/`
 
-**What the program does:** 
-This program produces `GHS-kr/output/GHS-kr.csv` containing a table of substance names, CASRN, combined hazard class/category/H-statements (in English), and M-factors. It further produces a text file `GHS-kr/output/hazards.txt` containing a list of all unique combined hazard class/category/H-statement fields that appear in the dataset.
+**What the program does:** Reads the spreadsheet of Korean GHS classifications and produces `GHS-kr/output/GHS-kr.csv`, containing a table of substance names, CASRN, combined hazard class/category/H-statements (in English), and M-factors. It further produces a text file `GHS-kr/output/hazards.txt` containing a list of all unique combined hazard class/category/H-statement fields that appear in the dataset.
 
 **How the data source is organized:** The document is in 한국어, with only substance names in English. It is straightforwardly structured and includes numeric GHS chapter references for hazard classes, and H-statement codes. I was able to convincingly translate the key elements of the document using Google Translate (some of my notes are in `GHS-kr/GHS-kr-trans-attempt.ods`, LibreOffice spreadsheet). 
 

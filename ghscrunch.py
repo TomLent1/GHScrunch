@@ -132,20 +132,27 @@ def h_statement(h):
 def splitsens(info):
     # For Japan GHS classifications.
     # Splits apart info for respiratory sensitization and skin sensitization
-    # in a given row of cells. I didn't strip off errant hyphens, because in
-    # the symbol/signal/statement fields, "-" is used to denote the absence
-    # of the hazard, e.g. "(Respiratory sensitizer)-\n(Skin sensitizer)-".
-    # Don't include hazard class names in input, better to predetermine those.
+    # in a given row of cells. The hazard class name field, which says
+    # "Respiratory/skin sensitizer", should not be included in the list passed
+    # to this function. Returned list includes an automatically assigned field.
     resp_list = ['Respiratory sensitizer']
     skin_list = ['Skin sensitizer']
-    for x in info:
-        x = str(x)
-        if 'Skin' in x:
-            a = x.find('Skin')
-            resp_str = x[:a].rstrip(';([ \n\r')
-            skin_str = x[a:].rstrip('; \n\r')
+    for s in info:
+        s = str(s)
+        if 'Skin' in s:
+            a = s.find('Skin')
+            resp_str = s[:a].rstrip(';([ \n\r')
+            resp_str = resp_str.replace('Respiratory sensitizer: ', '', 1)
+            resp_str = resp_str.replace('Respiratory Sensitizer: ', '', 1)
+            resp_str = resp_str.replace('Respiratory sensitization: ', '', 1)
+            resp_str = resp_str.replace('(Respiratory sensitization)', '', 1)
+            skin_str = s[a:].rstrip('; \n\r')
+            skin_str = skin_str.replace('Skin sensitizer: ', '', 1)
+            skin_str = skin_str.replace('Skin Sensitizer: ', '', 1)
+            skin_str = skin_str.replace('Skin sensitization: ', '', 1)
+            skin_str = skin_str.replace('Skin sensitization)', '', 1)
         else: 
-            resp_str = skin_str = x.rstrip(' \n')
+            resp_str = skin_str = s.rstrip(' \n')
         resp_list = resp_list + [resp_str]
         skin_list = skin_list + [skin_str]
     return resp_list, skin_list
@@ -238,6 +245,7 @@ def update_all(chemicals, source_file):
             update(chemicals[casrn], 'eye_dmg',
                    chemsheet.row_values(30)[2:8] + [date])
             # For respiratory & skin sensitization, we need to split strings.
+            # Don't include cell 2, it's automatically added by splitsens().
             resp_only, skin_only = splitsens(chemsheet.row_values(31)[3:8])
             update(chemicals[casrn], 'resp_sens',
                    resp_only + [date])
@@ -342,34 +350,51 @@ def crunch_jp():
     # Then, output a list of chemicals & their classification info for 
     # each hazard class.
     # These are all the fields we have extracted:
-    out_header = ['CASRN', 'Name', 'Hazard class', 'Classification', 
-                  'Symbol', 'Signal word', 'Hazard statement', 
-                  'Rationale for classification', 'Date of classification']   
+    header = ['CASRN', 'Name', 'Hazard class', 'Classification',
+              'Symbol', 'Signal word', 'Hazard statement',
+              'Rationale for classification', 'Date of classification']
     # I want the output to be in separate CSV files for each hazard class.
+    # Furthermore, I want separate files for "classification not possible",
+    # "not classified", and "not applicable".
+    nafile = open('GHS-jp/output/notapplicable.csv', 'w', newline='')
+    nawriter = csv.writer(nafile)
+    nawriter.writerow(header)
+    ncfile = open('GHS-jp/output/notclassified.csv', 'w', newline='')
+    ncwriter = csv.writer(ncfile)
+    ncwriter.writerow(header)
+    npfile = open('GHS-jp/output/notpossible.csv', 'w', newline='')
+    npwriter = csv.writer(npfile)
+    npwriter.writerow(header)
     for h in hazard_classes:
         with open('GHS-jp/output/' + h + '.csv', 'w', newline='') as outfile:
             listwriter = csv.writer(outfile)
-            listwriter.writerow(out_header)
-            for c in chemicals.keys():
-                listwriter.writerow([c] + [chemicals[c]['name']] + 
-                                    chemicals[c][h])
+            listwriter.writerow(header)
+            for c in sorted(chemicals.keys()):
+                # The following conditions must be exact matches, rather than
+                # the field containing those phrases. Because sometimes the
+                # field contains classifications for several related compounds
+                # of which just one might be 'Not classified'... 
+                if chemicals[c][h][1] == 'Not applicable':
+                    nawriter.writerow([c] + [chemicals[c]['name']] + 
+                                      chemicals[c][h])
+                elif chemicals[c][h][1] == 'Not classified':
+                    ncwriter.writerow([c] + [chemicals[c]['name']] + 
+                                      chemicals[c][h])
+                elif chemicals[c][h][1] == 'Classification not possible':
+                    npwriter.writerow([c] + [chemicals[c]['name']] + 
+                                      chemicals[c][h])
+                else:                
+                    listwriter.writerow([c] + [chemicals[c]['name']] + 
+                                        chemicals[c][h])
+    nafile.close()
+    ncfile.close()
+    npfile.close()
     # Also output an index of chemicals, just to check for problems.
     with open('GHS-jp/output/index.csv', 'w', newline='') as outfile:
         listwriter = csv.writer(outfile)
         listwriter.writerow(['CASRN', 'Name'])
-        for c in chemicals.keys():
+        for c in sorted(chemicals.keys()):
             listwriter.writerow([c] + [chemicals[c]['name']])
-    # Experiment: enumerate all the hazard statements to see if we can
-    # back-translate them into H-statement codes.
-    hstatements = []
-    with open('GHS-jp/output/hstatements.txt', 'w') as outfile:
-        for c in chemicals.keys():
-            for h in hazard_classes:
-                hs = chemicals[c][h][4]
-                if hs not in hstatements:
-                    hstatements.append(hs)
-        for x in hstatements:
-            print(x, file=outfile)
 
 
 def crunch_kr():
@@ -653,9 +678,9 @@ def crunch_nz():
     outfile_inc = open('GHS-nz/output/GHS-nz.csv', 'w', newline='')
     outfile_var = open('GHS-nz/output/variants.csv', 'w', newline='')
     outfile_exc = open('GHS-nz/output/exclude.csv', 'w', newline='')
-    writer_inc = csv.writer(outfile_inc, dialect='excel')
-    writer_var = csv.writer(outfile_var, dialect='excel')
-    writer_exc = csv.writer(outfile_exc, dialect='excel')
+    writer_inc = csv.writer(outfile_inc)
+    writer_var = csv.writer(outfile_var)
+    writer_exc = csv.writer(outfile_exc)
     header = ['CASRN', 'Substance name', 'HSNO code',
               'HSNO classification text', 'GHS translation', 'Key study']
     writer_inc.writerow(header)
@@ -670,6 +695,9 @@ def crunch_nz():
         names = sorted(chemicals[casrn].keys())
         # Find the principal (definitely non-redundant) substance from the 
         # list of names. If they all contain %, then there's no pure substance.
+        # If there are multiple names which do not contain %, then all but one
+        # of those will end up in the redundant list. So far, the only such
+        # case is a substance that seems redundant anyway.
         p = -1
         for i in range(len(names)):
             if '%' not in names[i]:

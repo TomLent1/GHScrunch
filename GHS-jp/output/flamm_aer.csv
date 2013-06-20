@@ -1,19 +1,4 @@
-CASRN,Name,Hazard class,Classification,Symbol,Signal word,Hazard statement,Rationale for classification,Date of classification
-10605-21-7,carbendazim(ISO),Flammable aerosols,,,,,0.0,2008.03.26
-110-71-4,"1,2-dimethoxyethane",Flammable aerosols,,,,,0.0,2008.03.17
-110-88-3,"1,3,5-trioxan",Flammable aerosols,,,,,0.0,2008.03.26
-111-77-3,2-(2-methoxyethoxy)ethanol,Flammable aerosols,,,,,0.0,2008.03.26
-111-96-6,bis(2-methoxyethyl)ether,Flammable aerosols,,,,,0.0,2008.03.26
-123-39-7,N-methylformamide,Flammable aerosols,,,,,0.0,2008.03.24
-1333-86-4,Carbon black,Flammable aerosols,Not applicable(Materials of animal or vegetable origin and mineral origin),-,-,-,Not aerosol products,"Jun. 20, 2006"
-143860-04-2,"3-ethyl-2-methyl-2-(3-methylbutyl)-1,3-oxazolidine",Flammable aerosols,,,,,0.0,2008.02.25
-2210-79-9,"2,3-epoxypropyl o-tolyl ether",Flammable aerosols,,,,,0.0,2008.03.21
-25167-80-0,chlorophenol,Flammable aerosols,"Not applicable (o, m, p-)",-,-,-,"Not aerosol products (o, m, p-)","Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-288-88-0,"1,2,4-triazole",Flammable aerosols,,,,,0.0,2008.03.26
-69094-18-4,"2,2-dibromo-2-nitroethanol",Flammable aerosols,,,,,0.0,2008.02.25
-7778-39-4,Arsenic acid,Flammable aerosols,Not applicable (aqueous solution),,,,Not aerosol products,"Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-823-40-5,2-methyl-m-phenylene diamine,Flammable aerosols,,,,,0.0,2008.02.19
-85954-11-6,"2,2'-((3,3',5,5'-tetramethyl-(1,1'-biphenyl)-4,4'-diyl)-bis(oxymethylene))-bis-oxirane",Flammable aerosols,,,,,0.0,2008.02.22
-87-66-1,pyrogallol,Flammable aerosols,,,,,0.0,2008.03.26
-88-12-0,1-vinyl-2-pyrrolidone,Flammable aerosols,,,,,0.0,2008.03.17
-96-29-7,2-butanone oxime,Flammable aerosols,,,,,0.0,2008.03.25
+CASRN,Name,Classification,Symbol,Signal word,Hazard statement,Rationale for classification,Date of classification
+1333-86-4,Carbon black,Flammable aerosols - Not applicable(Materials of animal or vegetable origin and mineral origin),-,-,-,Not aerosol products,"Jun. 20, 2006"
+25167-80-0,chlorophenol,"Flammable aerosols - Not applicable (o, m, p-)",-,-,-,"Not aerosol products (o, m, p-)","Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
+7778-39-4,Arsenic acid,Flammable aerosols - Not applicable (aqueous solution),,,,Not aerosol products,"Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"

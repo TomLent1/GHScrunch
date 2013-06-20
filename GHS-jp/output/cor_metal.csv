@@ -1,41 +1,24 @@
-CASRN,Name,Hazard class,Classification,Symbol,Signal word,Hazard statement,Rationale for classification,Date of classification
-10605-21-7,carbendazim(ISO),Corrosive to metals,,,,,0.0,2008.03.26
-110-71-4,"1,2-dimethoxyethane",Corrosive to metals,,,,,0.0,2008.03.17
-110-88-3,"1,3,5-trioxan",Corrosive to metals,,,,,0.0,2008.03.26
-111-77-3,2-(2-methoxyethoxy)ethanol,Corrosive to metals,,,,,0.0,2008.03.26
-111-96-6,bis(2-methoxyethyl)ether,Corrosive to metals,,,,,0.0,2008.03.26
-123-39-7,N-methylformamide,Corrosive to metals,,,,,0.0,2008.03.24
-1333-86-4,Carbon black,Corrosive to metals,Classification not possible(Materials of animal or vegetable origin and mineral origin),-,-,-,Test methods applicable to solid substances are not available.,"Jun. 20, 2006"
-1336-21-6,Ammonium hydroxide,Corrosive to metals,Category 1,"Corrosion
+CASRN,Name,Classification,Symbol,Signal word,Hazard statement,Rationale for classification,Date of classification
+1333-86-4,Carbon black,Corrosive to metals - Classification not possible(Materials of animal or vegetable origin and mineral origin),-,-,-,Test methods applicable to solid substances are not available.,"Jun. 20, 2006"
+1336-21-6,Ammonium hydroxide,Corrosive to metals - Category 1,"Corrosion
 ","Warning
 ",May be corrosive to metals,"Although the examination data of metal caustic was not found, 8 which indicates caustic is given to UNRTDG corresponding to UNRTDG No. (2672). Since ICSC (J) (1995) had a description ""it corrodes many metals,"" it was set as Category 1.         ","Oct. 23, 2006 (Environmental Hazards: Mar. 31, 2006)"
-143860-04-2,"3-ethyl-2-methyl-2-(3-methylbutyl)-1,3-oxazolidine",Corrosive to metals,,,,,0.0,2008.02.25
-16872-11-0,"Borate(1-), tetrafluoro-, hydrogen",Corrosive to metals,Category 1,"Corrosion
+16872-11-0,"Borate(1-), tetrafluoro-, hydrogen",Corrosive to metals - Category 1,"Corrosion
 ","Warning
 ",May be corrosive to metals,"Although there is no test data, UNRTDG is classified into 8 and II according to the UNRTDG No. (1775). Since there is a description as a use that ""to clean metal surfaces before welding; to brighten aluminum; as a solute in electrolytes for plating metals such as chromium, iron, nickel, copper, silver, zinc, cadmium, indium, tin, and lead (has a high throwing power)"" (Merck, 13th, 2001), it was set as Category 1.  ","Jun. 23, 2006 (Environmental Hazards: Mar. 31, 2006)"
-2210-79-9,"2,3-epoxypropyl o-tolyl ether",Corrosive to metals,,,,,0.0,2008.03.21
-25167-80-0,chlorophenol,Corrosive to metals,"Classification not possible(o, m, p)",-,-,-,"No data available (o, m, p-)","Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-25321-14-6,Dinitrotoluene,Corrosive to metals,"Not classified (2,5-DNT), Classification not possible (2,6-DNT, 3,4-DNT, 2,3-DNT, 3,5-DNT)",,,,"As for 2,5-DNT, classified into Division 6.1 (UN#3454 (solid) and 1600 (molten)) (UN Recommendations on the Transport of Dangerous Goods). As for 2,6-DNT, 3,4-DNT, 2,3-DNT, 3,5-DNT and 2,4-DNT, test methods applicable to solid substances are not available. The melting points of isomers are 66degC (2,6-DNT), 58degC (3,4-DNT), 59-61degC (2,3-DNT), 71degC (2,4-DNT) (ICSC (2004)), 93degC (3,5-DNT), 52.5degC (2,5-DNT) (HSDB, 2006) (the test temperature: 55degC).","Aug. 22, 2006 (Environmental Hazards: Mar. 31, 2006)"
-25323-30-2,Dichloroethylene,Corrosive to metals,"Classification not possible (1, 1-form and trans1, 2-form), Not classified (cis1, 2-form)",,,,"As for 1,1-form and trans-1,2-form, test methods applicable to gaseous substances are not available (boiling point: 32degC (1,1-form) (ICSC, 2004) and 48.7degC (trans-1,2-form) (Lide, 84th, 2003), test temperature: 55degC). As for cis-1,2-form, classified into Class 3 (UN#1150, 1, 2-dichloroethylene) (UN Recommendations on the Transport of Dangerous Goods).","Jun. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
-288-88-0,"1,2,4-triazole",Corrosive to metals,,,,,0.0,2008.03.26
-69094-18-4,"2,2-dibromo-2-nitroethanol",Corrosive to metals,,,,,0.0,2008.02.25
-7646-78-8,"Stannane, tetrachloro-",Corrosive to metals,Category 1,"Corrosion
+25167-80-0,chlorophenol,"Corrosive to metals - Classification not possible(o, m, p)",-,-,-,"No data available (o, m, p-)","Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
+25321-14-6,Dinitrotoluene,"Corrosive to metals - Not classified (2,5-DNT), Classification not possible (2,6-DNT, 3,4-DNT, 2,3-DNT, 3,5-DNT)",,,,"As for 2,5-DNT, classified into Division 6.1 (UN#3454 (solid) and 1600 (molten)) (UN Recommendations on the Transport of Dangerous Goods). As for 2,6-DNT, 3,4-DNT, 2,3-DNT, 3,5-DNT and 2,4-DNT, test methods applicable to solid substances are not available. The melting points of isomers are 66degC (2,6-DNT), 58degC (3,4-DNT), 59-61degC (2,3-DNT), 71degC (2,4-DNT) (ICSC (2004)), 93degC (3,5-DNT), 52.5degC (2,5-DNT) (HSDB, 2006) (the test temperature: 55degC).","Aug. 22, 2006 (Environmental Hazards: Mar. 31, 2006)"
+25323-30-2,Dichloroethylene,"Corrosive to metals - Classification not possible (1, 1-form and trans1, 2-form), Not classified (cis1, 2-form)",,,,"As for 1,1-form and trans-1,2-form, test methods applicable to gaseous substances are not available (boiling point: 32degC (1,1-form) (ICSC, 2004) and 48.7degC (trans-1,2-form) (Lide, 84th, 2003), test temperature: 55degC). As for cis-1,2-form, classified into Class 3 (UN#1150, 1, 2-dichloroethylene) (UN Recommendations on the Transport of Dangerous Goods).","Jun. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
+7646-78-8,"Stannane, tetrachloro-",Corrosive to metals - Category 1,"Corrosion
 ","Warning
 ",May be corrosive to metals,"UNRTDG is classified into 8 and II which indicate causticity according to the UNRTDG No. (1827). Since ICSC (J) (2004) and HSDB (2003) also had the statement which indicates corrosion behavior, it was set as Category 1.","Dec. 18, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7726-95-6,Bromine,Corrosive to metals,Category 1,"Corrosion
+7726-95-6,Bromine,Corrosive to metals - Category 1,"Corrosion
 ","Warning
 ",May be corrosive to metals,"It is not necessary to do the examination defined in the United Nations, and is judged as ""Category 1"". Because reacting violently with aluminum is known (Bretherick (J) (1998)).","Jun. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7778-39-4,Arsenic acid,Corrosive to metals,Not classified (aqueous solution),,,,Classified into Division 6.1 (UN#1553 (solution)) (UN Recommendations on the Transport of Dangerous Goods).,"Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7790-94-5,Chlorosulfonic acid,Corrosive to metals,Category 1,"Corrosion
+7778-39-4,Arsenic acid,Corrosive to metals - Not classified (aqueous solution),,,,Classified into Division 6.1 (UN#1553 (solution)) (UN Recommendations on the Transport of Dangerous Goods).,"Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
+7790-94-5,Chlorosulfonic acid,Corrosive to metals - Category 1,"Corrosion
 ","Warning
 ",May be corrosive to metals,"UNRTDG is classified into 8 and I according to the UNRTDG No. (1754). Since NFPA (13th, 2002) had the description ""perform transportation with a glass bottles"", it was thought that corrosion behavior was strong and it was set as Category 1.","Jul. 24, 2006 (Environmental Hazards: Jan. 25, 2007)"
-79-06-1,Acrylamide,Corrosive to metals,"Classification not possible
-",,,,Test methods applicable to solid substances are not available,"Mar. 23, 2006 (Environmental Hazards: Feb. 10, 2006)"
-79-43-6,dichloroacetic acid,Corrosive to metals,Category 1,"Corrosion
+79-43-6,dichloroacetic acid,Corrosive to metals - Category 1,"Corrosion
 ","Warning
 ",May be corrosive to metals,"UNRTDG is classified into 8 and II according to the UNRTDG No. (1764). Since ICSC (J) (2000) had the description ""it is strong acid and many metals is corroded"", it was thought that there was corrosion behavior and it was set as Category 1.","Feb. 20, 2007 (Environmental Hazards: Mar. 31, 2006)"
-823-40-5,2-methyl-m-phenylene diamine,Corrosive to metals,,,,,0.0,2008.02.19
-85954-11-6,"2,2'-((3,3',5,5'-tetramethyl-(1,1'-biphenyl)-4,4'-diyl)-bis(oxymethylene))-bis-oxirane",Corrosive to metals,,,,,0.0,2008.02.22
-87-66-1,pyrogallol,Corrosive to metals,,,,,0.0,2008.03.26
-88-12-0,1-vinyl-2-pyrrolidone,Corrosive to metals,,,,,0.0,2008.03.17
-96-29-7,2-butanone oxime,Corrosive to metals,,,,,0.0,2008.03.25

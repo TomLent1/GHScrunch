@@ -1,108 +1,108 @@
-CASRN,Name,Hazard class,Classification,Symbol,Signal word,Hazard statement,Rationale for classification,Date of classification
-10028-15-6,ozone,Acute toxicity (inhalation: gas),Category 1,"Skull and crossbones
+CASRN,Name,Classification,Symbol,Signal word,Hazard statement,Rationale for classification,Date of classification
+10028-15-6,ozone,Acute toxicity (inhalation: gas) - Category 1,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,It was considered as Category 1 based on rat LC50 value of 4.8ppm (ACGIH (2001).),"Apr. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
-10035-10-6,Hydrobromic acid,Acute toxicity (inhalation: gas),Category 3,"Skull and crossbones
+10035-10-6,Hydrobromic acid,Acute toxicity (inhalation: gas) - Category 3,"Skull and crossbones
 ","Danger
 ",Toxic if inhaled,It was considered as Category 3 based on rat inhalation LC50 = 1430ppm (4hr) (ACGIH (2004)).,"Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-10049-04-4,Chlorine dioxide,Acute toxicity (inhalation: gas),Category 1,"Skull and crossbones
+10049-04-4,Chlorine dioxide,Acute toxicity (inhalation: gas) - Category 1,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"It was considerd as Category 1 based on rat LC50 (4 hours) value: 32ppm (CICAD 37, 2002).","Sep. 1, 2005 (Environmental Hazards: Mar. 31, 2006)"
-10102-43-9,Nitrogen monoxide,Acute toxicity (inhalation: gas),Category 3,"Skull and crossbones
+10102-43-9,Nitrogen monoxide,Acute toxicity (inhalation: gas) - Category 3,"Skull and crossbones
 ","Danger
 ",Toxic if inhaled,It was considered as Category 3 from the rat value of 870ppm (RTECS (2004)).,"Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-10102-44-0,nitrogen dioxide,Acute toxicity (inhalation: gas),Category 1,"Skull and crossbones
+10102-44-0,nitrogen dioxide,Acute toxicity (inhalation: gas) - Category 1,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"It was considered as Category 1 based on rat LC50 (4 hours) value: 88ppm (RTECS, 2005, HSDB, 2005) and rat LC50 (1 hour) value: 0.22mg/L (4-hour equivalent of 58ppm) (RTECS, 2005).","Sep. 1, 2005 (Environmental Hazards: Mar. 31, 2006)"
-10294-34-5,boron trichloride,Acute toxicity (inhalation: gas),Category 3,"Skull and crossbones
+10294-34-5,boron trichloride,Acute toxicity (inhalation: gas) - Category 3,"Skull and crossbones
 ","Danger
 ",Toxic if inhaled,"It was considered as Category 3 based on rat LC50 value of 1270ppm/4H (2541ppm/1H) (HSDB, 2002).","Mar. 15, 2007 (Environmental Hazards: Mar. 31, 2006)"
-124-40-3,Dimethylamine,Acute toxicity (inhalation: gas),Category 4,"Exclamation mark
+124-40-3,Dimethylamine,Acute toxicity (inhalation: gas) - Category 4,"Exclamation mark
 ","Warning
 ",Harmful if inhaled,It was considered as Category 4 based on rat LC50 (4 hours) value: 4700 ml/m3 (DFGOT vol.7 (1996)).,"Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-19287-45-7,diborane(6),Acute toxicity (inhalation: gas),Category 1,"Skull and crossbones
+19287-45-7,diborane(6),Acute toxicity (inhalation: gas) - Category 1,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"It was considered as Category 1 based on the lower rat inhalation LC50 value (4hrs) = 40ppm (from the two-point data of 40ppm (ACGIH (2001)) and 50ppm (PATTY (5th, 2001)).","Feb. 20, 2007 (Environmental Hazards: Mar. 31, 2006)"
-2699-79-8,sulphuryl difluoride,Acute toxicity (inhalation: gas),Category 3,"Skull and crossbones
+2699-79-8,sulphuryl difluoride,Acute toxicity (inhalation: gas) - Category 3,"Skull and crossbones
 ","Danger
 ",Toxic if inhaled,"Rad LC50 value (4-hour equivalent) = 1865ppm (male) and 1510ppm (female) (all are ACGIH(s) (7th, 2001)) (in the information on Priority 1), and the higher toxic value (1510ppm) was adopted, and it was considered as Category 3.","Mar. 15, 2007 (Environmental Hazards: Mar. 31, 2006)"
-353-50-4,carbonyl difluoride,Acute toxicity (inhalation: gas),Category 2,"Skull and crossbones
+353-50-4,carbonyl difluoride,Acute toxicity (inhalation: gas) - Category 2,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"It was considered as Category 2 based on the lower value from rat LC50 (1 hour) value= 360ppm (4-hour equivalent of 180ppm), and 460ppm (4-hour equivalent of 230ppm) (ACGIH 7th, 2001, PATTY 4th, 1994).","Oct. 1, 2005 (Environmental Hazards: Mar. 31, 2006)"
-382-21-8,Perfluoroisobutylene,Acute toxicity (inhalation: gas),Category 1,"Skull and crossbones
+382-21-8,Perfluoroisobutylene,Acute toxicity (inhalation: gas) - Category 1,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"Boiling points is 7degC in 760torr, and it is gas according to GHS definition. It was considered as Category 1 based on rat 2 hour exposure LC50 value: 1.05ppm (4 hour equivalent: 0.742ppm) (ACGIH 7th, 2001)(in source of Priority 1).","Nov. 1, 2005 (Environmental Hazards: Mar. 31, 2006)"
-420-04-2,Cyanamide,Acute toxicity (inhalation: gas),Classification not possible(active ingredient),-,-,-,"Solutions is outside of classification since it is the liquid based on GHS definition. Since there is no data about active ingredient,  it cannot be classified.","Feb. 20, 2007 (Environmental Hazards: Mar. 31, 2006)"
-460-19-5,oxalonitrile,Acute toxicity (inhalation: gas),Category 2,"Skull and crossbones
+420-04-2,Cyanamide,Acute toxicity (inhalation: gas) - Classification not possible(active ingredient),-,-,-,"Solutions is outside of classification since it is the liquid based on GHS definition. Since there is no data about active ingredient,  it cannot be classified.","Feb. 20, 2007 (Environmental Hazards: Mar. 31, 2006)"
+460-19-5,oxalonitrile,Acute toxicity (inhalation: gas) - Category 2,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"It was considered as Category 2 based on rat inhalation exposures LC50= 175ppm (4-hour equivalent) (Patty (5th, 2001)).","Jun. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
-463-51-4,Ketene,Acute toxicity (inhalation: gas),Category 1,"Skull and crossbones
+463-51-4,Ketene,Acute toxicity (inhalation: gas) - Category 1,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,It was considered as Category 1based on lower LC50 = 51ppm. (from two data obtained by having converted rat LC50 value into 4 hours exposure.,"Jun. 20, 2006 (Environmental Hazards: Jan. 25, 2007)"
-50-00-0,Formaldehyde,Acute toxicity (inhalation: gas),Category 2,,,,Based on the testing data of rat LC50 (inhalation of gas) of 480ppm (SIDS (2002)).,"Mar. 23, 2006 (Environmental Hazards: Feb. 10, 2006)"
-506-77-4,cyanogen chloride,Acute toxicity (inhalation: gas),Category 1,"Skull and crossbones
+50-00-0,Formaldehyde,Acute toxicity (inhalation: gas) - Category 2,,,,Based on the testing data of rat LC50 (inhalation of gas) of 480ppm (SIDS (2002)).,"Mar. 23, 2006 (Environmental Hazards: Feb. 10, 2006)"
+506-77-4,cyanogen chloride,Acute toxicity (inhalation: gas) - Category 1,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"Mouse lethal concentration (3-minute exposure) = 500ppm (ACGIH (2001)). (If it converts, it will be <100ppm as 4 hours exposure.) There is also a descriptions of death (ACGIH (2001)) by 48ppm and exposure for 30 minute for humans. It was considered as Category 1 based on these knowledge.","Apr. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
-624-91-9,methyl nitrite,Acute toxicity (inhalation: gas),Category 2,"Skull and crossbones
+624-91-9,methyl nitrite,Acute toxicity (inhalation: gas) - Category 2,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"It was considered as Category 2 from rat LC50 = 176ppm/4H (PATTY, 5th (2001), RTECS (1997)).","May 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-630-08-0,Carbon monoxide,Acute toxicity (inhalation: gas),Category 3,"Skull and crossbones
+630-08-0,Carbon monoxide,Acute toxicity (inhalation: gas) - Category 3,"Skull and crossbones
 ","Danger
 ",Toxic if inhaled,It was considered as Category 3 from data of rat LC50 (4hr): 1805ppm (IUCLID (2000)) and 1659ppm (RTECS (2004)).,"May 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-684-16-2,hexafluoroacetone,Acute toxicity (inhalation: gas),Category 2,"Skull and crossbones
+684-16-2,hexafluoroacetone,Acute toxicity (inhalation: gas) - Category 2,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"It was considered as Category 2 based on the description that the rat lethal concentration in 4-hour exposure is 300ppm (ACGIH 7th, 2001).","Nov. 1, 2005 (Environmental Hazards: Mar. 31, 2006)"
-74-83-9,Bromomethane; Methyl bromide,Acute toxicity (inhalation: gas),Category 3,,,,Based on the rat LC50 (inhalation of gas) value of 600ppm (Agricultural Chemical Registration Data (1980)).,"Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-74-87-3,Chloromethane; Methyl chloride,Acute toxicity (inhalation: gas),Category 4,,,,"Based on the testing data of rat LC50 (inhalation of gas) of 2,566ppm (SIDS (2004)), representing the lower of the two testing data, 2,566mg/kg (SIDS (2004)) and 2,700mg/kg (SIDS (2004)).","Apr. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
-74-89-5,Methanamine,Acute toxicity (inhalation: gas),Category 4,Exclamation mark,Warning,Harmful if inhaled,"Since LC50 values of the 4-hour inhalation exposure test employing rats were 4,400 mL/m3 (4,400 ppm), and 6,400-9,100 mL/m3 (6,400-9,100 ppm) (DFGOT vol.7 (1996)), it was classified into Category 4. ",2009.3.31
-74-93-1,Methanethiol,Acute toxicity (inhalation: gas),Category 3,"Skull and crossbones
+74-83-9,Bromomethane; Methyl bromide,Acute toxicity (inhalation: gas) - Category 3,,,,Based on the rat LC50 (inhalation of gas) value of 600ppm (Agricultural Chemical Registration Data (1980)).,"Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
+74-87-3,Chloromethane; Methyl chloride,Acute toxicity (inhalation: gas) - Category 4,,,,"Based on the testing data of rat LC50 (inhalation of gas) of 2,566ppm (SIDS (2004)), representing the lower of the two testing data, 2,566mg/kg (SIDS (2004)) and 2,700mg/kg (SIDS (2004)).","Apr. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
+74-89-5,Methanamine,Acute toxicity (inhalation: gas) - Category 4,Exclamation mark,Warning,Harmful if inhaled,"Since LC50 values of the 4-hour inhalation exposure test employing rats were 4,400 mL/m3 (4,400 ppm), and 6,400-9,100 mL/m3 (6,400-9,100 ppm) (DFGOT vol.7 (1996)), it was classified into Category 4. ",2009.3.31
+74-93-1,Methanethiol,Acute toxicity (inhalation: gas) - Category 3,"Skull and crossbones
 ","Danger
 ",Toxic if inhaled,"It was considered as Category 3. Based on Rat LC50 (4 hours) value: 675ppm (ACGIH, 2004, DFGOT vol.20, 2003, PATTY 4th, 1994, ATSDR, 1992) and LC50 (1 hour) value: 1680ppm (4-hour equivalent of 840 ppm)( DFGOT vol.20, 2003, PATTY 4th, 1994).","Aug. 18, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7446-09-5,Sulfur dioxide,Acute toxicity (inhalation: gas),Category 3,"Skull and crossbones
+7446-09-5,Sulfur dioxide,Acute toxicity (inhalation: gas) - Category 3,"Skull and crossbones
 ","Danger
 ",Toxic if inhaled,"LC50 value of the study was judged to 593 - 1319ppm, and it was considered as Category 3. This is from description that death is not observed at 593ppm, three of eight examples died at 965ppm, five of eight examples died at 1168ppm, and the all eight examples died at 1319ppm in the rat 4-hour inhalation exposure test (ATSDR (1998)).","Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-75-04-7,Ethanamine,Acute toxicity (inhalation: gas),Category 5,-,"Warning
+75-04-7,Ethanamine,Acute toxicity (inhalation: gas) - Category 5,-,"Warning
 ",May be harmful if inhaled,It was considered as Category 5 based on rat LC50 = 6842ppm (IUCLID (2000)).,"May 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-75-21-8,Ethylene oxide,Acute toxicity (inhalation: gas),Category 3,,,,"Based on the rat LC50 (inhalation route) value of 800ppm representing the lower of the two testing data, 1,460ppm (CaPSAR, 1999) and 800ppm ((MOE Risk Assessment Vol. 2, 2003).","Mar. 23, 2006 (Environmental Hazards: Feb. 10, 2006)"
-75-44-5,Phosgene,Acute toxicity (inhalation: gas),Category 1,,,,"Based on human LC50 (inhalation of gas) value of 2ppm (4 hours: converted from 170 min), representing the two testing data, rat LC50 of 5.58ppm (4 hours) (CERI Hazard Data 2000-51 (2001)) and human LC50 of 3ppm (170 min). ","Dec. 19, 2006 (Environmental Hazards: Mar. 31, 2006)"
-75-50-3,Trimethylamine,Acute toxicity (inhalation: gas),Category 4,"Exclamation mark
+75-21-8,Ethylene oxide,Acute toxicity (inhalation: gas) - Category 3,,,,"Based on the rat LC50 (inhalation route) value of 800ppm representing the lower of the two testing data, 1,460ppm (CaPSAR, 1999) and 800ppm ((MOE Risk Assessment Vol. 2, 2003).","Mar. 23, 2006 (Environmental Hazards: Feb. 10, 2006)"
+75-44-5,Phosgene,Acute toxicity (inhalation: gas) - Category 1,,,,"Based on human LC50 (inhalation of gas) value of 2ppm (4 hours: converted from 170 min), representing the two testing data, rat LC50 of 5.58ppm (4 hours) (CERI Hazard Data 2000-51 (2001)) and human LC50 of 3ppm (170 min). ","Dec. 19, 2006 (Environmental Hazards: Mar. 31, 2006)"
+75-50-3,Trimethylamine,Acute toxicity (inhalation: gas) - Category 4,"Exclamation mark
 ","Warning
 ",Harmful if inhaled,"It is classified into Category 4 based on the lower value (LC50 = 3519ppm) among two rat LC50 = 3519ppm (IUCLID, 2000) and 4264ppm (IUCLID, 2000)(in the source of Priority 2). ","Jun. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7637-07-2,"Borane, trifluoro-",Acute toxicity (inhalation: gas),Category 2,"Skull and crossbones
+7637-07-2,"Borane, trifluoro-",Acute toxicity (inhalation: gas) - Category 2,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,It was considered as Category 2 based on rat LC50 = 436ppm (ACGIH (2001)).,"May 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7647-01-0,Hydrochloric acid,Acute toxicity (inhalation: gas),Category 3,"Skull and crossbones
+7647-01-0,Hydrochloric acid,Acute toxicity (inhalation: gas) - Category 3,"Skull and crossbones
 ","Danger
 ",Toxic if inhaled,"It was considered as Category 3, based on 1411ppm obtained from the statistical calculations after conversion from rat LC50 = 4.2, 4.7 and 283mg/L/60min (SIDS (2002)). In addition, since it became lower than the lowest value of calculated data, lowest value 4.2mg/L (4-hour product portfolio managements equivalents 1411ppm) of data is adopted.","Apr. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7664-41-7,Ammonia,Acute toxicity (inhalation: gas),Category 4,"Exclamation mark
+7664-41-7,Ammonia,Acute toxicity (inhalation: gas) - Category 4,"Exclamation mark
 ","Warning
 ",Harmful if inhaled,It was considered as Category 4 based on rat LC50 = 4608.7ppm (4-hour equivalent) (EHC 54 (1986)).,"Apr. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7782-41-4,Fluorine,Acute toxicity (inhalation: gas),Category 1,,,,"Based on the LC50 (4 hours) of 92.5ppm calculated from the testing data of rat LC50 (1-hour inhalation of gas) of 185ppm (PATTY  (4th, 2000)).","Jun. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7782-50-5,Chlorine,Acute toxicity (inhalation: gas),Category 2,"Skull and crossbones
+7782-41-4,Fluorine,Acute toxicity (inhalation: gas) - Category 1,,,,"Based on the LC50 (4 hours) of 92.5ppm calculated from the testing data of rat LC50 (1-hour inhalation of gas) of 185ppm (PATTY  (4th, 2000)).","Jun. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
+7782-50-5,Chlorine,Acute toxicity (inhalation: gas) - Category 2,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"It was considered as Category 2 based on each 4-hour equivalent of two data of a rat being LC50 = 146ppm (EHC 21 (1982), ACGIH (2005)).","Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7782-65-2,germanium tetrahydride,Acute toxicity (inhalation: gas),Category 1,"Skull and crossbones
+7782-65-2,germanium tetrahydride,Acute toxicity (inhalation: gas) - Category 1,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,It was considered as Category 1 based on guinea pigs LC50 value = 260mg/m3 (equivalent: 83ppm) (RTECS (2004)) in the 4-hour inhalation experiments. ,"Jun. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7783-06-4,Hydrogen sulfide,Acute toxicity (inhalation: gas),Category 2,"Skull and crossbones
+7783-06-4,Hydrogen sulfide,Acute toxicity (inhalation: gas) - Category 2,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"It was considered as Catgory 2 based on the lower value of 444ppm. ( from rat LC50 (4 hours): 444ppm (industrial hygene academic society recommentation (2001), ACGIH (2001)), and 700mg/m3 (equivalent: 503ppm) (CICAD (2003)).","Jun. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7783-55-3,phosphorous trifluoride,Acute toxicity (inhalation: gas),Category 1,"Skull and crossbones
+7783-55-3,phosphorous trifluoride,Acute toxicity (inhalation: gas) - Category 1,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"There was no data of LC50. So it was estimated by mouse LCLo = 33.52ppm/4H (equivalent) (RTECS (2004)), and it was considered as Category 1.","Mar. 15, 2007 (Environmental Hazards: Mar. 31, 2006)"
-7783-60-0,sulphur tetrafluoride,Acute toxicity (inhalation: gas),Category 1,"Skull and crossbones
+7783-60-0,sulphur tetrafluoride,Acute toxicity (inhalation: gas) - Category 1,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"It was considered as Category 1 from rat LC50 = 19ppm/4hr (ACGIH (7th, 2001)).","Mar. 15, 2007 (Environmental Hazards: Mar. 31, 2006)"
-7783-79-1,Selenium hexafluoride,Acute toxicity (inhalation: gas),Category 1,"Skull and crossbones
+7783-79-1,Selenium hexafluoride,Acute toxicity (inhalation: gas) - Category 1,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"There was no data of LC50. So It was estimated by rat LCLo = 5ppm/4H (equivalent) (RTECS (2004)), and it was considered as Category 1. In addition, it support the category 1that 10ppm/4H exposure was also lethal in any four sorts of the rat, the mouse, the guinea pig, and the rabbit (HSDB, 2003). ","Mar. 15, 2007 (Environmental Hazards: Mar. 31, 2006)"
-7783-82-6,Tungsten hexafluoride,Acute toxicity (inhalation: gas),Category 2,,,,Based on the LC50 value of 117ppm calculated from the testing data of rat LC50 of 1.43mg/L (HSDB (2004)).,"Aug. 22, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7784-42-1,Arsine,Acute toxicity (inhalation: gas),Category 1,,,,Based on the rat LC50 (inhalation of gas) value of 16.2ppm (4 hours).,"Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7790-91-2,chlorine trifluoride,Acute toxicity (inhalation: gas),Category 2,"Skull and crossbones
+7783-82-6,Tungsten hexafluoride,Acute toxicity (inhalation: gas) - Category 2,,,,Based on the LC50 value of 117ppm calculated from the testing data of rat LC50 of 1.43mg/L (HSDB (2004)).,"Aug. 22, 2006 (Environmental Hazards: Mar. 31, 2006)"
+7784-42-1,Arsine,Acute toxicity (inhalation: gas) - Category 1,,,,Based on the rat LC50 (inhalation of gas) value of 16.2ppm (4 hours).,"Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
+7790-91-2,chlorine trifluoride,Acute toxicity (inhalation: gas) - Category 2,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,It was considered as Category 2 based on rat LC50 = 149ppm.,"Apr. 20, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7803-51-2,phosphine,Acute toxicity (inhalation: gas),Category 1,"Skull and crossbones
+7803-51-2,phosphine,Acute toxicity (inhalation: gas) - Category 1,"Skull and crossbones
 ","Danger
 ",Falat if inhaled,"It was considered as Category 1 based on rat LC50 (4 hours) level: 11ppm (EHC 73, 1988, ACGIH 7th, 2001, industrial hygene academic society recommentation, 1998).","Jul. 24, 2006 (Environmental Hazards: Mar. 31, 2006)"
-7803-62-5,silane,Acute toxicity (inhalation: gas),Category 5,-,"Warning
+7803-62-5,silane,Acute toxicity (inhalation: gas) - Category 5,-,"Warning
 ",May be harmful if inhaled,"It become out of Category 4 according to rat LC50 = 9600ppm/4hr (ACGIH (7th, 2001)) (Priority 1 document). But rat LC50 = 4000ppm/4hr (HSDB (2005)) (Priority 2 document) are suitable for Category 4. And there are the nonsurviving animals up to the dose to Category 4, it was considered as Category 5.","Mar. 15, 2007 (Environmental Hazards: Mar. 31, 2006)"

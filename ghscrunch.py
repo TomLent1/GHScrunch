@@ -180,11 +180,13 @@ def update_all(chemicals, source_file):
         chemsheet = chembook.sheet_by_index(chempage)
         # Cells are identified by (row, col) where A1 is (0, 0).
         id = chemsheet.cell_value(1,0).strip()
-        casrn_field = chemsheet.cell_value(2, 2).strip('- ')
-        # Must use their ID numbers as unique ID if CASRN is blank.
-        if casrn_field == '':
-            casrn_field = id
         chemname = chemsheet.cell_value(1, 3).strip()
+        casrn_field = chemsheet.cell_value(2, 2).strip('- ')
+        # Must use something as unique ID if CASRN is blank. Provided index
+        # IDs are not the same across datasets (2007 - 2009). So, add a few
+        # characters of the chemical name (without introducing commas).
+        if casrn_field == '':
+            casrn_field = id + (chemname[:4] + chemname[-4:]).replace(',', '')
         date = chemsheet.cell_value(2, 4)
         # But I also want one CASRN per chemical listing.
         for c in casrn_field.split(','):
@@ -349,10 +351,13 @@ def crunch_jp():
         update_all(chemicals, filename)
     # Then, output a list of chemicals & their classification info for 
     # each hazard class.
-    # These are all the fields we have extracted:
-    header = ['CASRN', 'Name', 'Hazard class', 'Classification',
-              'Symbol', 'Signal word', 'Hazard statement',
+    # There will be no separate hazard class field in the output, because
+    # it will be combined with classification.
+    header = ['CASRN', 'Name', # 'Hazard class',
+              'Classification', 'Symbol', 'Signal word', 'Hazard statement',
               'Rationale for classification', 'Date of classification']
+    # This will keep track of unique classifications.
+    sublists = set()
     # I want the output to be in separate CSV files for each hazard class.
     # Furthermore, I want separate files for "classification not possible",
     # "not classified", and "not applicable".
@@ -370,25 +375,33 @@ def crunch_jp():
             listwriter = csv.writer(outfile)
             listwriter.writerow(header)
             for c in sorted(chemicals.keys()):
-                # The following conditions must be exact matches, rather than
-                # the field containing those phrases. Because sometimes the
-                # field contains classifications for several related compounds
-                # of which just one might be 'Not classified'... 
-                if chemicals[c][h][1] == 'Not applicable':
+                # Mash the hazard class and category together...
+                category = str(chemicals[c][h][1]).replace('\n', ' ').strip()
+                s = str(chemicals[c][h][0]).strip() + ' - ' + category
+                # These conditions test for exact matches, on purpose.
+                if category == 'Not applicable':
                     nawriter.writerow([c] + [chemicals[c]['name']] + 
-                                      chemicals[c][h])
-                elif chemicals[c][h][1] == 'Not classified':
+                                      [s] + chemicals[c][h][2:])
+                elif category == 'Not classified':
                     ncwriter.writerow([c] + [chemicals[c]['name']] + 
-                                      chemicals[c][h])
-                elif chemicals[c][h][1] == 'Classification not possible':
+                                      [s] + chemicals[c][h][2:])
+                elif category == 'Classification not possible':
                     npwriter.writerow([c] + [chemicals[c]['name']] + 
-                                      chemicals[c][h])
-                else:                
+                                      [s] + chemicals[c][h][2:])
+                elif category != '':
+                    # Don't bother outputting rows of empty classifications
+                    # (where no classification results were given).
+                    sublists.add(s)
                     listwriter.writerow([c] + [chemicals[c]['name']] + 
-                                        chemicals[c][h])
+                                        [s] + chemicals[c][h][2:])
     nafile.close()
     ncfile.close()
     npfile.close()
+    # Output a list of unique classifications (hazard class + category) that
+    # appear in the hazard-specific output files.
+    with open('GHS-jp/output/classifications.txt', 'w') as classtxt:
+        for sub in sorted(sublists):
+            print(sub, file=classtxt)
     # Also output an index of chemicals, just to check for problems.
     with open('GHS-jp/output/index.csv', 'w', newline='') as outfile:
         listwriter = csv.writer(outfile)
@@ -409,7 +422,7 @@ def crunch_kr():
                          'M-factor'])
     # I also want to enumerate the unique class/category/H-statement
     # combinations (sublists).
-    sublists = []
+    sublists = set()
     # Read in the spreadsheet; process and output results for each line.
     for r in range(16,1208):
         # Name:           (r, 1)
@@ -463,25 +476,20 @@ def crunch_kr():
         h_state = h_code + ' - ' + h_statement(h_code)
         # Make the combined hazard class/category/H-statement field:
         s = haz_class_en + ' - ' + category + ' [' + h_state + ']'
+        sublists.add(s)
         # Make M-factor field (though not really using it for anything now).
         if chemsheet.cell_value(r, 9) != '':
             m_factor = str(int(chemsheet.cell_value(r, 9)))
         else:
             m_factor = ''
-        # Keep track of sublists.
-        if s not in sublists:
-            sublists.append(s)
         # Ensure one CASRN per line when writing output:
         for casrn in casrn_field.split(', '):
             listwriter.writerow([casrn] + names + [s, m_factor])
     outfile.close()
-    sublists.sort()
     # Output some helpful information about the hazard sublists.
-    subtxt = open('GHS-kr/output/hazards.txt', 'w')
-    print('Number of hazard sublists:', len(sublists), file=subtxt)
-    for sub in sublists:
-        print(sub, file=subtxt)
-    subtxt.close()
+    with open('GHS-kr/output/sublists.txt', 'w') as subtxt:
+        for sub in sorted(sublists):
+            print(sub, file=subtxt)
 
 
 def crunch_nz():

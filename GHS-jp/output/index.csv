@@ -1499,25 +1499,25 @@ CASRN,Name
 99-99-0,4-Nitrotoluene
 999-61-1,2-hydroxypropyl acrylate
 999-81-5,"Ethanaminium, 2-chloro-N,N,N-trimethyl-"
-ID1018,Tetraalkyllead
-ID1284,Sulfonated polystyrene halofuginone calcium
-ID1304,"2,4,5-Trichlorophenoxyacetic acid methoxybutyl ester"
-ID1308,Toluidine salts
-ID1325,Carboxylic acids(higher fatty acids) barium salts
-ID1340,2-(3-Pyridyl)- piperidine sulfate
-ID1345,Blasticiden-S-benzylaminobenzenesulfonate
-ID1375,Fenaminosulf
-ID1413,Triphenyltin fatty acid ester (alkyl C=9-11)
-ID384,Chlorotrifluoroethane
-ID410,Dichloropentafluoropropane; HCFC-225
-ID420,Dibromotetrafluoroethane; Halone-2402
-ID430,Dioxins
-ID438,Tetrachlorodifluoroethane; CFC-112
-ID443,Trichlorotrifluoroethane; CFC-113
-ID492,Poly(oxyethylene) alkyl ether (alkyl C=12-15)
-ID723,Coal tar naphtha
-ID803,polybrominated biphenyl
-ID810,Rock wool
-ID819,petroleum ether
-ID820,Petroleum naphtha
-ID821,Petroleum benzine
+ID1018Tetrlead,Tetraalkyllead
+ID1284Sulfcium,Sulfonated polystyrene halofuginone calcium
+ID130424ster,"2,4,5-Trichlorophenoxyacetic acid methoxybutyl ester"
+ID1308Tolualts,Toluidine salts
+ID1325Carbalts,Carboxylic acids(higher fatty acids) barium salts
+ID13402-(3fate,2-(3-Pyridyl)- piperidine sulfate
+ID1345Blasnate,Blasticiden-S-benzylaminobenzenesulfonate
+ID1375Fenasulf,Fenaminosulf
+ID1413Trip-11),Triphenyltin fatty acid ester (alkyl C=9-11)
+ID384Chlohane,Chlorotrifluoroethane
+ID410Dich-225,Dichloropentafluoropropane; HCFC-225
+ID420Dibr2402,Dibromotetrafluoroethane; Halone-2402
+ID430Dioxxins,Dioxins
+ID438Tetr-112,Tetrachlorodifluoroethane; CFC-112
+ID443Tric-113,Trichlorotrifluoroethane; CFC-113
+ID492Poly-15),Poly(oxyethylene) alkyl ether (alkyl C=12-15)
+ID723Coalhtha,Coal tar naphtha
+ID803polyenyl,polybrominated biphenyl
+ID810Rockwool,Rock wool
+ID819petrther,petroleum ether
+ID820Petrhtha,Petroleum naphtha
+ID821Petrzine,Petroleum benzine

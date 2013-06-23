@@ -378,7 +378,12 @@ def crunch_jp():
                 # Mash the hazard class and category together...
                 category = str(chemicals[c][h][1]).replace('\n', ' ').strip()
                 s = str(chemicals[c][h][0]).strip() + ' - ' + category
-                # These conditions test for exact matches, on purpose.
+                # These conditions test for exact matches. Things like
+                # "Category 4 (m-cresol) Not applicable (o- and p-cresol)" 
+                # will not be filtered out, since you want to know about that
+                # Category 4. Unfortunately, you have to edit these by hand.
+                # As a side effect, things like "Not applicable (aqueous 
+                # solution)" will be kept even though they're useless.
                 if category == 'Not applicable':
                     nawriter.writerow([c] + [chemicals[c]['name']] + 
                                       [s] + chemicals[c][h][2:])
